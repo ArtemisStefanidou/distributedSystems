@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-12T22:33:53.206Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" etag="z-7oZ-gxei_cmHYsl2Bm" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-12T22:33:57.933Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" etag="PC2WUSqAhXfemxBJOTtC" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1100" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -626,7 +626,7 @@
         <mxCell id="Hrjqmwau-k4uzBghyXGY-8" value="createQuiz()&#xa;createSubject()&#xa;showStudentPerfomance()" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Hrjqmwau-k4uzBghyXGY-5">
           <mxGeometry y="128" width="160" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="Hrjqmwau-k4uzBghyXGY-9" value="question" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="Hrjqmwau-k4uzBghyXGY-9" value="ερωτήσεις" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="2945.5" y="2410" width="160" height="270" as="geometry" />
         </mxCell>
         <mxCell id="Hrjqmwau-k4uzBghyXGY-10" value="question_ID: int&#xa;&#xa;image: img&#xa;questionText: string&#xa;&#xa;option1:string&#xa;option2:string&#xa;option3:string&#xa;option4:string&#xa;&#xa;script:string&#xa;&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Hrjqmwau-k4uzBghyXGY-9">
