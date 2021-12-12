@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-12T20:52:08.414Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="QQF15ho-1TZPp3Le5-_n" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-12T20:52:19.718Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="9TEqFIk_WXU0AW5DXDfa" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1269" dy="1460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -382,9 +382,6 @@
               <mxPoint x="925" y="2000" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="SUe9okifFMKzkyMlBvx9-17" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;Επιλογή&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#CC6600;" vertex="1" parent="1">
-          <mxGeometry x="1260" y="2070" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VDAzMY6VPHkbo_ca9DUp-4" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;Δημιουργία μαθήματος&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#CC6600;" vertex="1" parent="1">
           <mxGeometry x="960" y="2119.07" width="120" height="80" as="geometry" />
