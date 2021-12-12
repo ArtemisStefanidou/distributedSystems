@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-12T19:42:42.724Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="X_mETso8D7_nB2tGCMzB" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-12T19:45:36.501Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="sx_Lbux1IbdXOocXfFp_" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
-    <mxGraphModel dx="702" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="462" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,14 +30,6 @@
           <mxGeometry x="369" y="196.25" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="-XtP8Va-9KeHgSvp5jP7-8" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fillColor=#bac8d3;strokeColor=#23445d;" parent="-XtP8Va-9KeHgSvp5jP7-7" vertex="1">
-          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
-            <mxPoint x="-27" y="7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="-XtP8Va-9KeHgSvp5jP7-13" value="«COMPONENT»&lt;br&gt;&lt;b&gt;DBMS&lt;br&gt;&lt;/b&gt;" style="html=1;dropTarget=0;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
-          <mxGeometry x="974" y="766.25" width="180" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="-XtP8Va-9KeHgSvp5jP7-14" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fillColor=#bac8d3;strokeColor=#23445d;" parent="-XtP8Va-9KeHgSvp5jP7-13" vertex="1">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
             <mxPoint x="-27" y="7" as="offset" />
           </mxGeometry>
@@ -152,6 +144,20 @@
         </mxCell>
         <mxCell id="FBepFoA94dysS3fDuO20-3" value="Student" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="343" y="760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FBepFoA94dysS3fDuO20-4" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="776.25" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-XtP8Va-9KeHgSvp5jP7-13" value="«COMPONENT»&lt;br&gt;&lt;b&gt;DBMS&lt;br&gt;&lt;/b&gt;" style="html=1;dropTarget=0;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="974" y="766.25" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-XtP8Va-9KeHgSvp5jP7-14" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fillColor=#bac8d3;strokeColor=#23445d;" parent="-XtP8Va-9KeHgSvp5jP7-13" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FBepFoA94dysS3fDuO20-5" value="&lt;span&gt;«COMPONENT»&lt;/span&gt;&lt;br&gt;&lt;b&gt;DBMS&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="845" y="860" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
