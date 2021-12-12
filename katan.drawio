@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-12T20:33:23.126Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="cOw8Lcwzl9k1NqKhDrTI" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-12T20:34:23.060Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="s3ohj9ZDxnLCTxtQghlm" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1170" dy="1395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -281,6 +281,9 @@
         </mxCell>
         <mxCell id="FBepFoA94dysS3fDuO20-9" value="&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;Εμφάνιση&lt;br&gt;Αξιολογήσεων&lt;br&gt;Άλλων&lt;br&gt;Χρηστών&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#CC6600;" vertex="1" parent="1">
           <mxGeometry x="410" y="1980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FBepFoA94dysS3fDuO20-10" value="&lt;b&gt;&lt;u&gt;USE CASE DIAGRAM&lt;/u&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1729" width="150" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
