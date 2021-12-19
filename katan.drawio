@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-19T18:11:25.291Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="UMwIwB-mTBjENc2RAzUe" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-19T18:11:42.439Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="rxW9DlzIqr3GGeFLeKMm" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1673" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -746,7 +746,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Hb3FMK0GVsPXd5nITXZO-1" value="&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;Προσθήκη&lt;br&gt;Πληροφορίας&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;" vertex="1" parent="1">
+        <mxCell id="Hb3FMK0GVsPXd5nITXZO-1" value="&lt;b style=&quot;color: rgb(204 , 102 , 0) ; font-size: 15px&quot;&gt;Δημιουργία&lt;br&gt;&amp;nbsp;Quiz&lt;/b&gt;&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;" vertex="1" parent="1">
           <mxGeometry x="270" y="2805" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Hb3FMK0GVsPXd5nITXZO-2" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Administrator&lt;/b&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#0000FF;labelBorderColor=none;strokeColor=#0000FF;" vertex="1" parent="1">
