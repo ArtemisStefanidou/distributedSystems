@@ -1,6 +1,20 @@
 # distributedSystems
 a team project for Distributed Systems Class HUA
+-----------------------------------------------------------------------
 
+
+Οδηγίες εργασιών
+
+https://docs.google.com/document/d/e/2PACX-1vSnSUfpPwum1Pt-48ttv7J5-vsQ5yYst9rufVGh96o8yFXkpXbE3xOdZPlN3trG3sHniWhD2ZAIm7fI/pub
+
+Θέματα Εργασιών
+
+https://docs.google.com/document/d/e/2PACX-1vReZn87dLrV-lEkipsHImlP2IcJOJLxk27cP1TZi0qSVJ4Rf6C7XmlKwqUR2ZxmImyRgmJ2UyACo5Ps/pub
+
+Αναθέσεις Εργασιών
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTgTPeIBm-LkgEbQKHithdiQol38gsP5OJLILtrP703hlZyH7N/pubhtml?gid=647520828&single=true
+----------------------------------------------------------------------
 
 Θα έχουμε ένα σύστημα στο οποίο:
 
