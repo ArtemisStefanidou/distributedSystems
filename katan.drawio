@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T14:01:39.390Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="mMbPBLM3F6ofcc40WB-u" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T14:07:20.962Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="bhshwf14_IaibwlvYzA-" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="862" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1080,7 +1080,7 @@
             <mxPoint x="199" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-103" value="Επιλογή μαθητή προς διαγραφή:selectStudent()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-103" value="Επιλογή μαθητή προς διαγραφή:selectStudent(email_student)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="-0.2306" width="80" relative="1" as="geometry">
             <mxPoint x="404.96000000000004" y="5502.01" as="sourcePoint" />
             <mxPoint x="1117.96" y="5502.01" as="targetPoint" />
