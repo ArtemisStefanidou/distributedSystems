@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T15:44:51.793Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="9tNl_WfzUKz0n3vH8doQ" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T15:53:32.651Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="06qct7UVTo3MB5XM3Vg1" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1546" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1480,24 +1480,10 @@
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-354" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="147.75" y="4883" width="10" height="852.01" as="geometry" />
         </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-355" value="isTeacher&lt;span style=&quot;text-align: left&quot;&gt;(password,email)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-356">
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-355" value="isTeacher&lt;span style=&quot;text-align: left&quot;&gt;(password,email)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="147.75" y="4885" as="sourcePoint" />
-            <mxPoint x="542.75" y="4885" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-356" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="552.75" y="4885" width="10" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-357" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="552.75" y="4925.52" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-358" value="&lt;div style=&quot;text-align: center&quot;&gt;checkIfTeacher(password,email)&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-357">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="557.75" y="4905.52" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="587.75" y="4905.52" />
-            </Array>
+            <mxPoint x="550.5700000000002" y="4885.225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-359" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1">
@@ -1511,31 +1497,6 @@
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-360" value="return message&amp;nbsp; for success log in&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PBfKpjPMDtIZPqUbG8_x-359">
           <mxGeometry x="0.2211" y="-1" relative="1" as="geometry">
             <mxPoint x="15" y="-14" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-361" value="&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;Σύνδεση&lt;/b&gt;&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;" vertex="1" parent="1">
-          <mxGeometry x="507.75" y="4700" width="100" height="960" as="geometry" />
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-362" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PBfKpjPMDtIZPqUbG8_x-361">
-          <mxGeometry x="44.5" y="930.01" width="10" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-363" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PBfKpjPMDtIZPqUbG8_x-361">
-          <mxGeometry x="44.5" y="970.53" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-364" value="&lt;span style=&quot;text-align: center&quot;&gt;checkIfTeacher&lt;/span&gt;(password,email)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="PBfKpjPMDtIZPqUbG8_x-361" target="PBfKpjPMDtIZPqUbG8_x-363">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="49.49999999999909" y="950.53" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="79.5" y="950.53" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-365" value="error(no correct input)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="PBfKpjPMDtIZPqUbG8_x-361">
-          <mxGeometry x="0.267" relative="1" as="geometry">
-            <mxPoint x="-350.5000000000009" y="1010.01" as="targetPoint" />
-            <mxPoint x="44.49999999999909" y="1010.01" as="sourcePoint" />
-            <Array as="points" />
-            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-366" value="&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;Συμπλήρωση&amp;nbsp;&lt;br&gt;Στοιχείων&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;" vertex="1" parent="1">
@@ -1777,6 +1738,45 @@
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-32" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="1957.47" y="5261" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-392" value="&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;Σύνδεση&lt;/b&gt;&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;" vertex="1" parent="1">
+          <mxGeometry x="507.75" y="4700" width="100" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-393" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PBfKpjPMDtIZPqUbG8_x-392">
+          <mxGeometry x="44.5" y="930.01" width="10" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-394" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PBfKpjPMDtIZPqUbG8_x-392">
+          <mxGeometry x="44.5" y="970.53" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-395" value="&lt;span style=&quot;text-align: center&quot;&gt;checkIfTeacher&lt;/span&gt;(password,email)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="PBfKpjPMDtIZPqUbG8_x-392" target="PBfKpjPMDtIZPqUbG8_x-394">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="49.49999999999909" y="950.53" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="79.5" y="950.53" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-396" value="error(no correct input)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="PBfKpjPMDtIZPqUbG8_x-392">
+          <mxGeometry x="0.267" relative="1" as="geometry">
+            <mxPoint x="-350.5000000000009" y="1010.01" as="targetPoint" />
+            <mxPoint x="44.49999999999909" y="1010.01" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-397" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="552.75" y="4885" width="10" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-398" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="552.75" y="4925.52" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-399" value="&lt;div style=&quot;text-align: center&quot;&gt;checkIfTeacher(password,email)&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-398">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="557.75" y="4905.52" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="587.75" y="4905.52" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
