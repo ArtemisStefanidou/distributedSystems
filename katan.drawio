@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T14:07:20.962Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="bhshwf14_IaibwlvYzA-" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T14:10:55.536Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="9GORGVjxQU_v-2Dqt1FN" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="862" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1118,7 +1118,7 @@
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-130" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="DyhkyFhcJ8_pvjAM_B7h-106" vertex="1">
           <mxGeometry x="47.5" y="380" width="10" height="42.5" as="geometry" />
         </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-131" value="find(student)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.054;exitY=0.755;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DyhkyFhcJ8_pvjAM_B7h-106" edge="1">
+        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-131" value="findStudent(email_student)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.054;exitY=0.755;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DyhkyFhcJ8_pvjAM_B7h-106" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="-96.5" y="390.0050000000001" as="sourcePoint" />
             <mxPoint x="41.5" y="390.22000000000025" as="targetPoint" />
@@ -1135,7 +1135,7 @@
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-133" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="DyhkyFhcJ8_pvjAM_B7h-106" vertex="1">
           <mxGeometry x="47.5" y="720" width="10" height="42.5" as="geometry" />
         </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-134" value="find(student)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.054;exitY=0.755;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DyhkyFhcJ8_pvjAM_B7h-106" edge="1">
+        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-134" value="findStudent(email_student)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.054;exitY=0.755;exitDx=0;exitDy=0;exitPerimeter=0;" parent="DyhkyFhcJ8_pvjAM_B7h-106" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="-96.5" y="730.0050000000001" as="sourcePoint" />
             <mxPoint x="41.5" y="730.2200000000003" as="targetPoint" />
@@ -1208,7 +1208,7 @@
             <mxPoint x="793.5700000000002" y="6060.224999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-125" value="Επιλογή μαθητή προς διαγραφή:selectStudent()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-125" value="Επιλογή μαθητή προς διαγραφή:selectStudent(email_student)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="-0.2306" width="80" relative="1" as="geometry">
             <mxPoint x="402.9999999999998" y="5829.999999999999" as="sourcePoint" />
             <mxPoint x="1116" y="5829.999999999999" as="targetPoint" />
@@ -1216,7 +1216,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-126" value="ALT" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="386.5" y="5740" width="923.5" height="250" as="geometry" />
+          <mxGeometry x="386.5" y="5727.51" width="923.5" height="250" as="geometry" />
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-136" value="&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;Εμφάνιση Ιστορικού Μαθητή&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" parent="1" vertex="1">
           <mxGeometry x="315" y="6425" width="100" height="50" as="geometry" />
