@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T21:34:48.839Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="VeXsNMhGDxB3CN_BObnH" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T21:38:41.007Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="_WFbcgxiBZhT0JfISwfS" version="15.9.4" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
     <mxGraphModel dx="628" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -404,6 +404,13 @@
         <mxCell id="21b5UhgwRr3e1awjRe3y-99" value="" style="fillColor=#CC4125;strokeColor=#660000" vertex="1" parent="21b5UhgwRr3e1awjRe3y-97">
           <mxGeometry x="45" y="120" width="10" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="21b5UhgwRr3e1awjRe3y-102" value="Επιλογή μαθητή προς διαγραφή:selectStudent(name)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="21b5UhgwRr3e1awjRe3y-97">
+          <mxGeometry x="-0.1096" width="80" relative="1" as="geometry">
+            <mxPoint x="-150.5" y="227" as="sourcePoint" />
+            <mxPoint x="210" y="227" as="targetPoint" />
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="21b5UhgwRr3e1awjRe3y-98" value="click:Λίστα Μαθητών" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.2;exitY=0.115;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="21b5UhgwRr3e1awjRe3y-91">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="200" y="1100" as="sourcePoint" />
@@ -422,6 +429,12 @@
           <mxGeometry x="0.2211" y="-1" relative="1" as="geometry">
             <mxPoint x="15" y="-14" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="21b5UhgwRr3e1awjRe3y-103" value="&lt;b&gt;Λίστα&lt;br&gt;Μαθητών&lt;br&gt;&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#A2C4C9;fillColor=#A2C4C9;align=center;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="409.78" y="900" width="100" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="21b5UhgwRr3e1awjRe3y-104" value="" style="fillColor=#CC4125;strokeColor=#660000" vertex="1" parent="21b5UhgwRr3e1awjRe3y-103">
+          <mxGeometry x="45" y="220" width="10" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
