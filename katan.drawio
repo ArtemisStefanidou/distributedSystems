@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T22:11:37.561Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="SWrFnd50Pafs6qyMCKJU" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T22:13:02.418Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="htGaGHQJm8iEodtzc6BV" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1517" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1684,7 +1684,7 @@
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-397" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="552.75" y="4885" width="10" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-37" value="User Enter Information" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-37" value="Teacher Enter Information" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="191.5" y="8259.01" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-398" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
@@ -2247,7 +2247,7 @@
             <mxPoint x="1021.5" y="8214.01" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-95" value="User has to enter&amp;nbsp;&lt;br&gt;Fullname&lt;br&gt;email&lt;br&gt;phone&lt;br&gt;password&lt;br&gt;Teacher`s ID" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-95" value="Student has to enter&amp;nbsp;&lt;br&gt;Fullname&lt;br&gt;email&lt;br&gt;phone&lt;br&gt;password&lt;br&gt;Teacher`s ID" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
           <mxGeometry x="884.75" y="8224.01" width="123.5" height="140" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-96" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-95" target="IasBlbRvsBHQbtRGyZx_-93" parent="1">
