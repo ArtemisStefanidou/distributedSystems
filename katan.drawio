@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T16:31:04.956Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="rU2Xm_ygcf-dNjhzAT6C" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T16:37:24.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="3lU_ujPeXv8LCknuGT5n" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1546" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1726,6 +1726,9 @@
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-418" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PBfKpjPMDtIZPqUbG8_x-414">
           <mxGeometry x="49.5" y="380" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-419" value="προσωρινοί χρήστες" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC6600;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="540" width="130" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
