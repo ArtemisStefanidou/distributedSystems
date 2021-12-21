@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T23:33:53.852Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="awKN0B4UKsfzWI05wuRK" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T23:34:55.729Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="7p1shL29WZBwFQYJpQiO" version="15.9.4" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
     <mxGraphModel dx="546" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -642,7 +642,7 @@
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21b5UhgwRr3e1awjRe3y-202" value="findRequests(id_teacher)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="21b5UhgwRr3e1awjRe3y-199">
+        <mxCell id="21b5UhgwRr3e1awjRe3y-202" value="listUsers(role=student)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="21b5UhgwRr3e1awjRe3y-199">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="55" y="140" as="sourcePoint" />
             <mxPoint x="210" y="140" as="targetPoint" />
