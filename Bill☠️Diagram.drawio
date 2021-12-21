@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T23:31:11.891Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="hCRts9SzAFUXyhcIwZ8t" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T23:33:53.852Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="awKN0B4UKsfzWI05wuRK" version="15.9.4" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
     <mxGraphModel dx="546" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -620,7 +620,7 @@
             <mxPoint x="2002.5" y="349.39" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21b5UhgwRr3e1awjRe3y-196" value="Επιβεβαίωση&#xa;Μαθητή" style="rounded=1;fontStyle=1;fillColor=#FFD966;strokeColor=none" vertex="1" parent="1">
+        <mxCell id="21b5UhgwRr3e1awjRe3y-196" value="Εύρεση&#xa;Μαθητή" style="rounded=1;fontStyle=1;fillColor=#FFD966;strokeColor=none" vertex="1" parent="1">
           <mxGeometry x="776.25" y="850" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="21b5UhgwRr3e1awjRe3y-197" value="" style="fillColor=#CC4125;strokeColor=#660000" vertex="1" parent="1">
@@ -656,7 +656,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21b5UhgwRr3e1awjRe3y-204" value="click:ΑΙΤΗΜΑΤΑ ΜΑΘΗΤΩΝ" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.01;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="21b5UhgwRr3e1awjRe3y-197">
+        <mxCell id="21b5UhgwRr3e1awjRe3y-204" value="click:Λίστα Μαθητών" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.01;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="21b5UhgwRr3e1awjRe3y-197">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="930" y="1100" as="sourcePoint" />
             <mxPoint x="1010" y="1025" as="targetPoint" />
