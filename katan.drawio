@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T14:18:08.025Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="tMoMPWEgjZJUKXMg4_h5" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T14:18:58.474Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="Wl6cN8ehWL7YqSXGF0BS" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1016" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1225,26 +1225,12 @@
           <mxGeometry x="350" y="6500" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-138" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="360" y="6580" width="10" height="720" as="geometry" />
+          <mxGeometry x="360" y="6580" width="10" height="710" as="geometry" />
         </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-139" value="isTeacher&lt;span style=&quot;text-align: left&quot;&gt;(password,email)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="DyhkyFhcJ8_pvjAM_B7h-140" edge="1">
+        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-139" value="isTeacher&lt;span style=&quot;text-align: left&quot;&gt;(password,email)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="360" y="6595" as="sourcePoint" />
-            <mxPoint x="755" y="6595" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-140" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="765" y="6595" width="10" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-141" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="765" y="6635.52" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="DyhkyFhcJ8_pvjAM_B7h-142" value="&lt;div style=&quot;text-align: center&quot;&gt;checkIfTeacher(password,email)&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="1" target="DyhkyFhcJ8_pvjAM_B7h-141" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="770" y="6615.52" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="800" y="6615.52" />
-            </Array>
+            <mxPoint x="762.8199999999997" y="6595.225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-143" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="1" edge="1">
@@ -1261,7 +1247,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-145" value="&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;Σύνδεση&lt;/b&gt;&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;" parent="1" vertex="1">
-          <mxGeometry x="720" y="6410" width="100" height="960" as="geometry" />
+          <mxGeometry x="720" y="6410" width="100" height="880" as="geometry" />
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-146" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="DyhkyFhcJ8_pvjAM_B7h-145" vertex="1">
           <mxGeometry x="44.5" y="775" width="10" height="75" as="geometry" />
@@ -1351,7 +1337,7 @@
           <mxGeometry x="424.5" y="7148" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-168" value="&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;MAIN&lt;br&gt;PAGE&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;" parent="1" vertex="1">
-          <mxGeometry x="884" y="6410" width="100" height="960" as="geometry" />
+          <mxGeometry x="884" y="6410" width="100" height="880" as="geometry" />
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-169" value="click:Εμφάνιση Ιστορικού Μαθητή" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="DyhkyFhcJ8_pvjAM_B7h-170" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1389,7 +1375,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-177" value="&lt;div&gt;&lt;font color=&quot;#cc6600&quot;&gt;&lt;b&gt;DB&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;verticalAlign=top;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1195.98" y="6411" width="100" height="1060" as="geometry" />
+          <mxGeometry x="1195.98" y="6411" width="100" height="879" as="geometry" />
         </mxCell>
         <mxCell id="DyhkyFhcJ8_pvjAM_B7h-180" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="DyhkyFhcJ8_pvjAM_B7h-177" vertex="1">
           <mxGeometry x="47.5" y="380" width="10" height="50" as="geometry" />
@@ -1817,6 +1803,20 @@
             <mxPoint x="813.25" y="7705.52" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="843.25" y="7705.52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGe5FDAjPjMWb73hsyaC-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="765" y="6595" width="10" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="UGe5FDAjPjMWb73hsyaC-26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="765" y="6635.52" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UGe5FDAjPjMWb73hsyaC-27" value="&lt;div style=&quot;text-align: center&quot;&gt;checkIfTeacher(password,email)&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" target="UGe5FDAjPjMWb73hsyaC-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="769.9999999999998" y="6615.52" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="800" y="6615.52" />
             </Array>
           </mxGeometry>
         </mxCell>
