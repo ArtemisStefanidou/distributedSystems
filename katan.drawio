@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T11:57:01.482Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="XkD-XnfYG6uPZXoWnXsG" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T11:58:33.112Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="hY8oy_7DeyWOqEBkfxP-" version="15.9.4" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
-    <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -720,10 +720,10 @@
         <mxCell id="RvhEsieofTqewbohKrWE-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;[Authorization Fail]&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="2360" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="RvhEsieofTqewbohKrWE-13" value="&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;Εγγραφή&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;" vertex="1" parent="1">
+        <mxCell id="RvhEsieofTqewbohKrWE-13" value="&lt;b style=&quot;color: rgb(204 , 102 , 0) ; font-size: 15px&quot;&gt;Εγγραφή&lt;br&gt;Καθηγητή&lt;/b&gt;&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;" vertex="1" parent="1">
           <mxGeometry x="970" y="2075" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="RvhEsieofTqewbohKrWE-14" value="&lt;font style=&quot;font-size: 9px&quot;&gt;&lt;b&gt;Θεατής/Χρήστης&lt;/b&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#0000FF;labelBorderColor=none;strokeColor=#0000FF;" vertex="1" parent="1">
+        <mxCell id="RvhEsieofTqewbohKrWE-14" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Καθηγητής&lt;/b&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#0000FF;labelBorderColor=none;strokeColor=#0000FF;" vertex="1" parent="1">
           <mxGeometry x="1005" y="2150" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RvhEsieofTqewbohKrWE-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
