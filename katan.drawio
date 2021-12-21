@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T15:53:32.651Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="06qct7UVTo3MB5XM3Vg1" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T15:59:26.494Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="wGjcJAUsRPvj4pkap09d" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1546" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1471,7 +1471,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-352" value="&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;Δημιουργία&amp;nbsp;&lt;br&gt;Μαθητή&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-352" value="&lt;b&gt;&lt;font color=&quot;#cc6600&quot;&gt;Επιβεβαίωση&lt;br&gt;Μαθητή&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="103.75" y="4700" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-353" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Καθηγητής&lt;/b&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#0000FF;labelBorderColor=none;strokeColor=#0000FF;" vertex="1" parent="1">
