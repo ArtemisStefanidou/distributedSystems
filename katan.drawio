@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T16:49:24.042Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="01SqiSiGILjWnSEQVjFW" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T16:51:34.420Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="c_f52cBUihwWkcpR4Add" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1546" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -577,7 +577,7 @@
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-46" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="55" y="1880.01" width="10" height="235" as="geometry" />
         </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-47" value="authorization(user_password,user_email,role)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-48">
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-47" value="Συμπλήρωση Στοιχείων Καθηγητή(user_password,user_email,role)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-48">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="1880.01" as="sourcePoint" />
             <mxPoint x="450" y="1880.01" as="targetPoint" />
@@ -1774,27 +1774,27 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-429" value="ALT" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1413" y="5240" width="685" height="144.48" as="geometry" />
+          <mxGeometry x="1413" y="5390" width="685" height="144.48" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-430" value="error(This email already in use)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1">
           <mxGeometry x="0.267" relative="1" as="geometry">
-            <mxPoint x="1423" y="5304.48" as="targetPoint" />
-            <mxPoint x="1818" y="5304.48" as="sourcePoint" />
+            <mxPoint x="1423" y="5454.48" as="targetPoint" />
+            <mxPoint x="1818" y="5454.48" as="sourcePoint" />
             <Array as="points" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-431" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;[Sign in Fail]&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1478" y="5244.48" width="140" height="30" as="geometry" />
+          <mxGeometry x="1478" y="5394.48" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-432" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="1818" y="5270" width="10" height="40" as="geometry" />
+          <mxGeometry x="1818" y="5420" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-433" value="checkIfExists(user_password,user_email,role)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-432">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1823" y="5250" as="sourcePoint" />
+            <mxPoint x="1823" y="5400" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="1853" y="5250" />
+              <mxPoint x="1853" y="5400" />
             </Array>
           </mxGeometry>
         </mxCell>
