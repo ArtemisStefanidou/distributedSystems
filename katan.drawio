@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T22:13:02.418Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="htGaGHQJm8iEodtzc6BV" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T22:19:09.334Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="Wc8rhqJD6H7B4JJHxvzT" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1517" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2266,75 +2266,76 @@
           <mxGeometry x="713" y="8384" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-99" value="" style="shape=rhombus;html=1;verticalLabelPosition=bottom;verticalAlignment=top;" vertex="1" parent="1">
-          <mxGeometry x="753" y="8510" width="40" height="40" as="geometry" />
+          <mxGeometry x="753" y="8635" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-100" value="" style="edgeStyle=elbowEdgeStyle;html=1;elbow=horizontal;align=right;verticalAlign=bottom;endArrow=none;rounded=0;labelBackgroundColor=none;startArrow=open;startSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-99" target="IasBlbRvsBHQbtRGyZx_-98" parent="1">
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-100" value="" style="edgeStyle=elbowEdgeStyle;html=1;elbow=horizontal;align=right;verticalAlign=bottom;endArrow=none;rounded=0;labelBackgroundColor=none;startArrow=open;startSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" target="IasBlbRvsBHQbtRGyZx_-98" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="777" y="8470" as="targetPoint" />
+            <mxPoint x="773" y="8490" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-101" value="[authorized]" style="edgeStyle=elbowEdgeStyle;html=1;elbow=vertical;verticalAlign=bottom;endArrow=open;rounded=0;labelBackgroundColor=none;endSize=12;" edge="1" source="IasBlbRvsBHQbtRGyZx_-99" parent="1">
           <mxGeometry x="-0.3333" relative="1" as="geometry">
-            <mxPoint x="868" y="8580" as="targetPoint" />
+            <mxPoint x="868" y="8705" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="808" y="8530" />
+              <mxPoint x="808" y="8655" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-102" value="[not authorized]" style="edgeStyle=elbowEdgeStyle;html=1;elbow=vertical;verticalAlign=bottom;endArrow=open;rounded=0;labelBackgroundColor=none;endSize=12;" edge="1" source="IasBlbRvsBHQbtRGyZx_-99" parent="1">
           <mxGeometry x="-0.2857" relative="1" as="geometry">
-            <mxPoint x="678" y="8581" as="targetPoint" />
+            <mxPoint x="678" y="8706" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="688" y="8530" />
-              <mxPoint x="677" y="8530" />
+              <mxPoint x="688" y="8655" />
+              <mxPoint x="677" y="8655" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-103" value="Reject&lt;br&gt;Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="619.5" y="8580" width="120" height="60" as="geometry" />
+          <mxGeometry x="619.5" y="8705" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-104" value="Create&lt;br&gt;Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="808" y="8580" width="120" height="60" as="geometry" />
+          <mxGeometry x="808" y="8705" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-105" value="" style="rhombus;" vertex="1" parent="1">
-          <mxGeometry x="757.9999999999999" y="8690" width="30" height="30" as="geometry" />
+          <mxGeometry x="757.9999999999999" y="8815" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-106" value="" style="edgeStyle=elbowEdgeStyle;html=1;elbow=horizontal;align=right;verticalAlign=bottom;endArrow=none;rounded=0;labelBackgroundColor=none;startArrow=open;startSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-105" target="IasBlbRvsBHQbtRGyZx_-103" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="676.21" y="8660" as="targetPoint" />
-            <mxPoint x="675.9957142857141" y="8700" as="sourcePoint" />
+            <mxPoint x="676.21" y="8785" as="targetPoint" />
+            <mxPoint x="675.9957142857141" y="8825" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="680" y="8640" />
+              <mxPoint x="680" y="8765" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-107" value="" style="edgeStyle=elbowEdgeStyle;html=1;elbow=horizontal;align=right;verticalAlign=bottom;endArrow=none;rounded=0;labelBackgroundColor=none;startArrow=open;startSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-105" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="868" y="8640" as="targetPoint" />
-            <mxPoint x="867.4257142857141" y="8680" as="sourcePoint" />
+            <mxPoint x="868" y="8765" as="targetPoint" />
+            <mxPoint x="867.4257142857141" y="8805" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="868" y="8640" />
+              <mxPoint x="868" y="8765" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-108" value="" style="html=1;shape=mxgraph.sysml.timeEvent;strokeWidth=2;verticalLabelPosition=bottom;verticalAlignment=top;" vertex="1" parent="1">
-          <mxGeometry x="755.5" y="8760" width="35" height="40" as="geometry" />
+          <mxGeometry x="755.5" y="8885" width="35" height="40" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-109" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-105" target="IasBlbRvsBHQbtRGyZx_-108" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="828" y="8810" as="sourcePoint" />
-            <mxPoint x="878" y="8760" as="targetPoint" />
+            <mxPoint x="828" y="8935" as="sourcePoint" />
+            <mxPoint x="878" y="8885" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-110" value="Time event&lt;br&gt;so wait 30s before you move on&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
-          <mxGeometry x="621" y="8715" width="85" height="120" as="geometry" />
+          <mxGeometry x="621" y="8840" width="85" height="120" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-111" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0;exitY=0;exitDx=80;exitDy=65;exitPerimeter=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-110" target="IasBlbRvsBHQbtRGyZx_-108" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="918" y="8640" as="sourcePoint" />
-            <mxPoint x="968" y="8590" as="targetPoint" />
+            <mxPoint x="918" y="8765" as="sourcePoint" />
+            <mxPoint x="968" y="8715" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-112" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.005;entryY=0.223;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-98" target="IasBlbRvsBHQbtRGyZx_-113" parent="1">
@@ -2348,61 +2349,58 @@
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-114" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="650" y="8880" as="sourcePoint" />
-            <mxPoint x="650" y="9100" as="targetPoint" />
+            <mxPoint x="650" y="9005" as="sourcePoint" />
+            <mxPoint x="650" y="9225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-115" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="650" y="8880" as="sourcePoint" />
-            <mxPoint x="970" y="8880" as="targetPoint" />
+            <mxPoint x="650" y="9005" as="sourcePoint" />
+            <mxPoint x="970" y="9005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-116" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="969" y="9100" as="sourcePoint" />
-            <mxPoint x="649" y="9100" as="targetPoint" />
+            <mxPoint x="969" y="9225" as="sourcePoint" />
+            <mxPoint x="649" y="9225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-117" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="970" y="8880" as="sourcePoint" />
-            <mxPoint x="970" y="9100" as="targetPoint" />
+            <mxPoint x="970" y="9005" as="sourcePoint" />
+            <mxPoint x="970" y="9225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-118" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-108" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="772.6599999999997" y="8820" as="sourcePoint" />
-            <mxPoint x="773" y="8920" as="targetPoint" />
+            <mxPoint x="772.6599999999997" y="8945" as="sourcePoint" />
+            <mxPoint x="773" y="9045" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-119" value="Account Information&lt;br&gt;(pending)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="723.75" y="8920" width="120" height="60" as="geometry" />
+          <mxGeometry x="723.75" y="9045" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-120" value="Interruption Region" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="868" y="8890" width="60" height="30" as="geometry" />
+          <mxGeometry x="868" y="9015" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-121" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-119" target="IasBlbRvsBHQbtRGyZx_-122" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="739.5" y="9040" as="sourcePoint" />
-            <mxPoint x="690" y="9040" as="targetPoint" />
+            <mxPoint x="739.5" y="9165" as="sourcePoint" />
+            <mxPoint x="690" y="9165" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="740" y="9010" />
-              <mxPoint x="730" y="8990" />
+              <mxPoint x="740" y="9135" />
+              <mxPoint x="730" y="9115" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-122" value="Account&amp;nbsp;&lt;br&gt;Cancelled" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="654.5" y="9030" width="120" height="60" as="geometry" />
+          <mxGeometry x="654.5" y="9155" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-123" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-122" parent="1">
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-123" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-122" parent="1" target="IasBlbRvsBHQbtRGyZx_-124">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="723.75" y="9160" as="sourcePoint" />
-            <mxPoint x="714" y="9130" as="targetPoint" />
+            <mxPoint x="723.75" y="9285" as="sourcePoint" />
+            <mxPoint x="714" y="9255" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-124" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="700.5" y="9130" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-125" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-119" target="IasBlbRvsBHQbtRGyZx_-128" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -2410,20 +2408,32 @@
             <mxPoint x="930" y="9040" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-126" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-128" target="IasBlbRvsBHQbtRGyZx_-124" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="880" y="9090" as="sourcePoint" />
-            <mxPoint x="930" y="9040" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-127" value="Create Student Account" style="swimlane;startSize=23;" vertex="1" parent="1">
-          <mxGeometry x="610" y="8010" width="450" height="1190" as="geometry" />
+          <mxGeometry x="597.92" y="8050" width="450" height="1270" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-128" value="Account Information&lt;br&gt;(approved)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-127">
-          <mxGeometry x="198" y="1120" width="120" height="60" as="geometry" />
+          <mxGeometry x="229.07999999999998" y="1200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-129" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-127">
-          <mxGeometry x="148" y="50" width="30" height="30" as="geometry" />
+          <mxGeometry x="160.08" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-124" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-127">
+          <mxGeometry x="92.08000000000004" y="1215" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-126" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="IasBlbRvsBHQbtRGyZx_-128" target="IasBlbRvsBHQbtRGyZx_-124" parent="IasBlbRvsBHQbtRGyZx_-127">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="282.08000000000004" y="1040" as="sourcePoint" />
+            <mxPoint x="332.08000000000004" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-130" value="wait teacher`s&lt;br&gt;confirmation" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="715" y="8489" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-131" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IasBlbRvsBHQbtRGyZx_-130" target="IasBlbRvsBHQbtRGyZx_-99">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="8870" as="sourcePoint" />
+            <mxPoint x="860" y="8820" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
