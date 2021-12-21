@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T16:57:31.946Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="7gYpCgsYcEFKKP6Ewpas" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T17:05:18.819Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="BMV2qj1tqN0iiUzPqrMw" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
     <mxGraphModel dx="1546" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1737,7 +1737,7 @@
           <mxGeometry x="1405" y="4770" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-422" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="1415" y="4865" width="10" height="475" as="geometry" />
+          <mxGeometry x="1415" y="4865" width="10" height="985" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-423" value="Συμπλήρωση Στοιχείων Μαθητή(user_password,user_email,role)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -1774,32 +1774,32 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-429" value="ALT" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1413" y="5390" width="685" height="144.48" as="geometry" />
+          <mxGeometry x="1413" y="5350" width="685" height="144.48" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-430" value="error(This email already in use)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1">
           <mxGeometry x="0.267" relative="1" as="geometry">
-            <mxPoint x="1423" y="5454.48" as="targetPoint" />
-            <mxPoint x="1818" y="5454.48" as="sourcePoint" />
+            <mxPoint x="1423" y="5414.48" as="targetPoint" />
+            <mxPoint x="1818" y="5414.48" as="sourcePoint" />
             <Array as="points" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-431" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;[Sign in Fail]&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1478" y="5394.48" width="140" height="30" as="geometry" />
+          <mxGeometry x="1478" y="5354.48" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-432" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="1818" y="5420" width="10" height="40" as="geometry" />
+          <mxGeometry x="1818" y="5380" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-433" value="checkIfExists(user_password,user_email,role)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" target="PBfKpjPMDtIZPqUbG8_x-432">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1823" y="5400" as="sourcePoint" />
+            <mxPoint x="1823" y="5360" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="1853" y="5400" />
+              <mxPoint x="1853" y="5360" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-436" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="1820" y="4865" width="10" height="395" as="geometry" />
+          <mxGeometry x="1820" y="4865" width="10" height="865" as="geometry" />
         </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-437" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="1820" y="4905.52" width="10" height="40" as="geometry" />
@@ -1871,7 +1871,7 @@
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-461" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="PBfKpjPMDtIZPqUbG8_x-458">
           <mxGeometry x="45" y="60" width="10" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PBfKpjPMDtIZPqUbG8_x-462" value="return id teacher" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1">
+        <mxCell id="PBfKpjPMDtIZPqUbG8_x-462" value="return&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1">
           <mxGeometry x="0.267" relative="1" as="geometry">
             <mxPoint x="1430" y="5300" as="targetPoint" />
             <mxPoint x="2273.93" y="5301" as="sourcePoint" />
