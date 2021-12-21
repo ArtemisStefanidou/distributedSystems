@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T23:13:57.740Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="2UQ5JB0E5D10A76V7Cok" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T23:31:01.238Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="WAsmx32dmUTGcEDUDEcO" version="15.9.4" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
-    <mxGraphModel dx="966" dy="1586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="546" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1175,7 +1175,7 @@
         <mxCell id="ePrmX9Pspfo6tDJ7ehUC-273" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Καθηγητής&lt;/b&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#0000FF;labelBorderColor=none;strokeColor=#0000FF;fillColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="3127.5" y="104.39" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="21b5UhgwRr3e1awjRe3y-318" value="Εγγραφή&#xa;Καθηγητή" style="rounded=1;fontStyle=1;fillColor=#FFD966;strokeColor=none" vertex="1" parent="1">
+        <mxCell id="21b5UhgwRr3e1awjRe3y-318" value="Εγγραφή" style="rounded=1;fontStyle=1;fillColor=#FFD966;strokeColor=none" vertex="1" parent="1">
           <mxGeometry x="36.25" y="1600" width="173.75" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ePrmX9Pspfo6tDJ7ehUC-256" value="" style="fillColor=#CC4125;strokeColor=#660000" vertex="1" parent="1">
@@ -1202,7 +1202,7 @@
         <mxCell id="21b5UhgwRr3e1awjRe3y-322" value="" style="fillColor=#CC4125;strokeColor=#660000" vertex="1" parent="21b5UhgwRr3e1awjRe3y-321">
           <mxGeometry x="45" y="120" width="10" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="21b5UhgwRr3e1awjRe3y-323" value="getListUsers(role=teacher)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="21b5UhgwRr3e1awjRe3y-321">
+        <mxCell id="21b5UhgwRr3e1awjRe3y-323" value="getListUsers(role=user_role)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="21b5UhgwRr3e1awjRe3y-321">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="55" y="140" as="sourcePoint" />
             <mxPoint x="210" y="140" as="targetPoint" />
@@ -1223,7 +1223,7 @@
             <mxPoint x="3394.5" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21b5UhgwRr3e1awjRe3y-325" value="Συμπλήρωση Στοιχείων Καθηγητή&lt;br&gt;(user_password,user_email,role)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.1;exitY=0.069;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+        <mxCell id="21b5UhgwRr3e1awjRe3y-325" value="Συμπλήρωση Στοιχείων&amp;nbsp;&lt;br&gt;(user_password,user_email,role)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.1;exitY=0.069;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry x="-0.0011" relative="1" as="geometry">
             <mxPoint x="80" y="1780.0100000000002" as="sourcePoint" />
             <mxPoint x="269" y="1780.0000000000005" as="targetPoint" />
