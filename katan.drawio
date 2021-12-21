@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T22:22:47.355Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="HiXzLZTupLwWHfNx5CJp" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T22:23:57.579Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="xzADre8-R5SpKSwYP2ui" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
-    <mxGraphModel dx="1517" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1423" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1874,9 +1874,6 @@
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-436" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="1820" y="4865" width="10" height="625" as="geometry" />
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-60" value="30 Seconds" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="519.42" y="7826" width="78.5" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-437" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="1820" y="4905.52" width="10" height="40" as="geometry" />
         </mxCell>
@@ -2154,6 +2151,9 @@
         <mxCell id="IasBlbRvsBHQbtRGyZx_-31" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-89">
           <mxGeometry x="148" y="50" width="30" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-60" value="30 Seconds" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-89">
+          <mxGeometry x="131.49999999999994" y="795" width="78.5" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="PBfKpjPMDtIZPqUbG8_x-491" value="isStudent&lt;span style=&quot;text-align: left&quot;&gt;(password,email)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.218;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1470" y="5996.989999999998" as="sourcePoint" />
@@ -2428,6 +2428,9 @@
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-113" value="Check for &lt;br&gt;user inputs" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-127">
           <mxGeometry x="292.08000000000004" y="334" width="75.25" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-178" value="30 Seconds" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-127">
+          <mxGeometry x="135.83000000000004" y="890" width="78.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-130" value="wait teacher`s&lt;br&gt;confirmation" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;" vertex="1" parent="1">
           <mxGeometry x="715" y="8489" width="120" height="80" as="geometry" />
