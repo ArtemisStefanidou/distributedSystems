@@ -2,6 +2,7 @@
 a team project for Distributed Systems Class HUA
 -----------------------------------------------------------------------
 
+online doc https://docs.google.com/document/d/1xtqQCBkSEX6O3Z0vvs7zvSIu-oAtml-82NfRlfJ3N_0/edit#bookmark=id.jda1zjvxvsia
 
 Οδηγίες εργασιών
 
