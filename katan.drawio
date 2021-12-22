@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-21T23:49:16.084Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="_62McepH8n6vSSDnJU1_" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-22T00:01:53.681Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="EgJLQiro-QBUHNEI1KFF" version="16.0.0" type="github">
   <diagram id="GJK99qKiG53gX0k3GKg5" name="Page-1">
-    <mxGraphModel dx="2566" dy="1654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="718" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2054,7 +2054,7 @@
             <mxPoint x="15" y="-14" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IasBlbRvsBHQbtRGyZx_-89" value="Create Teacher Account" style="swimlane;" vertex="1" parent="1">
+        <mxCell id="IasBlbRvsBHQbtRGyZx_-89" value="Create  Account" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="88.5" y="8005" width="450" height="1190" as="geometry" />
         </mxCell>
         <mxCell id="IasBlbRvsBHQbtRGyZx_-85" value="Account Information&lt;br&gt;(approved)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="IasBlbRvsBHQbtRGyZx_-89">
