@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "quiz_lv1")
-public class QuizLv1 {
+public class QuizLvl1 {
 
     @Id
     @Column(name = "subject_lv1_id")
@@ -17,7 +17,7 @@ public class QuizLv1 {
     @Column(name = "question_lv1_id")
     private int questionId;
 
-    public QuizLv1() {
+    public QuizLvl1() {
     }
 
     public int getSubjectId() {
