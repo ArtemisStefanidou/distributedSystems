@@ -1,4 +1,4 @@
-package org.hua.dit.distributedsystems.data;
+package org.hua.dit.distributedsystems.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,26 +10,25 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    @Column(name = "user_id ")
+    @Column(name = "user_id")
     private int user_id ;
 
-    @Id
-    @Column(name = "user_email ")
+    @Column(name = "user_email")
     private String user_email ;
 
-    @Column(name = "user_phone_number  ")
+    @Column(name = "user_phone_number")
     private int user_phone_number  ;
 
-    @Column(name = "user_password  ")
+    @Column(name = "user_password")
     private int user_password  ;
 
-    @Column(name = "user_fullname  ")
+    @Column(name = "user_fullname")
     private String user_fullname  ;
 
-    @Column(name = "user_role  ")
+    @Column(name = "user_role")
     private String user_role  ;
 
-    @Column(name = "user_teacher  ")
+    @Column(name = "user_teacher")
     private String user_teacher  ;
 
     public User() {

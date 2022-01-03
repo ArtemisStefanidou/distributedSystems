@@ -1,24 +1,24 @@
-package org.hua.dit.distributedsystems.data;
+package org.hua.dit.distributedsystems.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "Grade")
-public class Grade {
+public class Grade implements Serializable {
 
-    @Id
-    @Column(name = "grade_of_question  ")
+    @Column(name = "grade_of_question")
     private int grade_of_question;
 
     @Id
-    @Column(name = "grade_question_id  ")
+    @Column(name = "grade_question_id")
     private int grade_question_id;
 
     @Id
-    @Column(name = "grade_user_id   ")
+    @Column(name = "grade_user_id")
     private int grade_user_id;
 
     public Grade(){

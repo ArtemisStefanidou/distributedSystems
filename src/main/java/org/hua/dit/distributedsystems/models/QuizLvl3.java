@@ -1,20 +1,21 @@
-package org.hua.dit.distributedsystems.data;
+package org.hua.dit.distributedsystems.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "quiz_lv3")
-public class QuizLvl3 {
+public class QuizLvl3 implements Serializable {
 
     @Id
     @Column(name = "subject_lv3_id")
     private int subject_lv3_id;
 
     @Id
-    @Column(name = "question_lv3")
+    @Column(name = "question_lv3_id")
     private int question_lv3;
 
     public QuizLvl3() {
