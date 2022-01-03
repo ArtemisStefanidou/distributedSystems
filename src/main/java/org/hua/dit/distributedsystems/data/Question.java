@@ -1,4 +1,4 @@
-package org.hua.dit.ditributedsystems.distibutedsystems.data;
+package org.hua.dit.distributedsystems.data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
