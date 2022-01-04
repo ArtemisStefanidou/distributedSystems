@@ -52,3 +52,66 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 &emsp; 6.Ο μαθητής μπορεί να επιλέξει να κάνει quiz ανεξάρτητα με την τάξη στην οποία βρίσκεται <br />
 &emsp; 7. Για να επιλέξει ο μαθητής κάποιο quiz πρέπει πρώτα να έχει επιλέξει την τάξη που θέλει<br />
 &emsp; 8.για να δημιουργήσει ο καθηγητής quiz θα πρέπει πρώτα να χει δηλώσει σε ποια τάξη ανήκει <br />
+
+create table question(
+                         question_id INT NOT NULL AUTO_INCREMENT,
+                         question_image VARCHAR(100),
+                         question_text VARCHAR(100) NOT NULL,
+                         question_option1 VARCHAR(100) NOT NULL,
+                         question_option2 VARCHAR(100) NOT NULL,
+                         question_option3 VARCHAR(100),
+                         question_option4 VARCHAR(100),
+                         question_script VARCHAR(100),
+                         PRIMARY KEY ( question_id )
+);
+
+create table subject(
+                        subject_id INT NOT NULL AUTO_INCREMENT,
+                        subject_name VARCHAR(50) NOT NULL,
+                        subject_class VARCHAR(50) ,
+                        PRIMARY KEY ( subject_id )
+);
+
+create table quiz_lv1(
+                         subject_lv1_id INT NOT NULL,
+                         question_lv1_id INT NOT NULL,
+                         PRIMARY KEY ( subject_lv1_id , question_lv1_id),
+                         FOREIGN KEY (subject_lv1_id) REFERENCES subject(subject_id),
+                         FOREIGN KEY (question_lv1_id) REFERENCES question(question_id)
+);
+
+create table quiz_lv2(
+                         subject_lv2_id INT NOT NULL,
+                         question_lv2_id INT NOT NULL,
+                         PRIMARY KEY ( subject_lv2_id , question_lv2_id),
+                         FOREIGN KEY (subject_lv2_id) REFERENCES subject(subject_id),
+                         FOREIGN KEY (question_lv2_id) REFERENCES question(question_id)
+);
+
+create table quiz_lv3(
+                         subject_lv3_id INT NOT NULL,
+                         question_lv3_id INT NOT NULL,
+                         PRIMARY KEY ( subject_lv3_id , question_lv3_id),
+                         FOREIGN KEY (subject_lv3_id) REFERENCES subject(subject_id),
+                         FOREIGN KEY (question_lv3_id) REFERENCES question(question_id)
+);
+
+create table user(
+                     user_id INT NOT NULL AUTO_INCREMENT,
+                     user_email VARCHAR(50) NOT NULL,
+                     user_phone_number INT NOT NULL,
+                     user_password VARCHAR(50) NOT NULL,
+                     user_fullname VARCHAR(50) NOT NULL,
+                     user_role VARCHAR(50) NOT NULL,
+                     user_teacher VARCHAR(50),
+                     PRIMARY KEY (user_id)
+);
+
+create table grade(
+                      grade_of_question INT NOT NULL,
+                      grade_question_id INT NOT NULL,
+                      grade_user_id INT NOT NULL,
+                      FOREIGN KEY (grade_question_id) REFERENCES question(question_id),
+                      FOREIGN KEY (grade_user_id) REFERENCES user(user_id),
+                      PRIMARY KEY (grade_question_id,grade_user_id)
+);
