@@ -4,14 +4,15 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
 
     @Id
     @Column(name = "user_id")
-    private int user_id ;
+    private Integer user_id ;
 
     @Column(name = "user_email")
     private String user_email ;
@@ -32,6 +33,15 @@ public class User {
     private String user_teacher  ;
 
     public User() {
+    }
+
+    public User(Integer id, String user_email, int user_phone_number, int user_password, String user_fullname, String user_role) {
+        this.user_id = id;
+        this.user_email = user_email;
+        this.user_phone_number = user_phone_number;
+        this.user_password = user_password;
+        this.user_fullname = user_fullname;
+        this.user_role = user_role;
     }
 
     public int getUser_id() {
