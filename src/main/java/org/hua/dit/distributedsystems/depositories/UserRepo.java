@@ -4,7 +4,7 @@ import org.hua.dit.distributedsystems.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface UserRepo extends JpaRepository<User, Integer> {
+public interface UserRepo extends JpaRepository<User, Long> {
 
 
 

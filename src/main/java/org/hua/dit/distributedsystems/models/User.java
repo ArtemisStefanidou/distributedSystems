@@ -7,12 +7,12 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "user")
+@Table(name = "User")
 public class User implements Serializable {
 
     @Id
     @Column(name = "user_id")
-    private Integer user_id ;
+    private Long user_id ;
 
     @Column(name = "user_email")
     private String user_email ;
@@ -35,7 +35,7 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Integer id, String user_email, int user_phone_number, int user_password, String user_fullname, String user_role) {
+    public User(Long id, String user_email, int user_phone_number, int user_password, String user_fullname, String user_role) {
         this.user_id = id;
         this.user_email = user_email;
         this.user_phone_number = user_phone_number;
@@ -44,11 +44,11 @@ public class User implements Serializable {
         this.user_role = user_role;
     }
 
-    public int getUser_id() {
+    public Long getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(int user_id) {
+    public void setUser_id(Long user_id) {
         this.user_id = user_id;
     }
 

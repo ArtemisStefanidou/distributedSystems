@@ -18,7 +18,7 @@ public class DistributedSystemsApplication {
     @Bean
     CommandLineRunner commandLineRunner(UserRepo userRepo) {
         return args -> {
-          User bill = new User(1,"basilaras13com@gmail.com", 123 , 123, "bill", "Hacker");
+          User bill = new User(2L,"artemis@gmail.com", 123 , 123, "Artemis", "Mathematician");
 
           userRepo.save(bill);
         };
