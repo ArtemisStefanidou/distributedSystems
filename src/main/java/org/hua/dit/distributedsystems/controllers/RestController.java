@@ -44,11 +44,11 @@ public class RestController {
 
     // /deleteStudent --> pop up for confirmation to delete the Student (delete)
 
-    //getStudentsList --> (get)
+    // /getStudentsList --> (get)
 
     // /getDetails --> get details for a student (get)
 
-    //ENERGEIES MATHIHTH
+    //ENERGEIES MATHHTH
 
     // /signin (post)
     // /login (post)
