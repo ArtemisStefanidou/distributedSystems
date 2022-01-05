@@ -38,6 +38,10 @@ public class Question {
 
     }
 
+    public Question(Long id) {
+        this.id = id;
+    }
+
     public Long getId() {
         return id;
     }

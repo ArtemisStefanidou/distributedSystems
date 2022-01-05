@@ -1,5 +1,11 @@
 package org.hua.dit.distributedsystems;
 
+import org.hua.dit.distributedsystems.models.Grade;
+import org.hua.dit.distributedsystems.models.Question;
+import org.hua.dit.distributedsystems.models.Subject;
+import org.hua.dit.distributedsystems.repositories.GradeRepo;
+import org.hua.dit.distributedsystems.repositories.QuestionsRepo;
+import org.hua.dit.distributedsystems.repositories.SubjectRepo;
 import org.hua.dit.distributedsystems.repositories.UserRepo;
 import org.hua.dit.distributedsystems.models.User;
 import org.springframework.boot.CommandLineRunner;
@@ -16,11 +22,12 @@ public class DistributedSystemsApplication {
 
 
     @Bean
-    CommandLineRunner commandLineRunner(UserRepo userRepo) {
+    CommandLineRunner commandLineRunner(GradeRepo repo) {
         return args -> {
-          User bill = new User(2L,"artemis@gmail.com", 123 , 123, "Artemis", "Mathematician");
+/*          Grade bill = new Grade(1L,"Mathematics");
+          repo.save(bill);*/
 
-          userRepo.save(bill);
+
         };
     }
 

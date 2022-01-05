@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Subject")
+@Table(name="subject")
 public class Subject {
 
     @Id
@@ -24,6 +24,12 @@ public class Subject {
     public Subject() {
 
     }
+
+    public Subject(Long subject_id, String subject_name) {
+        this.subject_id = subject_id;
+        this.subject_name = subject_name;
+    }
+
     public Long getSubject_id() {
         return subject_id;
     }
