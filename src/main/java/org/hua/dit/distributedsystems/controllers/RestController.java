@@ -38,6 +38,16 @@ public class RestController {
 
     // /question --> two endpoints but one for create (post) and the other for update (patch)
 
+    // /menuStudentManage
+
+    // /createStudent --> form for create a student (post)
+
+    // /deleteStudent --> pop up for confirmation to delete the Student (delete)
+
+    //getStudentsList --> (get)
+
+    // /getDetails --> get details for a student (get)
+
     // Energeies Mathiti
 
     // /signin (post)
