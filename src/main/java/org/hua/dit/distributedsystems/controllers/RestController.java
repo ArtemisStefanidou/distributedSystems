@@ -28,7 +28,7 @@ public class RestController {
     //  /doQuiz/info/quiz (post) kataxwrhsh apanthsewn sto quiz
     //  /doQuiz/info/quiz/grade (get) emfanish batmou
 
-    // /myGrades (get)
+    // /myGrades (get) emfanish bathologiwn se ola ta quiz pou exei kanei
 
 
 }
