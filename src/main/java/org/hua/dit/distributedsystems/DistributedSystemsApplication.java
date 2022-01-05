@@ -1,17 +1,16 @@
 package org.hua.dit.distributedsystems;
 
-import org.hua.dit.distributedsystems.models.Grade;
-import org.hua.dit.distributedsystems.models.Question;
-import org.hua.dit.distributedsystems.models.Subject;
-import org.hua.dit.distributedsystems.repositories.GradeRepo;
-import org.hua.dit.distributedsystems.repositories.QuestionsRepo;
-import org.hua.dit.distributedsystems.repositories.SubjectRepo;
-import org.hua.dit.distributedsystems.repositories.UserRepo;
-import org.hua.dit.distributedsystems.models.User;
+import org.hua.dit.distributedsystems.models.QuizLvl1;
+import org.hua.dit.distributedsystems.models.QuizLvl2;
+import org.hua.dit.distributedsystems.models.QuizLvl3;
+import org.hua.dit.distributedsystems.repositories.QuizLv1Repo;
+import org.hua.dit.distributedsystems.repositories.QuizLv2Repo;
+import org.hua.dit.distributedsystems.repositories.QuizLv3Repo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.hua.dit.distributedsystems.repositories.ClassRepo;
 
 @SpringBootApplication
 public class DistributedSystemsApplication {
@@ -22,8 +21,13 @@ public class DistributedSystemsApplication {
 
 
     @Bean
-    CommandLineRunner commandLineRunner(GradeRepo repo) {
+    CommandLineRunner commandLineRunner(QuizLv3Repo repo) {
         return args -> {
+
+/*            QuizLvl3 q = new QuizLvl3(1L, 1L);
+
+            repo.save(q);*/
+
 /*          Grade bill = new Grade(10 , 1L, 1L);
           repo.save(bill);*/
 
