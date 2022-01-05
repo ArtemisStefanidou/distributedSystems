@@ -12,5 +12,8 @@ public class RestController {
 
     // /createClass --> form for create a class (post)
 
+    // /updateClass --> form for update the class (post)
+
+    // /update
 
 }
