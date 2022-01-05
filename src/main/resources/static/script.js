@@ -25,6 +25,17 @@ class ClassPost {
         this.class_name = class_name;
     }
 }
+class UserPost {
+    constructor(user_id,user_email,user_phone_number,user_password,user_fullname,user_role,user_teacher) {
+        this.user_id = user_id;
+        this.user_email = user_email;
+        this.user_phone_number  = user_phone_number;
+        this.user_password  = user_password;
+        this.user_fullname = user_fullname ;
+        this.user_role  = user_role;
+        this.user_teacher =user_teacher ;
+    }
+}
 
 document.getElementById("colSubmit").addEventListener("click", (event) => {
 
@@ -80,12 +91,12 @@ document.getElementById("subjectSubmit").addEventListener("click", (event) => {
 
 document.getElementById("userSubmit").addEventListener("click", (event) => {
 
-    const userPost = new UserPost();
+    const userPost = new UserPost("12","meletis@gmail.com",1234567,1234,"meletis","teacher","none");
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/subject", true);
+    xhr.open("POST", "http://localhost:8080/user", true);
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(JSON.stringify(subjectPost));
+    xhr.send(JSON.stringify(userPost));
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {

@@ -3,6 +3,7 @@ package org.hua.dit.distributedsystems.controllers;
 import org.hua.dit.distributedsystems.models.post.ClassPost;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.SubjectPost;
+import org.hua.dit.distributedsystems.models.post.UserPost;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -163,7 +164,16 @@ public class RestController {
 
 
 
+    // createUser --> /user (post)
+    @PostMapping(value="/user" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
 
+    public void userPost(@RequestBody UserPost userPost) {
+
+        //todo
+        System.out.println(userPost.getUser_email()+","+userPost.getUser_role()+","+userPost.getUser_fullname()+","+userPost.getUser_teacher()+","+userPost.getUser_id()+","+userPost.getUser_password()+","+userPost.getUser_phone_number());
+    }
 
 
     // createClass --> /class (post)
