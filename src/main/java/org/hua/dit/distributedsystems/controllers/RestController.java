@@ -1,12 +1,11 @@
 package org.hua.dit.distributedsystems.controllers;
 
+import org.hua.dit.distributedsystems.models.post.ClassPost;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
+import org.hua.dit.distributedsystems.models.post.SubjectPost;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
@@ -167,11 +166,44 @@ public class RestController {
 
 
 
+    // createClass --> /class (post)
+    @PostMapping(value="/class" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
+
+    public void classPost(@RequestBody ClassPost classPost) {
+
+        //todo
+        System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
+    }
+
+    // delete Question --> /question (delete)
+    @DeleteMapping("/class/{id}")
+    public void deleteClass(@PathVariable Long id) {
+        //repository.deleteById(id);
+    }
 
 
+    // createSubject --> /subject (post)
+    @PostMapping(value="/subject" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
+        public void classPost(@RequestBody SubjectPost subjectPost) {
+
+        System.out.println(subjectPost.getSubject_class()+","+subjectPost.getSubject_id()+","+subjectPost.getSubject_name());
+        return;
+
+        }
+
+    // delete Question --> /question (delete)
+    @DeleteMapping("/subject/{id}")
+    public void deleteSubject(@PathVariable Long id) {
+        //repository.deleteById(id);
+    }
 
 
-    @PostMapping(value="/createQuestion" , consumes = {
+    // createQuestion --> /question (post)
+    @PostMapping(value="/question" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
     })
 
@@ -180,6 +212,20 @@ public class RestController {
         System.out.println(questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_script());
         return;
     }
+//    @PostMapping(value="/question" , consumes = {
+//            MediaType.APPLICATION_JSON_VALUE
+//    })
+//
+//    public void questionPost(@RequestBody QuestionPost questionPost) {
+//
+//        System.out.println(questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_script());
+//        return;
+//    }
 
 
+    // delete Question --> /question (delete)
+    @DeleteMapping("/question/{id}")
+    void deleteQuestion(@PathVariable Long id) {
+        //repository.deleteById(id);
+    }
 }
