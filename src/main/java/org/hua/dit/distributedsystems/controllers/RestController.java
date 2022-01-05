@@ -14,7 +14,7 @@ public class RestController {
 
     // /updateClass --> form for update the class (post)
 
-    // /update
+    // /deleteClass --> pop up for confirmation to delete the class (delete)
 
 
     // KATI
