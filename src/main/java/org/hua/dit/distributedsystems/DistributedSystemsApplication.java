@@ -24,7 +24,7 @@ public class DistributedSystemsApplication {
     @Bean
     CommandLineRunner commandLineRunner(GradeRepo repo) {
         return args -> {
-/*          Grade bill = new Grade(1L,"Mathematics");
+/*          Grade bill = new Grade(10 , 1L, 1L);
           repo.save(bill);*/
 
 

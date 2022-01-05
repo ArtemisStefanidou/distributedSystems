@@ -1,16 +1,19 @@
 package org.hua.dit.distributedsystems.models;
 
+import org.hua.dit.distributedsystems.models.ids.GradeId;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "Grade")
-@IdClass(Grade.GradeId.class)
+@IdClass(GradeId.class)
 public class Grade implements Serializable {
 
     @Column(name = "grade_of_question")
-    private Long grade_of_question;
+    private int grade_of_question;
 
     @Id
     @Column(name = "grade_question_id")
@@ -24,14 +27,17 @@ public class Grade implements Serializable {
 
     }
 
+    public Grade(int grade_of_question, Long grade_question_id, Long grade_user_id) {
+        this.grade_of_question = grade_of_question;
+        this.grade_question_id = grade_question_id;
+        this.grade_user_id = grade_user_id;
+    }
 
-
-
-    public Long getGrade_of_question() {
+    public int getGrade_of_question() {
         return grade_of_question;
     }
 
-    public void setGrade_of_question(Long grade_of_question) {
+    public void setGrade_of_question(int grade_of_question) {
         this.grade_of_question = grade_of_question;
     }
 
@@ -51,38 +57,4 @@ public class Grade implements Serializable {
         this.grade_user_id = grade_user_id;
     }
 
-    public class GradeId implements Serializable {
-
-        private Long grade_question_id;
-
-        private Long grade_user_id;
-
-        public GradeId(Long grade_question_id, Long grade_user_id) {
-            this.grade_question_id = grade_question_id;
-            this.grade_user_id = grade_user_id;
-        }
-
-        public GradeId() {
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj)
-                return true;
-
-            if (obj == null || getClass() != obj.getClass())
-                return false;
-
-
-            GradeId gradeId = (GradeId) obj;
-            return grade_question_id.equals(gradeId.grade_question_id) &&
-                    grade_user_id.equals(gradeId.grade_user_id);
-        }
-
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(grade_question_id, grade_user_id);
-        }
-    }
 }
