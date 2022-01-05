@@ -38,5 +38,18 @@ public class RestController {
 
     // /question --> two endpoints but one for create (post) and the other for update (patch)
 
-    // KATI
+    // Energeies Mathiti
+
+    // /signin (post)
+    // /login (post)
+    //  /doQuiz  (get) emfanish selidas epilogwn
+    //  /doQuiz/info (post) kataxwrhsh plhroforiwn
+    //  /doQuiz/info (get) emfanish me bash tis plhrofories
+    //  /doQuiz/info/quiz (get) epilogh quiz
+    //  /doQuiz/info/quiz (post) kataxwrhsh apanthsewn sto quiz
+    //  /doQuiz/info/quiz/grade (get) emfanish batmou
+
+    // /myGrades (get) emfanish bathologiwn se ola ta quiz pou exei kanei
+
+
 }
