@@ -24,6 +24,8 @@ public class DistributedSystemsApplication {
     CommandLineRunner commandLineRunner(QuizLv3Repo repo) {
         return args -> {
 
+            System.out.println("hello");
+
 /*            QuizLvl3 q = new QuizLvl3(1L, 1L);
 
             repo.save(q);*/
