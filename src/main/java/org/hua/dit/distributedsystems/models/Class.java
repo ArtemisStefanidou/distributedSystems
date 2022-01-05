@@ -16,11 +16,16 @@ public class Class implements Serializable {
 
 
     @Column(name = "class_name")
-    private int class_name ;
+    private String class_name ;
 
 
     public Class(){
 
+    }
+
+    public Class(Long class_id, String class_name) {
+        this.class_id = class_id;
+        this.class_name = class_name;
     }
 
     public Long getClass_id() {
@@ -31,11 +36,11 @@ public class Class implements Serializable {
         this.class_id = class_id;
     }
 
-    public int getClass_name() {
+    public String getClass_name() {
         return class_name;
     }
 
-    public void setClass_name(int class_name) {
+    public void setClass_name(String class_name) {
         this.class_name = class_name;
     }
 }
