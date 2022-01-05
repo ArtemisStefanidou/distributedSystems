@@ -1,7 +1,11 @@
 package org.hua.dit.distributedsystems.controllers;
 
+import org.hua.dit.distributedsystems.models.post.QuestionPost;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @org.springframework.web.bind.annotation.RestController
@@ -26,11 +30,11 @@ public class RestController {
 
     // /menuClass
 
-    // /createChapter --> form for create a chapter (post)
+    // /createSubject --> form for create a subject (post)
 
-    // /updateChapter --> form for update the Chapter (patch)
+    // /updateSubject --> form for update the Subject (patch)
 
-    // /deleteChapter --> pop up for confirmation to delete the Chapter (delete)
+    // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
 
     // /menuChapter
 
@@ -67,5 +71,114 @@ public class RestController {
 
     // /myGrades (get) emfanish bathologiwn se ola ta quiz pou exei kanei
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @PostMapping(value="/createQuestion" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
+
+    public void collaborativePost(@RequestBody QuestionPost questionPost) {
+
+        System.out.print(questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_script());
+
+    }
 
 }
