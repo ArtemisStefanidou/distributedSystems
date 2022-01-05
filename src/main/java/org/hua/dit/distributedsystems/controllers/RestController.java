@@ -48,7 +48,7 @@ public class RestController {
 
     // /getDetails --> get details for a student (get)
 
-    // Energeies Mathiti
+    //ENERGEIES MATHIHTH
 
     // /signin (post)
     // /login (post)
