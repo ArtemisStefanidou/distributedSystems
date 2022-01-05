@@ -6,6 +6,9 @@ public class ClassPost {
     private Long class_id ;
     private String class_name ;
 
+    public ClassPost(){
+
+    }
     public Long getClass_id() {
         return class_id;
     }
