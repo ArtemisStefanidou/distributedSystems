@@ -1,6 +1,6 @@
 package org.hua.dit.distributedsystems;
 
-import org.hua.dit.distributedsystems.depositories.UserRepo;
+import org.hua.dit.distributedsystems.repositories.UserRepo;
 import org.hua.dit.distributedsystems.models.User;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

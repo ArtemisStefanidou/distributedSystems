@@ -1,4 +1,4 @@
-package org.hua.dit.distributedsystems.depositories;
+package org.hua.dit.distributedsystems.repositories;
 
 import org.hua.dit.distributedsystems.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;

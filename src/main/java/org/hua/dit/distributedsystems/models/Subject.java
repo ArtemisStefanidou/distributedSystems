@@ -12,7 +12,7 @@ public class Subject {
 
     @Id
     @Column(name = "subject_id")
-    private int subject_id;
+    private Long subject_id;
 
     @Column(name = "subject_name")
     private String subject_name;
@@ -24,11 +24,11 @@ public class Subject {
     public Subject() {
 
     }
-    public int getSubject_id() {
+    public Long getSubject_id() {
         return subject_id;
     }
 
-    public void setSubject_id(int subject_id) {
+    public void setSubject_id(Long subject_id) {
         this.subject_id = subject_id;
     }
 
