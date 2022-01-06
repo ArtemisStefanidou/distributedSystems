@@ -3,14 +3,12 @@ package org.hua.dit.distributedsystems;
 import org.hua.dit.distributedsystems.models.QuizLvl1;
 import org.hua.dit.distributedsystems.models.QuizLvl2;
 import org.hua.dit.distributedsystems.models.QuizLvl3;
-import org.hua.dit.distributedsystems.repositories.QuizLv1Repo;
-import org.hua.dit.distributedsystems.repositories.QuizLv2Repo;
-import org.hua.dit.distributedsystems.repositories.QuizLv3Repo;
+import org.hua.dit.distributedsystems.models.User;
+import org.hua.dit.distributedsystems.repositories.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.hua.dit.distributedsystems.repositories.ClassRepo;
 
 @SpringBootApplication
 public class DistributedSystemsApplication {
@@ -21,7 +19,7 @@ public class DistributedSystemsApplication {
 
 
     @Bean
-    CommandLineRunner commandLineRunner(QuizLv3Repo repo) {
+    CommandLineRunner commandLineRunner(UserRepo repo) {
         return args -> {
 
             System.out.println("hello");
@@ -30,8 +28,8 @@ public class DistributedSystemsApplication {
 
             repo.save(q);*/
 
-/*          Grade bill = new Grade(10 , 1L, 1L);
-          repo.save(bill);*/
+          User bill = new User();
+          repo.save(bill);
 
 
         };
