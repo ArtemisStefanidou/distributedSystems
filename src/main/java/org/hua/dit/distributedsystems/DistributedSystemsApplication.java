@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 public class DistributedSystemsApplication {
 
@@ -33,15 +35,18 @@ public class DistributedSystemsApplication {
 
 
 
-            User bill = new User(null, "bill@gmail.com", 1234, "1234", "Bill", "student");
+            User bill = new User(null, "bill@gmail.com", 1234, "1234", "Bill", new ArrayList<>());
             userService.saveUser(bill);
 
-
-            User artemis = new User(null, "artemis@gmail.com", 1234, "5678", "Artemis", "teacher");
+            User artemis = new User(null, "artemis@gmail.com", 1234, "5678", "Artemis", new ArrayList<>());
             userService.saveUser(artemis);
 
-            User meletis = new User(null, "meletis@gmail.com", 1234, "9012", "Meletis", "teacher");
+            User meletis = new User(null, "meletis@gmail.com", 1234, "9012", "Meletis", new ArrayList<>());
             userService.saveUser(meletis);
+
+            userService.addRoleToUser("bill@gmail.com", "student");
+            userService.addRoleToUser("artemis@gmail.com", "teacher");
+            userService.addRoleToUser("meletis@gmail.com", "teacher");
 
 
         };

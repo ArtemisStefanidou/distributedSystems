@@ -2,6 +2,8 @@ package org.hua.dit.distributedsystems.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Entity
 @Table(name = "User")
@@ -23,8 +25,10 @@ public class User implements Serializable {
     @Column(name = "user_fullname")
     private String user_fullname  ;
 
+
     @Column(name = "user_role")
-    private String user_role  ;
+    @ManyToMany (fetch = FetchType.EAGER)
+    private Collection<Role> user_role = new ArrayList<>();
 
     @Column(name = "user_teacher")
     private String user_teacher  ;
@@ -32,8 +36,8 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Long id, String email, int user_phone_number, String user_password, String user_fullname, String user_role) {
-        this.user_id = id;
+    public User(Long user_id, String email, int user_phone_number, String user_password, String user_fullname, Collection<Role> user_role) {
+        this.user_id = user_id;
         this.email = email;
         this.user_phone_number = user_phone_number;
         this.user_password = user_password;
@@ -81,11 +85,27 @@ public class User implements Serializable {
         this.user_fullname = user_fullname;
     }
 
-    public String getUser_role() {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Collection<Role> getUser_role() {
         return user_role;
     }
 
-    public void setUser_role(String user_role) {
+    public void setUser_role(Collection<Role> user_role) {
         this.user_role = user_role;
+    }
+
+    public String getUser_teacher() {
+        return user_teacher;
+    }
+
+    public void setUser_teacher(String user_teacher) {
+        this.user_teacher = user_teacher;
     }
 }

@@ -2,6 +2,7 @@ package org.hua.dit.distributedsystems.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hua.dit.distributedsystems.models.Role;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.repositories.RoleRepo;
 import org.hua.dit.distributedsystems.repositories.UserRepo;
@@ -41,6 +42,14 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    public void addRoleToUser(String email, String roleName) {
+        User user = userRepo.findByEmail(email);
+        Role role = roleRepo.findByRoleName(roleName);
+
+        user.getUser_role().add(role);
+    }
+
+    @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepo.findByEmail(email);
 
@@ -53,7 +62,9 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
 
-        authorities.add(new SimpleGrantedAuthority(user.getUser_role()));
+        user.getUser_role().forEach(role -> {
+            authorities.add(new SimpleGrantedAuthority(role.getRoleName()));
+        });
 
         return new org.springframework.security.core.userdetails.User(user.getUser_email(), user.getUser_password(), authorities);
     }
