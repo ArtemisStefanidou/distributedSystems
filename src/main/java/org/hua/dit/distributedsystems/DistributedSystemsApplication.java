@@ -1,14 +1,13 @@
 package org.hua.dit.distributedsystems;
 
-import org.hua.dit.distributedsystems.models.QuizLvl1;
-import org.hua.dit.distributedsystems.models.QuizLvl2;
-import org.hua.dit.distributedsystems.models.QuizLvl3;
-import org.hua.dit.distributedsystems.models.User;
+import org.hua.dit.distributedsystems.models.*;
 import org.hua.dit.distributedsystems.repositories.*;
+import org.hua.dit.distributedsystems.service.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class DistributedSystemsApplication {
@@ -17,19 +16,32 @@ public class DistributedSystemsApplication {
         SpringApplication.run(DistributedSystemsApplication.class, args);
     }
 
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Bean
-    CommandLineRunner commandLineRunner(UserRepo repo) {
+    CommandLineRunner commandLineRunner(UserRepo repo, RoleRepo roleRepo, UserService userService) {
         return args -> {
 
-            System.out.println("hello");
+            Role student = new Role(null, "student");
+            roleRepo.save(student);
 
-/*            QuizLvl3 q = new QuizLvl3(1L, 1L);
+            Role teacher = new Role(null, "teacher");
+            roleRepo.save(teacher);
 
-            repo.save(q);*/
 
-          User bill = new User();
-          repo.save(bill);
+
+            User bill = new User(null, "bill@gmail.com", 1234, "1234", "Bill", "student");
+            userService.saveUser(bill);
+
+
+            User artemis = new User(null, "artemis@gmail.com", 1234, "5678", "Artemis", "teacher");
+            userService.saveUser(artemis);
+
+            User meletis = new User(null, "meletis@gmail.com", 1234, "9012", "Meletis", "teacher");
+            userService.saveUser(meletis);
 
 
         };

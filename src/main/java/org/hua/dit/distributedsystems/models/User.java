@@ -11,14 +11,14 @@ public class User implements Serializable {
     @Column(name = "user_id")
     private Long user_id ;
 
-    @Column(name = "user_email")
-    private String user_email ;
+    @Column(name = "email")
+    private String email ;
 
     @Column(name = "user_phone_number")
     private int user_phone_number  ;
 
     @Column(name = "user_password")
-    private int user_password  ;
+    private String user_password  ;
 
     @Column(name = "user_fullname")
     private String user_fullname  ;
@@ -32,9 +32,9 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Long id, String user_email, int user_phone_number, int user_password, String user_fullname, String user_role) {
+    public User(Long id, String email, int user_phone_number, String user_password, String user_fullname, String user_role) {
         this.user_id = id;
-        this.user_email = user_email;
+        this.email = email;
         this.user_phone_number = user_phone_number;
         this.user_password = user_password;
         this.user_fullname = user_fullname;
@@ -50,11 +50,11 @@ public class User implements Serializable {
     }
 
     public String getUser_email() {
-        return user_email;
+        return email;
     }
 
-    public void setUser_email(String user_email) {
-        this.user_email = user_email;
+    public void setUser_email(String email) {
+        this.email = email;
     }
 
     public int getUser_phone_number() {
@@ -65,11 +65,11 @@ public class User implements Serializable {
         this.user_phone_number = user_phone_number;
     }
 
-    public int getUser_password() {
+    public String getUser_password() {
         return user_password;
     }
 
-    public void setUser_password(int user_password) {
+    public void setUser_password(String user_password) {
         this.user_password = user_password;
     }
 
@@ -87,13 +87,5 @@ public class User implements Serializable {
 
     public void setUser_role(String user_role) {
         this.user_role = user_role;
-    }
-
-    public String getUser_teacher() {
-        return user_teacher;
-    }
-
-    public void setUser_teacher(String user_teacher) {
-        this.user_teacher = user_teacher;
     }
 }

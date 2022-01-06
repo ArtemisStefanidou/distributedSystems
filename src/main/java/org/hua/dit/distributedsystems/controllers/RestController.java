@@ -5,10 +5,10 @@ import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.SubjectPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
+@RequestMapping("/")
 public class RestController {
 
 
@@ -75,97 +75,8 @@ public class RestController {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // createUser --> /user (post)
-    @PostMapping(value="/user" , consumes = {
+    @PostMapping(value="user" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
     })
 
@@ -177,7 +88,7 @@ public class RestController {
 
 
     // createClass --> /class (post)
-    @PostMapping(value="/class" , consumes = {
+    @PostMapping(value="class" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
     })
 
@@ -188,14 +99,14 @@ public class RestController {
     }
 
     // delete Question --> /question (delete)
-    @DeleteMapping("/class/{id}")
+    @DeleteMapping("class/{id}")
     public void deleteClass(@PathVariable Long id) {
         //repository.deleteById(id);
     }
 
 
     // createSubject --> /subject (post)
-    @PostMapping(value="/subject" , consumes = {
+    @PostMapping(value="subject" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
     })
         public void classPost(@RequestBody SubjectPost subjectPost) {
@@ -206,14 +117,14 @@ public class RestController {
         }
 
     // delete Question --> /question (delete)
-    @DeleteMapping("/subject/{id}")
+    @DeleteMapping("subject/{id}")
     public void deleteSubject(@PathVariable Long id) {
         //repository.deleteById(id);
     }
 
 
     // createQuestion --> /question (post)
-    @PostMapping(value="/question" , consumes = {
+    @PostMapping(value="question" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
     })
 
@@ -234,7 +145,7 @@ public class RestController {
 
 
     // delete Question --> /question (delete)
-    @DeleteMapping("/question/{id}")
+    @DeleteMapping("question/{id}")
     void deleteQuestion(@PathVariable Long id) {
         //repository.deleteById(id);
     }
