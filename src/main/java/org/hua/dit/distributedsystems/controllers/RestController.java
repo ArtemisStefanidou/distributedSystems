@@ -14,10 +14,6 @@ public class RestController {
 
     //API
 
-
-//    /home --> login page (post)
-//    email password
-
 //ENERGEIES KATHIGHTH
 
     // createClass --> /class (post)
@@ -36,29 +32,46 @@ public class RestController {
 
     // /deleteClass --> pop up for confirmation to delete the class (delete)
 
-    // /menuClass
+    // createSubject --> /subject (post)
+    @PostMapping(value="subject" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
+    public void classPost(@RequestBody SubjectPost subjectPost) {
 
-    // /createSubject --> form for create a subject (post)
+        System.out.println(subjectPost.getSubject_class()+","+subjectPost.getSubject_id()+","+subjectPost.getSubject_name());
+        return;
+
+    }
 
     // /updateSubject --> form for update the Subject (patch)
 
     // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
 
-    // /menuChapter
+    // createQuestion --> /question (post)
+    @PostMapping(value="question" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
 
-    // /createQuestion --> form for create a Question (post)
+    public void collaborativePost(@RequestBody QuestionPost questionPost) {
+
+        System.out.println(questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_script());
+        return;
+    }
 
     // /updateQuestion --> form for update the Question (patch)
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
 
-    // /menuQuestion
+    // createUser --> /user (post)
+    @PostMapping(value="user" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
 
-    // /question --> two endpoints but one for create (post) and the other for update (patch)
+    public void userPost(@RequestBody UserPost userPost) {
 
-    // /menuStudentManage
-
-    // /createStudent --> form for create a student (post)
+        //todo
+        System.out.println(userPost.getUser_email()+","+userPost.getUser_role()+","+userPost.getUser_fullname()+","+userPost.getUser_teacher()+","+userPost.getUser_id()+","+userPost.getUser_password()+","+userPost.getUser_phone_number());
+    }
 
     // /deleteStudent --> pop up for confirmation to delete the Student (delete)
 
@@ -83,16 +96,7 @@ public class RestController {
 
 
 
-    // createUser --> /user (post)
-    @PostMapping(value="user" , consumes = {
-            MediaType.APPLICATION_JSON_VALUE
-    })
 
-    public void userPost(@RequestBody UserPost userPost) {
-
-        //todo
-        System.out.println(userPost.getUser_email()+","+userPost.getUser_role()+","+userPost.getUser_fullname()+","+userPost.getUser_teacher()+","+userPost.getUser_id()+","+userPost.getUser_password()+","+userPost.getUser_phone_number());
-    }
 
 
 
@@ -104,16 +108,7 @@ public class RestController {
     }
 
 
-    // createSubject --> /subject (post)
-    @PostMapping(value="subject" , consumes = {
-            MediaType.APPLICATION_JSON_VALUE
-    })
-        public void classPost(@RequestBody SubjectPost subjectPost) {
 
-        System.out.println(subjectPost.getSubject_class()+","+subjectPost.getSubject_id()+","+subjectPost.getSubject_name());
-        return;
-
-        }
 
     // delete Question --> /question (delete)
     @DeleteMapping("subject/{id}")
@@ -122,16 +117,7 @@ public class RestController {
     }
 
 
-    // createQuestion --> /question (post)
-    @PostMapping(value="question" , consumes = {
-            MediaType.APPLICATION_JSON_VALUE
-    })
 
-    public void collaborativePost(@RequestBody QuestionPost questionPost) {
-
-        System.out.println(questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_script());
-        return;
-    }
 //    @PostMapping(value="/question" , consumes = {
 //            MediaType.APPLICATION_JSON_VALUE
 //    })
