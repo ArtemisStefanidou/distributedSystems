@@ -6,40 +6,30 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/")
-public class IndexController {
+@RequestMapping("/teacher/")
+public class Teacher {
 
-    @GetMapping("index")
-    public String login() {
-        return "login";
-    }
-
-    @GetMapping("menuTeacher")
+    @GetMapping("menu")
     public String menuTeacher() {
         return "menuTeacher";
     }
 
-    @GetMapping("menuStudent")
-    public String menuStudent() {
-        return "menuStudent";
-    }
-
-    @GetMapping("menuTeacher/classMenu")
+    @GetMapping("menu/class")
     public String classMenu() {
         return "classMenu";
     }
 
-    @GetMapping("menuTeacher/subjectMenu")
+    @GetMapping("menu/subject")
     public String chapterMenu() {
         return "subjectMenu";
     }
 
-    @GetMapping("menuTeacher/questionMenu")
+    @GetMapping("menu/question")
     public String questionMenu() {
         return "questionMenu";
     }
 
-    @GetMapping("menuTeacher/studentManageMenu")
+    @GetMapping("menu/studentManage")
     public String studentManageMenu() {
         return "studentManageMenu";
     }

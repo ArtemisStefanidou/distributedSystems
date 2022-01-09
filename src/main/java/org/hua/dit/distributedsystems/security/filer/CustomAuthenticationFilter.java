@@ -4,7 +4,6 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -65,9 +64,6 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
                 .withExpiresAt(new Date((System.currentTimeMillis() + 30 * 60 *1000 )))
                 .withIssuer(request.getRequestURL().toString())
                 .sign(algorithm);
-
-/*        response.setHeader("access_token", accessToken);
-        response.setHeader("refresh_token", refreshToken);*/
 
         Map<String, String> tokens = new HashMap<>();
 
