@@ -28,4 +28,19 @@ public class IndexController {
     public String classMenu() {
         return "classMenu";
     }
+
+    @GetMapping("menuTeacher/subjectMenu")
+    public String chapterMenu() {
+        return "subjectMenu";
+    }
+
+    @GetMapping("menuTeacher/questionMenu")
+    public String questionMenu() {
+        return "questionMenu";
+    }
+
+    @GetMapping("menuTeacher/studentManageMenu")
+    public String studentManageMenu() {
+        return "studentManageMenu";
+    }
 }
