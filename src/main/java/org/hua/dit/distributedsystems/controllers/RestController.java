@@ -20,9 +20,17 @@ public class RestController {
 
 //ENERGEIES KATHIGHTH
 
-    // /menuTeacher --> central menu after the sign in from a teacher role=="teacher" (get)
+    // createClass --> /class (post)
+    @PostMapping(value="class" , consumes = {
+            MediaType.APPLICATION_JSON_VALUE
+    })
 
-    // /createClass --> form for create a class (post)
+    public void classPost(@RequestBody ClassPost classPost) {
+
+        //todo
+        System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
+    }
+
 
     // /updateClass --> form for update the class (post)
 
@@ -87,16 +95,7 @@ public class RestController {
     }
 
 
-    // createClass --> /class (post)
-    @PostMapping(value="class" , consumes = {
-            MediaType.APPLICATION_JSON_VALUE
-    })
 
-    public void classPost(@RequestBody ClassPost classPost) {
-
-        //todo
-        System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
-    }
 
     // delete Question --> /question (delete)
     @DeleteMapping("class/{id}")
