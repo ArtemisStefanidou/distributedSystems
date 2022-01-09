@@ -27,28 +27,38 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public User saveUser(User user) {
-        user.setUser_password(passwordEncoder.encode(user.getUser_password()));
+        log.info("Encoding password...");
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        log.info("Saving new user {} to the database", user.getFullName());
         return userRepo.save(user);
     }
 
     @Override
-    public User getUser(String email) {
-        return userRepo.findByEmail(email) ;
-    }
-
-    @Override
-    public List<User> getUsers() {
-        return userRepo.findAll();
+    public Role saveRole(Role role) {
+        log.info("Saving new role {} to the database", role.getName());
+        return roleRepo.save(role);
     }
 
     @Override
     public void addRoleToUser(String email, String roleName) {
         User user = userRepo.findByEmail(email);
-        Role role = roleRepo.findByRoleName(roleName);
+        log.info("Adding role {} to user {}", roleName, user.getFullName());
+        Role role = roleRepo.findByName(roleName);
 
-        user.getUser_role().add(role);
+        user.getRoles().add(role);
     }
 
+    @Override
+    public User getUser(String email) {
+        log.info("Fetching user {}", email);
+        return userRepo.findByEmail(email) ;
+    }
+
+    @Override
+    public List<User> getUsers() {
+        log.info("Fetching all users");
+        return userRepo.findAll();
+    }
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepo.findByEmail(email);
@@ -62,10 +72,10 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
 
-        user.getUser_role().forEach(role -> {
-            authorities.add(new SimpleGrantedAuthority(role.getRoleName()));
+        user.getRoles().forEach(role -> {
+            authorities.add(new SimpleGrantedAuthority(role.getName()));
         });
 
-        return new org.springframework.security.core.userdetails.User(user.getUser_email(), user.getUser_password(), authorities);
+        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), authorities);
     }
 }

@@ -24,8 +24,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private final UserDetailsService userDetailsService;
-
-
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
@@ -45,8 +43,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers(GET ,"/test/users/**").hasAuthority("teacher");
 
 
-        http.authorizeRequests().anyRequest().permitAll();
-        /*http.authorizeRequests().anyRequest().authenticated();*/
+        /*http.authorizeRequests().anyRequest().permitAll();*/
+        http.authorizeRequests().anyRequest().authenticated();
 
         http.addFilter(customAuthenticationFilter);
         http.addFilterBefore(new CustomAuthorisationFilter(), UsernamePasswordAuthenticationFilter.class);
