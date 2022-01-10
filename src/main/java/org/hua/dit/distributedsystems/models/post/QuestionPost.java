@@ -1,6 +1,7 @@
 package org.hua.dit.distributedsystems.models.post;
 
 public class QuestionPost {
+    private String question_id;
     private String question_image;
     private String question_text;
     private String question_option1;
@@ -8,6 +9,14 @@ public class QuestionPost {
     private String question_option3;
     private String question_option4;
     private String question_script;
+
+    public String getQuestion_id() {
+        return question_id;
+    }
+
+    public void setQuestion_id(String question_id) {
+        this.question_id = question_id;
+    }
 
     public QuestionPost() {
     }
