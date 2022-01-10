@@ -5,6 +5,7 @@ import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.SubjectPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
 import org.hua.dit.distributedsystems.repositories.ClassRepo;
+import org.hua.dit.distributedsystems.repositories.SubjectRepo;
 import org.hua.dit.distributedsystems.repositories.UserRepo;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -17,10 +18,12 @@ public class TeacherRest {
 
     private final ClassRepo classRepo;
     private final UserRepo userRepo;
+    private final SubjectRepo subjectRepo;
 
-    public TeacherRest(ClassRepo classRepo, UserRepo userRepo) {
+    public TeacherRest(ClassRepo classRepo, UserRepo userRepo, SubjectRepo subjectRepo) {
         this.classRepo = classRepo;
         this.userRepo = userRepo;
+        this.subjectRepo = subjectRepo;
     }
 
     // createClass --> /class (post)
@@ -39,12 +42,11 @@ public class TeacherRest {
     // /updateClass --> form for update the class (post)
 
     // /deleteClass --> pop up for confirmation to delete the class (delete)
-
     @DeleteMapping("/class/{id}")
-    void deleteEmployee(@PathVariable Long id) {
+    void deleteClass(@PathVariable Long id) {
         classRepo.deleteById(id);
-        System.out.println("here");
     }
+
     // createSubject --> /subject (post)
     @PostMapping(value="subject" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
@@ -59,6 +61,11 @@ public class TeacherRest {
     // /updateSubject --> form for update the Subject (patch)
 
     // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
+    @DeleteMapping("/subject/{id}")
+    void deleteSubject(@PathVariable Long id) {
+        subjectRepo.deleteById(id);
+        System.out.println("here");
+    }
 
     // createQuestion --> /question (post)
     @PostMapping(value="question" , consumes = {

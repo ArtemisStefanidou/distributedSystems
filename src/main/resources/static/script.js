@@ -108,16 +108,36 @@ document.getElementById("userSubmit").addEventListener("click", (event) => {
 
 document.getElementById("deleteClass").addEventListener("click", (event) => {
 
+    alert("js");
     let xhr = new XMLHttpRequest();
     let id = 1;
     xhr.open("DELETE", "http://localhost:8080/teacher/class/"+id, true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-            if (xhr.status == 200) {
-
-            }
+    xhr.onload = function () {
+        var classBack = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(classBack);
+        } else {
+            console.error(classBack);
         }
-    };
+    }
+    xhr.send(null);
+});
+
+document.getElementById("deleteSubject").addEventListener("click", (event) => {
+
+    alert("deleteSubject");
+    let xhr = new XMLHttpRequest();
+    let id = 1;
+    xhr.open("DELETE", "http://localhost:8080/teacher/subject/"+id, true);
+    xhr.onload = function () {
+        var classBack = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(classBack);
+        } else {
+            console.error(classBack);
+        }
+    }
+    xhr.send(null);
 });
 
 
