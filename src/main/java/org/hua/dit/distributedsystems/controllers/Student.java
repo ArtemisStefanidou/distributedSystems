@@ -13,4 +13,14 @@ public class Student {
         return "student/menuStudent";
     }
 
+    @GetMapping("quiz")
+    public String findQuiz() {
+        return "student/findQuiz";
+    }
+
+    @GetMapping("grades")
+    public String myGrades() {
+        return "student/myGrades";
+    }
+
 }

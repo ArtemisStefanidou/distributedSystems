@@ -6,31 +6,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/teacher/")
+@RequestMapping("/teacher/menu")
 public class Teacher {
 
-    @GetMapping("menu")
+    @GetMapping("/")
     public String menuTeacher() {
-        return "menuTeacher";
+        return "/teacher/menuTeacher";
     }
 
-    @GetMapping("menu/class")
+    @GetMapping("/class")
     public String classMenu() {
-        return "classMenu";
+        return "/teacher/classMenu";
     }
 
-    @GetMapping("menu/subject")
+    @GetMapping("/subject")
     public String chapterMenu() {
-        return "subjectMenu";
+        return "/teacher/subjectMenu";
     }
 
-    @GetMapping("menu/question")
+    @GetMapping("/question")
     public String questionMenu() {
-        return "questionMenu";
+        return "/teacher/questionMenu";
     }
 
-    @GetMapping("menu/studentManage")
+    @GetMapping("/studentManage")
     public String studentManageMenu() {
-        return "studentManageMenu";
+        return "/teacher/studentManageMenu";
     }
 }

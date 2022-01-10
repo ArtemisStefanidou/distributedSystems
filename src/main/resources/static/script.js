@@ -60,7 +60,7 @@ document.getElementById("classSubmit").addEventListener("click", (event) => {
     const classPost = new ClassPost("12","DHMOTIKO");
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/class", true);
+    xhr.open("POST", "http://localhost:8080/teacher/class", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(classPost));
     xhr.onreadystatechange = function () {
@@ -77,7 +77,7 @@ document.getElementById("subjectSubmit").addEventListener("click", (event) => {
     const subjectPost = new SubjectPost("12","dunameis","DHMOTIKO");
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/subject", true);
+    xhr.open("POST", "http://localhost:8080/teacher/subject", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(subjectPost));
     xhr.onreadystatechange = function () {
@@ -97,6 +97,20 @@ document.getElementById("userSubmit").addEventListener("click", (event) => {
     xhr.open("POST", "http://localhost:8080/user", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(userPost));
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+
+            }
+        }
+    };
+});
+
+document.getElementById("deleteClass").addEventListener("click", (event) => {
+
+    let xhr = new XMLHttpRequest();
+    let id = 1;
+    xhr.open("DELETE", "http://localhost:8080/teacher/class/"+id, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
