@@ -1,15 +1,19 @@
 package org.hua.dit.distributedsystems.controllers;
 
+import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.ClassPost;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.SubjectPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
-import org.hua.dit.distributedsystems.repositories.ClassRepo;
-import org.hua.dit.distributedsystems.repositories.SubjectRepo;
-import org.hua.dit.distributedsystems.repositories.UserRepo;
+import org.hua.dit.distributedsystems.repositories.*;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/teacher/")
@@ -17,13 +21,17 @@ public class TeacherRest {
     //ENERGEIES KATHIGHTH
 
     private final ClassRepo classRepo;
-    private final UserRepo userRepo;
+    private final UserRepo studentRepo;
     private final SubjectRepo subjectRepo;
+    private final QuestionsRepo questionRepo;
+    private final RoleRepo roleRepo;
 
-    public TeacherRest(ClassRepo classRepo, UserRepo userRepo, SubjectRepo subjectRepo) {
+    public TeacherRest(ClassRepo classRepo, UserRepo userRepo, UserRepo studentRepo, SubjectRepo subjectRepo, QuestionsRepo questionRepo, RoleRepo roleRepo) {
         this.classRepo = classRepo;
-        this.userRepo = userRepo;
+        this.studentRepo = studentRepo;
         this.subjectRepo = subjectRepo;
+        this.questionRepo = questionRepo;
+        this.roleRepo = roleRepo;
     }
 
     // createClass --> /class (post)
@@ -36,10 +44,25 @@ public class TeacherRest {
         //todo
         System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
 
+
     }
 
+    @PostMapping(path = "class",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ClassPost> create(@RequestBody ClassPost classPost) {
+        ClassPost postClass = new ClassPost();
+        //ClassPost postClass = classRepo.save(classRepo); // prepei o bill na ftiaxei to service tou class
+        if (postClass == null) {
+            System.out.println("todo");
+            //throw new ServerException() ;
+            return null;
+        } else {
+            return new ResponseEntity<>(postClass, HttpStatus.CREATED);
+        }
+    }
 
-    // /updateClass --> form for update the class (post)
+    // /updateClass --> form for update the class (patch)
 
     // /deleteClass --> pop up for confirmation to delete the class (delete)
     @DeleteMapping("/class/{id}")
@@ -64,7 +87,6 @@ public class TeacherRest {
     @DeleteMapping("/subject/{id}")
     void deleteSubject(@PathVariable Long id) {
         subjectRepo.deleteById(id);
-        System.out.println("here");
     }
 
     // createQuestion --> /question (post)
@@ -81,6 +103,11 @@ public class TeacherRest {
     // /updateQuestion --> form for update the Question (patch)
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
+    @DeleteMapping("/question/{id}")
+    void deleteQuestion(@PathVariable Long id) {
+        questionRepo.deleteById(id);
+        System.out.println("here");
+    }
 
     // createUser --> /user (post)
     @PostMapping(value="user" , consumes = {
@@ -94,8 +121,25 @@ public class TeacherRest {
     }
 
     // /deleteStudent --> pop up for confirmation to delete the Student (delete)
+    //kathe mathiths mporei na exei mono ena kathighth
+    @DeleteMapping("/student/{id}")
+    void deleteStudent(@PathVariable Long id) {
+        studentRepo.deleteById(id);
+        System.out.println("here");
+    }
 
     // /getStudentsList --> (get)
+    @GetMapping("/studentsList/")
+    List<User> all() {
+        return studentRepo.findAll(); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
+    }
+
 
     // /getDetails --> get details for a student (get)
+    @GetMapping("/student/{id}")
+    Optional<User> one(@PathVariable Long id) {
+
+        return studentRepo.findById(id);
+                //.orElseThrow(() -> new EmployeeNotFoundException(id));
+    }
 }

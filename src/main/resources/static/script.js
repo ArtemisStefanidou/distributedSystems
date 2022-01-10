@@ -130,17 +130,200 @@ document.getElementById("deleteSubject").addEventListener("click", (event) => {
     let id = 1;
     xhr.open("DELETE", "http://localhost:8080/teacher/subject/"+id, true);
     xhr.onload = function () {
-        var classBack = JSON.parse(xhr.responseText);
+        let subject = JSON.parse(xhr.responseText);
         if (xhr.readyState == 4 && xhr.status == "200") {
-            console.table(classBack);
+            console.table(subject);
         } else {
-            console.error(classBack);
+            console.error(subject);
         }
     }
     xhr.send(null);
 });
 
 
+document.getElementById("deleteQuestion").addEventListener("click", (event) => {
+
+    alert("deleteQuestion");
+    let xhr = new XMLHttpRequest();
+    let id = 1;
+    xhr.open("DELETE", "http://localhost:8080/teacher/question/"+id, true);
+    xhr.onload = function () {
+        let question = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(question);
+        } else {
+            console.error(question);
+        }
+    }
+    xhr.send(null);
+});
+
+document.getElementById("deleteStudent").addEventListener("click", (event) => {
+
+    alert("deleteStudent");
+    let xhr = new XMLHttpRequest();
+    let id = 1;
+    xhr.open("DELETE", "http://localhost:8080/teacher/student/"+id, true);
+    xhr.onload = function () {
+        let question = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(question);
+        } else {
+            console.error(question);
+        }
+    }
+    xhr.send(null);
+});
+
+document.getElementById("studentList").addEventListener("click", (event) => {
+    const request = new XMLHttpRequest();
+
+    //for asynchronised
+    request.open('GET', "http://localhost:8080/teacher/studentsList/", true);
+    request.send();
+    //to check when the request is okay to leave
+    request.onreadystatechange = function () {
+
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+
+                let divElem = document.getElementById('printStudents');
+                let headersValues = ['Id','Email', 'Phone Number', 'Pass', 'Name','Teacher'];
+
+                let table = document.createElement('table');
+                let headersRows = document.createElement('tr');
+
+                //delete all the childrens besause maybe already exists a table with not updated info
+                while (divElem.firstChild) {
+                    divElem.removeChild(divElem.firstChild);
+                }
+
+                const students = JSON.parse(request.responseText);
+
+                //if results is 0 means that the select returns 0 rows because it doesn't find books to database
+                if (students.length == 0) {
+
+                    let errorTextNode = document.createTextNode("We don't have students in our database");
+                    //add this child to divElem to print the message to user
+                    divElem.appendChild(errorTextNode);
+                    return false;
+                }
+
+                //do the row and the cells for the headers of the table
+                headersValues.forEach(headerText => {
+                    let header = document.createElement('th');
+                    let textNode = document.createTextNode(headerText);
+                    header.appendChild(textNode);
+                    headersRows.appendChild(header);
+                });
+
+                table.appendChild(headersRows);
+
+                /*for each row that exists in the results (the rows that given by select)
+                   i do a foreach for each value that object book has to create the table to
+                   put all the values for each book that i have*/
+
+                /*if something went wrong with the database in the table appeared the wrong
+                    message to inform the user*/
+                students.forEach(student => {
+                    let row = document.createElement('tr');
+
+                    Object.values(student).forEach(text => {
+                        let cell = document.createElement('td');
+                        let textNode = document.createTextNode(text);
+                        cell.appendChild(textNode);
+                        //add cell by cell into the row to complite the info of one book that i have in the database
+                        row.appendChild(cell);
+                    })
+
+                    //add row by row into the table
+                    table.appendChild(row);
+
+                });
+
+                //add the completed table
+                divElem.appendChild(table);
+            }
+        }
+    };
+});
+
+document.getElementById("getStudent").addEventListener("click", (event) => {
+    const request = new XMLHttpRequest();
+
+    let id = 4;
+    //for asynchronised
+    request.open('GET', "http://localhost:8080/teacher/student/"+id, true);
+    request.send();
+    //to check when the request is okay to leave
+    request.onreadystatechange = function () {
+
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+
+                let divElem = document.getElementById('printStudent');
+                let headersValues = ['Id','Email', 'Phone Number', 'Pass', 'Name','Role','Teacher'];
+
+                let table = document.createElement('table');
+                let headersRows = document.createElement('tr');
+
+                //delete all the childrens besause maybe already exists a table with not updated info
+                while (divElem.firstChild) {
+                    divElem.removeChild(divElem.firstChild);
+                }
+
+                const students = JSON.parse(request.responseText);
+
+                //if results is 0 means that the select returns 0 rows because it doesn't find books to database
+                if (students.length == 0) {
+
+                    let errorTextNode = document.createTextNode("We don't have students in our database");
+                    //add this child to divElem to print the message to user
+                    divElem.appendChild(errorTextNode);
+                    return false;
+                }
+
+                //do the row and the cells for the headers of the table
+                headersValues.forEach(headerText => {
+                    let header = document.createElement('th');
+                    let textNode = document.createTextNode(headerText);
+                    header.appendChild(textNode);
+                    headersRows.appendChild(header);
+                });
+
+                table.appendChild(headersRows);
+
+                /*for each row that exists in the results (the rows that given by select)
+                   i do a foreach for each value that object book has to create the table to
+                   put all the values for each book that i have*/
+
+                /*if something went wrong with the database in the table appeared the wrong
+                    message to inform the user*/
+
+                    let row = document.createElement('tr');
+
+                    // alert(Object.keys(students))
+                    Object.values(students).forEach(text => {
+
+                        let cell = document.createElement('td');
+                        let textNode = document.createTextNode(text);
+                        cell.appendChild(textNode);
+                        //add cell by cell into the row to complite the info of one book that i have in the database
+                        row.appendChild(cell);
+
+                    })
+
+                    //add row by row into the table
+                    table.appendChild(row);
+
+
+
+                //add the completed table
+                divElem.appendChild(table);
+            }
+        }
+    };
+});
 
 
 

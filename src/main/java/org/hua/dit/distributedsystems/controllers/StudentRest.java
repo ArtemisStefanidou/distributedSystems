@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentRest {
     //ENERGEIES MATHHTH
 
-    // /signin (post)
-    // /login (post)
     //  /doQuiz  (get) emfanish selidas epilogwn
     //  /doQuiz/info (post) kataxwrhsh plhroforiwn
     //  /doQuiz/info (get) emfanish me bash tis plhrofories
