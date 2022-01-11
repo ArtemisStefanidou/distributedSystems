@@ -24,14 +24,13 @@ public class TeacherRest {
     private final UserRepo studentRepo;
     private final SubjectRepo subjectRepo;
     private final QuestionsRepo questionRepo;
-    private final RoleRepo roleRepo;
+
 
     public TeacherRest(ClassRepo classRepo, UserRepo userRepo, UserRepo studentRepo, SubjectRepo subjectRepo, QuestionsRepo questionRepo, RoleRepo roleRepo) {
         this.classRepo = classRepo;
         this.studentRepo = studentRepo;
         this.subjectRepo = subjectRepo;
         this.questionRepo = questionRepo;
-        this.roleRepo = roleRepo;
     }
 
     // createClass --> /class (post)

@@ -37,6 +37,15 @@ class UserPost {
     }
 }
 
+class GradePost {
+    constructor(grade_of_question,grade_question_id,grade_user_id) {
+        this.grade_of_question = grade_of_question;
+        this.grade_question_id = grade_question_id;
+        this.grade_user_id = grade_user_id;
+    }
+}
+
+
 document.getElementById("colSubmit").addEventListener("click", (event) => {
 
     const questionPost = new QuestionPost('image', 'test', 'opt1', 'opt2', 'opt3', 'opt4' , 'script');
@@ -325,6 +334,97 @@ document.getElementById("getStudent").addEventListener("click", (event) => {
     };
 });
 
+//student
+
+document.getElementById("getGrades").addEventListener("click", (event) => {
+    const request = new XMLHttpRequest();
+
+    //for asynchronised
+    request.open('GET', "http://localhost:8080/student/gradesList/", true);
+    request.send();
+    //to check when the request is okay to leave
+    request.onreadystatechange = function () {
+
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+
+                let divElem = document.getElementById('printGrades');
+                let headersValues = ['Question','User', 'Grade'];
+
+                let table = document.createElement('table');
+                let headersRows = document.createElement('tr');
+
+                //delete all the childrens besause maybe already exists a table with not updated info
+                while (divElem.firstChild) {
+                    divElem.removeChild(divElem.firstChild);
+                }
+
+                //do the row and the cells for the headers of the table
+                headersValues.forEach(headerText => {
+                    let header = document.createElement('th');
+                    let textNode = document.createTextNode(headerText);
+                    header.appendChild(textNode);
+                    headersRows.appendChild(header);
+                });
+
+                table.appendChild(headersRows);
+
+                const grades = JSON.parse(request.responseText);
+
+                //if results is 0 means that the select returns 0 rows because it doesn't find books to database
+                if (grades.length == 0) {
+
+                    let errorTextNode = document.createTextNode("We don't have grades in our database");
+                    //add this child to divElem to print the message to user
+                    divElem.appendChild(errorTextNode);
+                    return false;
+                }
+
+                /*for each row that exists in the results (the rows that given by select)
+                   i do a foreach for each value that object book has to create the table to
+                   put all the values for each book that i have*/
+
+                /*if something went wrong with the database in the table appeared the wrong
+                    message to inform the user*/
+                grades.forEach(student => {
+                    let row = document.createElement('tr');
+
+                    Object.values(grade).forEach(text => {
+                        let cell = document.createElement('td');
+                        let textNode = document.createTextNode(text);
+                        cell.appendChild(textNode);
+                        //add cell by cell into the row to complite the info of one book that i have in the database
+                        row.appendChild(cell);
+                    })
+
+                    //add row by row into the table
+                    table.appendChild(row);
+
+                });
+
+                //add the completed table
+                divElem.appendChild(table);
+            }
+        }
+    };
+});
+
+document.getElementById("gradePost").addEventListener("click", (event) => {
+
+    const gradePost = new GradePost(12, 1, 1);
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:8080/student/quizAnswers", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify(gradePost));
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+
+            }
+        }
+    };
+});
 
 
 
@@ -335,42 +435,3 @@ document.getElementById("getStudent").addEventListener("click", (event) => {
 
 
 
-
-
-// window.addEventListener('load',(event)=>{
-//     document.getElementById('doquiz').addEventListener('click',(event)=>{
-//
-//         alert("do quiz alert")
-//         //xml request , add a something
-//         const xhr = new XMLHttpRequest();
-//         xhr.open('POST','http://localhost:8080/quiz',true);
-//         xhr.setRequestHeader('Content-Type','application/json');
-//         xhr.send(JSON.stringify(something)); //use stringify to convert object to string
-//         xhr.onreadystatechange = function(){
-//             //so if i have a http response and i have a usefull result to take
-//             if(xhr.readyState == 4 && xhr.status == 200){
-//
-//             }
-//         };
-//     });
-//
-//     document.getElementById('myGrades').addEventListener('click',(event)=>{
-//         alert("show my grades  alert")
-//
-//         //XML request object
-//         const xhr = new XMLHttpRequest();
-//         xhr.open('GET',`http://localhost:8080/myGrades`,true);
-//         xhr.send();
-//
-//         xhr.onreadystatechange =function (){
-//
-//         };
-//     });
-//
-//
-//     document.getElementById('do').addEventListener('click',(event)=>{
-//
-//     });
-//
-//
-// });
