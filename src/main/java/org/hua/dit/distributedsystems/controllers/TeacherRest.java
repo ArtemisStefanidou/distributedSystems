@@ -1,5 +1,6 @@
 package org.hua.dit.distributedsystems.controllers;
 
+import org.hua.dit.distributedsystems.models.Class;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.ClassPost;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -62,6 +64,32 @@ public class TeacherRest {
     }
 
     // /updateClass --> form for update the class (patch)
+    @PatchMapping("class/{id}")
+    public void patchClass(@PathVariable long id, @RequestBody Map<String, Object> changes) {
+
+        //Fetch the data from the database
+        Class aClass = classRepo.findById(id).get();
+
+        //Map the persistent data to the REST dto
+        //This is done to enforce REST validation groups
+        ClassPost classModel = new ClassPost();
+
+        //apply the changes to the REST model.
+        changes.forEach(
+                (change, value) -> {
+                    switch (change) {
+                        case "id":
+                            classModel.setClass_id((Long) value);
+                            System.out.println(classModel.getClass_id());
+                            break;
+                        case "description":
+                            classModel.setClass_name((String) value);
+                            System.out.println(classModel.getClass_name());
+                            break;
+                    }
+                }
+        );
+    }
 
     // /deleteClass --> pop up for confirmation to delete the class (delete)
     @DeleteMapping("/class/{id}")
