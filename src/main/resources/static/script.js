@@ -426,15 +426,21 @@ document.getElementById("gradePost").addEventListener("click", (event) => {
     };
 });
 
-document.getElementById("gradePost").addEventListener("click", (event) => {
-    var url = "https://reqbin.com/echo/patch/json";
+document.getElementById("patchClass").addEventListener("click", (event) => {
+    var id = 1;
+
+    var classPost = `{
+  "id": 12345,
+  "name": "John Smith"
+}`;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("PATCH", url);
-
+    xhr.open("PATCH", "http://localhost:8080/teacher/class/"+id);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
 
+
+    xhr.send(JSON.stringify(classPost));
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             console.log(xhr.status);
@@ -442,14 +448,11 @@ document.getElementById("gradePost").addEventListener("click", (event) => {
         }
     };
 
-    var data = `{
-      "Id": 12345,
-      "Customer": "John Smith",
-      "Quantity": 1,
-      "Price": 10.00
-    }`;
 
-    xhr.send(data);
+
+
+
+
 });
 
 

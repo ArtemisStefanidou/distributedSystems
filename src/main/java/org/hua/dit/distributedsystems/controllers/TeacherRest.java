@@ -91,8 +91,24 @@ public class TeacherRest {
         );
     }
 
+//    @PutMapping("/employees/{id}")
+//    Employee replaceEmployee(@RequestBody Employee newEmployee, @PathVariable Long id) {
+//
+//        return repository.findById(id)
+//                .map(employee -> {
+//                    employee.setName(newEmployee.getName());
+//                    employee.setRole(newEmployee.getRole());
+//                    return repository.save(employee);
+//                })
+//                .orElseGet(() -> {
+//                    newEmployee.setId(id);
+//                    return repository.save(newEmployee);
+//                });
+//    }
+
+
     // /deleteClass --> pop up for confirmation to delete the class (delete)
-    @DeleteMapping("/class/{id}")
+    @DeleteMapping("class/{id}")
     void deleteClass(@PathVariable Long id) {
         classRepo.deleteById(id);
     }
@@ -111,7 +127,7 @@ public class TeacherRest {
     // /updateSubject --> form for update the Subject (patch)
 
     // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
-    @DeleteMapping("/subject/{id}")
+    @DeleteMapping("subject/{id}")
     void deleteSubject(@PathVariable Long id) {
         subjectRepo.deleteById(id);
     }
@@ -130,7 +146,7 @@ public class TeacherRest {
     // /updateQuestion --> form for update the Question (patch)
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
-    @DeleteMapping("/question/{id}")
+    @DeleteMapping("question/{id}")
     void deleteQuestion(@PathVariable Long id) {
         questionRepo.deleteById(id);
         System.out.println("here");
@@ -156,14 +172,14 @@ public class TeacherRest {
     }
 
     // /getStudentsList --> (get)
-    @GetMapping("/studentsList/")
+    @GetMapping("studentsList/")
     List<User> all() {
         return studentRepo.findAll(); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
     }
 
 
     // /getDetails --> get details for a student (get)
-    @GetMapping("/student/{id}")
+    @GetMapping("student/{id}")
     Optional<User> one(@PathVariable Long id) {
 
         return studentRepo.findById(id);
