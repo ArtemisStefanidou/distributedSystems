@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T14:59:36.537Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="4bfnmGEvt5d8wtpMsfd3" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T15:00:06.237Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="jHk2XhG09I0RExJ8RpEX" version="16.2.4" type="github">
   <diagram id="TjVTqbN8CfI_NzCVvxR8" name="Page-1">
-    <mxGraphModel dx="3820" dy="1817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
+    <mxGraphModel dx="3072" dy="1363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3930,6 +3930,18 @@
             <mxPoint x="990" y="10110" as="sourcePoint" />
             <mxPoint x="1040" y="10060" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-314" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=22;fontColor=#66FF66;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="Gt77ZtWJspsaxNxmN6N0-315" parent="1" target="Gt77ZtWJspsaxNxmN6N0-288">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1760.0499999999674" y="10663.779999999999" as="sourcePoint" />
+            <mxPoint x="1005.5824999999995" y="10723.999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-315" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="1156.61" y="10705.399999999998" width="88.2" height="107.56" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-316" value="&lt;font style=&quot;font-size: 21px&quot; color=&quot;#000000&quot;&gt;DBserver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="1139.5400000000002" y="10669.4" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
