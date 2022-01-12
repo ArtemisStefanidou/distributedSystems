@@ -1,6 +1,7 @@
 package org.hua.dit.distributedsystems.controllers;
 
 import org.hua.dit.distributedsystems.models.Class;
+import org.hua.dit.distributedsystems.models.Subject;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.ClassPost;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -63,48 +63,20 @@ public class TeacherRest {
         }
     }
 
-    // /updateClass --> form for update the class (patch)
-    @PatchMapping("class/{id}")
-    public void patchClass(@PathVariable long id, @RequestBody Map<String, Object> changes) {
 
-        //Fetch the data from the database
-        Class aClass = classRepo.findById(id).get();
+    //update class
+    @PutMapping("class/{id}")
+    Optional<Class> replaceEmployee(@RequestBody Class newClass, @PathVariable Long id) {
 
-        //Map the persistent data to the REST dto
-        //This is done to enforce REST validation groups
-        ClassPost classModel = new ClassPost();
+        return classRepo.findById(id)
+                .map(updateClass -> {
+                    //the id will be random from the system
+                    updateClass.setClass_name(newClass.getClass_name());
+                    System.out.println(updateClass);
+                    return classRepo.save(updateClass);
+                });
 
-        //apply the changes to the REST model.
-        changes.forEach(
-                (change, value) -> {
-                    switch (change) {
-                        case "id":
-                            classModel.setClass_id((Long) value);
-                            System.out.println(classModel.getClass_id());
-                            break;
-                        case "description":
-                            classModel.setClass_name((String) value);
-                            System.out.println(classModel.getClass_name());
-                            break;
-                    }
-                }
-        );
-    }
-
-//    @PutMapping("/employees/{id}")
-//    Employee replaceEmployee(@RequestBody Employee newEmployee, @PathVariable Long id) {
-//
-//        return repository.findById(id)
-//                .map(employee -> {
-//                    employee.setName(newEmployee.getName());
-//                    employee.setRole(newEmployee.getRole());
-//                    return repository.save(employee);
-//                })
-//                .orElseGet(() -> {
-//                    newEmployee.setId(id);
-//                    return repository.save(newEmployee);
-//                });
-//    }
+   }
 
 
     // /deleteClass --> pop up for confirmation to delete the class (delete)
@@ -124,7 +96,21 @@ public class TeacherRest {
 
     }
 
-    // /updateSubject --> form for update the Subject (patch)
+    // /updateSubject --> form for update the Subject (put)
+    @PutMapping("subject/{id}")
+    Optional<Subject> replaceSubject(@RequestBody Subject newSubject, @PathVariable Long id) {
+
+        return subjectRepo.findById(id)
+                .map(updateSubject -> {
+                    //the id will be random from the system
+                    updateSubject.setSubject_class(newSubject.getSubject_class());
+                    updateSubject.setSubject_name(newSubject.getSubject_name());
+                    System.out.println(updateSubject);
+                    return subjectRepo.save(updateSubject);
+                });
+
+    }
+
 
     // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
     @DeleteMapping("subject/{id}")
@@ -143,7 +129,20 @@ public class TeacherRest {
         return;
     }
 
-    // /updateQuestion --> form for update the Question (patch)
+    // /updateQuestion --> form for update the Question (put)
+    @PutMapping("question/{id}")
+    Optional<Subject> replaceQuestion(@RequestBody Subject newSubject, @PathVariable Long id) {
+
+        return subjectRepo.findById(id)
+                .map(updateSubject -> {
+                    //the id will be random from the system
+                    updateSubject.setSubject_class(newSubject.getSubject_class());
+                    updateSubject.setSubject_name(newSubject.getSubject_name());
+                    System.out.println(updateSubject);
+                    return subjectRepo.save(updateSubject);
+                });
+
+    }
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
     @DeleteMapping("question/{id}")

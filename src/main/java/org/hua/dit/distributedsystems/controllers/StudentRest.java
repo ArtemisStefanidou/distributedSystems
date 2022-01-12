@@ -41,7 +41,7 @@ public class StudentRest {
     }
 
     // /myGrades (get) emfanish bathologiwn se ola ta quiz pou exei kanei
-    @GetMapping("gradesList/")
+    @GetMapping("gradesList")
     List<Grade> all() {
         return gradeRepo.findAll(); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
     }

@@ -340,7 +340,7 @@ document.getElementById("getGrades").addEventListener("click", (event) => {
     const request = new XMLHttpRequest();
 
     //for asynchronised
-    request.open('GET', "http://localhost:8080/student/gradesList/", true);
+    request.open('GET', "http://localhost:8080/student/gradesList", true);
     request.send();
     //to check when the request is okay to leave
     request.onreadystatechange = function () {
@@ -426,28 +426,49 @@ document.getElementById("gradePost").addEventListener("click", (event) => {
     };
 });
 
-document.getElementById("patchClass").addEventListener("click", (event) => {
+document.getElementById("putClass").addEventListener("click", (event) => {
+
+    // Update a user
+
     var id = 1;
 
-    var classPost = `{
-  "id": 12345,
-  "name": "John Smith"
-}`;
+    var classNew = {};
+    classNew.class_name = "gimnasio";
+    var json = JSON.stringify(classNew);
 
     var xhr = new XMLHttpRequest();
-    xhr.open("PATCH", "http://localhost:8080/teacher/class/"+id);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-
-    xhr.send(JSON.stringify(classPost));
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
+    xhr.open("PUT", "http://localhost:8080/teacher/class/"+id, true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+    xhr.onload = function () {
+        var classDB = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(classDB);
+        } else {
+            console.error(classDB);
         }
-    };
-
+    }
+    xhr.send(json);
+//     var id = 1;
+//
+//     var classPost = `{
+//   "id": 12345,
+//   "name": "John Smith"
+// }`;
+//
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("PATCH", "http://localhost:8080/teacher/class/"+id);
+//     xhr.setRequestHeader("Accept", "application/json");
+//     xhr.setRequestHeader("Content-Type", "application/json");
+//
+//
+//     xhr.send(JSON.stringify(classPost));
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState === 4) {
+//             console.log(xhr.status);
+//             console.log(xhr.responseText);
+//         }
+//     };
+//
 
 
 
@@ -455,7 +476,31 @@ document.getElementById("patchClass").addEventListener("click", (event) => {
 
 });
 
+document.getElementById("putSubject").addEventListener("click", (event) => {
 
+    // Update a user
+
+    var id = 1;
+
+    var subjectNew = {};
+    subjectNew.subject_name = "exisoseis";
+    subjectNew.subject_class = "gimnasio";
+    var json = JSON.stringify(subjectNew);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("PUT", "http://localhost:8080/teacher/subject/"+id, true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+    xhr.onload = function () {
+        var subjectDB = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(subjectDB);
+        } else {
+            console.error(subjectDB);
+        }
+    }
+    xhr.send(json);
+
+});
 
 
 
