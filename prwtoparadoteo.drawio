@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T10:49:43.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="umzNRJRQ1j9ERS4G-2Yk" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T10:57:13.113Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="FxuSuuwKAlrsLIvYvwJ8" version="16.2.4" type="github">
   <diagram id="TjVTqbN8CfI_NzCVvxR8" name="Page-1">
-    <mxGraphModel dx="2566" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="898" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3170,12 +3170,12 @@
           <mxGeometry x="1287.06" y="8120" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-64" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
-          <mxGeometry x="1587.33" y="8093.44" width="88.2" height="107.56" as="geometry" />
+          <mxGeometry x="1562.98" y="7979.44" width="88.2" height="107.56" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-65" value="&lt;font style=&quot;font-size: 21px&quot; color=&quot;#000000&quot;&gt;DBserver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
-          <mxGeometry x="1583.18" y="8046" width="100" height="30" as="geometry" />
+          <mxGeometry x="1558.8300000000002" y="7932" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-67" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=21;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-64" target="rOyNG-rFi1SQirv_jvgf-63">
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-67" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=21;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-64" target="rOyNG-rFi1SQirv_jvgf-50">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="670" y="7770" as="sourcePoint" />
             <mxPoint x="720" y="7720" as="targetPoint" />
@@ -3264,6 +3264,9 @@
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-99" value="&lt;font color=&quot;#ff0000&quot;&gt;Μορφή Quiz&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;rotation=12;" vertex="1" parent="1">
           <mxGeometry x="795.77" y="7950" width="118.45" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-101" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1750.58" y="7050" width="670" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
