@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T14:21:27.917Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="pL83OAUXgUuERMUILQ0k" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T14:44:39.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="w2YtO4lE1QGdkR__pxnJ" version="16.2.4" type="github">
   <diagram id="TjVTqbN8CfI_NzCVvxR8" name="Page-1">
-    <mxGraphModel dx="2489" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
+    <mxGraphModel dx="2823" dy="1211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3733,20 +3733,104 @@
             <mxPoint x="1050" y="9900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-254" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1930" y="7310" width="730" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="b8whXSRi5vJxh0cb2YS--1" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=20;fontColor=#66FF66;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-6.350000000000001" y="7549" as="sourcePoint" />
             <mxPoint x="-91.92999999999992" y="7549" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-255" value="Τάξη" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1925.57" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="b8whXSRi5vJxh0cb2YS--2" value="Κάνε Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="1280.94" y="7670" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-256" value="Κεφάλαιο" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2024.25" y="7321" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b8whXSRi5vJxh0cb2YS--3" value="Κάνε Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="956.0999999999998" y="7902" width="132.2" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-257" value="Δυσκολία" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2121.83" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="b8whXSRi5vJxh0cb2YS--5" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; font-size: 25px&quot;&gt;Εύρεση Quiz&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=20;" vertex="1" parent="1">
           <mxGeometry x="1016.27" y="7321" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-258" value="Εκφώνηση" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2207.5" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-259" value="Εικόνα" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2290.26" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-260" value="Σωστή Απάντηση" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2374.42" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-261" value="Λάθος Απάντηση1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2441" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-262" value="Λαθος Απάντηση2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-263" value="Λάθος Απάντηση3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2587.28" y="7321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-264" value="&lt;font color=&quot;#ff0000&quot;&gt;option&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1930" y="7340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-265" value="&lt;font color=&quot;#ff0000&quot;&gt;option&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2024.25" y="7340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-266" value="&lt;font color=&quot;#ff0000&quot;&gt;option&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2119.74" y="7340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-267" value="&lt;font color=&quot;#ff0000&quot;&gt;txt&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2205.9399999999996" y="7340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-268" value="&lt;font color=&quot;#ff0000&quot;&gt;url&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2290.2599999999998" y="7340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-269" value="&lt;font color=&quot;#ff0000&quot;&gt;txt&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2374.4199999999996" y="7347" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-270" value="&lt;font color=&quot;#ff0000&quot;&gt;txt&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2440.9999999999995" y="7347" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-271" value="&lt;font color=&quot;#ff0000&quot;&gt;txt&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2509.9999999999995" y="7346" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-272" value="&lt;font color=&quot;#ff0000&quot;&gt;txt&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2587.2799999999997" y="7347" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-273" value="θα ναι ολες οι ερωτήσεις αποθηκευμένες έτσι&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="7410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-274" value="θα επιλέγει ο μαθητής να κάνει&amp;nbsp;&lt;br&gt;1η γυμν&lt;br&gt;Εξισώσεις&lt;br&gt;lvl2" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2174.94" y="7487" width="153.5" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-275" value="θα αναζητούμε μόνο τις ερωτήσεις με αυτό το τριπλό κριτήριο&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2174.94" y="7615.62" width="153.5" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-276" value="θα εμφανίζουμε &lt;font color=&quot;#66ff66&quot;&gt;τυχαία &lt;/font&gt;10 από αυτές&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="7740" width="153.5" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-277" value="Ο μαθητής θα συμπληρώνει μια μια τις ερωτήσεις και θα εμφανίζεται εκείνη την στιγμή αν απάντησε σωστά ή οχι&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2167.97" y="7875" width="153.5" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-278" value="Στο τέλος θα του εμφανίζεται το ποσοστό επιτυχίας&amp;nbsp;&lt;br&gt;6/10 --&amp;gt;60%" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2167.97" y="7985" width="153.5" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-279" value="είτε αποθηκεύει&amp;nbsp;&lt;br&gt;το ποσοστό αυτό&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2335.27" y="8002" width="138.3" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-280" value="ή οσες &lt;br&gt;ναναι&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="7747" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Gt77ZtWJspsaxNxmN6N0-281" value="ειτε T F ανα ερώτηση" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2501" y="8005" width="138.3" height="105" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
