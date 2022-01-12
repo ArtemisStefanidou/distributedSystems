@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-03T21:17:13.616Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="zwZvH6lS-DDw5X3jtYOL" version="16.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T10:49:43.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="umzNRJRQ1j9ERS4G-2Yk" version="16.2.4" type="github">
   <diagram id="TjVTqbN8CfI_NzCVvxR8" name="Page-1">
-    <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2566" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2973,6 +2973,297 @@
             <mxPoint x="1695.57" y="5073.75" as="sourcePoint" />
             <mxPoint x="1745.57" y="5023.75" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="60" y="6750" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-3" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; font-size: 25px;&quot;&gt;login&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="59.999999999999986" y="6760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-4" value="email:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="106.5" y="6830" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-5" value="password:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="104.55000000000001" y="6900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="200.73" y="6895" width="287.27" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="199.82" y="6830" width="290.18" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-8" value="" style="endArrow=none;html=1;rounded=0;fontSize=25;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-1" target="rOyNG-rFi1SQirv_jvgf-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="7040" as="sourcePoint" />
+            <mxPoint x="530" y="6990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-9" value="Student /Teacher" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" vertex="1" parent="1">
+          <mxGeometry x="317.2" y="6760" width="212.8" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-10" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="539.5" y="7030" width="670" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-13" value="" style="endArrow=none;html=1;rounded=0;fontSize=25;fontColor=#008A00;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-10" target="rOyNG-rFi1SQirv_jvgf-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="927.5799999999999" y="7510" as="sourcePoint" />
+            <mxPoint x="977.5799999999999" y="7460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-14" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" vertex="1" parent="1">
+          <mxGeometry x="996.6999999999999" y="7050" width="212.8" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-15" value="Main Page" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="557.3" y="7050" width="132.2" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-16" value="Οι βαθμολογίες μου" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="570.08" y="7150" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-17" value="Κάνε Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="914.22" y="7150" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-18" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-24" target="rOyNG-rFi1SQirv_jvgf-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="7420" as="sourcePoint" />
+            <mxPoint x="840" y="7210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-25" target="rOyNG-rFi1SQirv_jvgf-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="7410" as="sourcePoint" />
+            <mxPoint x="884.5" y="7279.999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-20" value="&lt;font color=&quot;#ff0000&quot;&gt;Οι βαθμολογίες μου&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=338;" vertex="1" parent="1">
+          <mxGeometry x="539.5" y="7321" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-22" value="&lt;font color=&quot;#ff0000&quot;&gt;Κάνε Quiz&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=22;" vertex="1" parent="1">
+          <mxGeometry x="997.26" y="7317" width="155.93" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-24" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="185.58" y="7400" width="650" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-25" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="934.98" y="7400" width="595.02" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-26" value="" style="endArrow=none;html=1;rounded=0;fontSize=25;fontColor=#FF0000;entryX=1.005;entryY=0.164;entryDx=0;entryDy=0;exitX=0.007;exitY=0.176;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-24" target="rOyNG-rFi1SQirv_jvgf-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="7800" as="sourcePoint" />
+            <mxPoint x="804.9999999999999" y="7830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-27" value="" style="endArrow=none;html=1;rounded=0;fontSize=25;fontColor=#FF0000;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="934.98" y="7459" as="sourcePoint" />
+            <mxPoint x="1530" y="7459" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-29" value="Οι βαθμολογίες μου&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="196.83000000000004" y="7410" width="243.53" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-30" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" vertex="1" parent="1">
+          <mxGeometry x="687.2" y="7413" width="135.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-31" value="Κάνε Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="937.7999999999998" y="7413" width="132.2" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-32" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" vertex="1" parent="1">
+          <mxGeometry x="1387.06" y="7413" width="131.43" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-33" value="" style="shape=mxgraph.rack.oracle.sun_storage_2500-m2_array;html=1;labelPosition=right;align=left;spacingLeft=15;dashed=0;shadow=0;fillColor=#ffffff;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="197" y="7490" width="630" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-34" value="Κεφάλαιο" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="345.35999999999996" y="7521" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-35" value="Δυσκολία" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="519.36" y="7524" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-36" value="Τάξη" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="223.46999999999997" y="7519" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-37" value="Επιτυχία(%)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="675.1700000000001" y="7523" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-38" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;3η γυμν&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="213.47000000000003" y="7562" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-39" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;Εξισώσεις&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="365.36" y="7559" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-40" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;lvl1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="509.36" y="7559" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-41" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;83%&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="660.1700000000001" y="7560" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-42" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;3η γυμν&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="216.55000000000007" y="7631" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-43" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;Ισότητα&lt;br style=&quot;font-size: 20px;&quot;&gt;Τριγώνων&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="371.36" y="7641" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-44" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;lvl2&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="514.64" y="7631" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-45" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;75%&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="660.1700000000001" y="7631" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-48" value="Ευρεση Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1277.2" y="7670" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-49" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-51" target="rOyNG-rFi1SQirv_jvgf-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1242.4899999999998" y="7410" as="sourcePoint" />
+            <mxPoint x="1232" y="7880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-50" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="939.98" y="7880" width="595.02" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-51" value="&lt;font color=&quot;#ff0000&quot;&gt;Εύρεση Quiz&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1135.5" y="7810" width="199.71" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-52" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-25" target="rOyNG-rFi1SQirv_jvgf-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1232.4900000000002" y="7740" as="sourcePoint" />
+            <mxPoint x="1232.4900000000002" y="7880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-53" value="" style="endArrow=none;html=1;rounded=0;fontSize=20;fontColor=#66FF66;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-50" target="rOyNG-rFi1SQirv_jvgf-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1150" y="7780" as="sourcePoint" />
+            <mxPoint x="1200" y="7730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-54" value="εύρεση Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="956.0999999999998" y="7906" width="132.2" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-55" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" vertex="1" parent="1">
+          <mxGeometry x="1391.58" y="7906" width="131.43" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-56" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=20;fontColor=#66FF66;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="7580" as="sourcePoint" />
+            <mxPoint x="100" y="7570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-57" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="16.35" y="7496.44" width="88.2" height="107.56" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-58" value="&lt;font style=&quot;font-size: 21px&quot; color=&quot;#000000&quot;&gt;DBserver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="2.1999999999999993" y="7460" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-59" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="659" y="6800.44" width="88.2" height="107.56" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-60" value="&lt;font style=&quot;font-size: 21px&quot; color=&quot;#000000&quot;&gt;DBserver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="644.85" y="6764" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-61" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=21;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-1" target="rOyNG-rFi1SQirv_jvgf-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="7120" as="sourcePoint" />
+            <mxPoint x="720" y="7070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-63" value="Ολοκλήρωση Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1287.06" y="8120" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-64" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="1587.33" y="8093.44" width="88.2" height="107.56" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-65" value="&lt;font style=&quot;font-size: 21px&quot; color=&quot;#000000&quot;&gt;DBserver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#66FF66;" vertex="1" parent="1">
+          <mxGeometry x="1583.18" y="8046" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-67" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=21;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-64" target="rOyNG-rFi1SQirv_jvgf-63">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="7770" as="sourcePoint" />
+            <mxPoint x="720" y="7720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-69" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/user-interface-797/32/User_Interface_list_to-do_checkmark_option_UI-128.png;fontSize=21;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1000.0000000000001" y="7558.780000000001" width="56.84" height="56.84" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-70" value="Τάξη" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="990" y="7524" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-72" value="Κεφάλαιο" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1172.27" y="7524" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-73" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/user-interface-797/32/User_Interface_list_to-do_checkmark_option_UI-128.png;fontSize=21;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1183.8500000000001" y="7559.900000000001" width="56.84" height="56.84" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-76" value="Δυσκολία" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1371.94" y="7524" width="89.07" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-77" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/user-interface-797/32/User_Interface_list_to-do_checkmark_option_UI-128.png;fontSize=21;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1386.3700000000001" y="7558.780000000001" width="56.84" height="56.84" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-78" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="254.26" y="7800" width="470" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-79" value="______Εκφώνηση_______" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="276.78" y="7850" width="414.97" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-80" value="Question 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="296.24" y="7800" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-83" value="Απάντηση 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="276.78" y="8020" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-84" value="Απάντηση 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="277.5" y="8100" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-85" value="Απάντηση 4" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="501.31999999999994" y="8100" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-86" value="Απάντηση 3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="502.3399999999999" y="8020" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-87" value="Εικόνα" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="398.1099999999999" y="7930" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-88" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=32;fontColor=#000000;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-89" target="rOyNG-rFi1SQirv_jvgf-78">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="489.26" y="8300" as="sourcePoint" />
+            <mxPoint x="534.26" y="8100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-89" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="255.83999999999992" y="8275" width="470" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-90" value="______Εκφώνηση_______" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="278.3599999999999" y="8325" width="414.97" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-91" value="Question 30" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="297.81999999999994" y="8275" width="196.44" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-92" value="Απάντηση 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="278.3599999999999" y="8495" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-93" value="Απάντηση 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="279.0799999999999" y="8575" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-94" value="Απάντηση 4" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="502.89999999999986" y="8575" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-95" value="Απάντηση 3" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="503.91999999999985" y="8495" width="207.48" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-96" value="Εικόνα" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="399.6899999999998" y="8405" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-97" value="QUIZ" style="shape=tape;whiteSpace=wrap;html=1;fontSize=32;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1022.49" y="7978.44" width="430" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-98" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=32;fontColor=#000000;entryX=0;entryY=0.65;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="rOyNG-rFi1SQirv_jvgf-78" target="rOyNG-rFi1SQirv_jvgf-97">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="882.5" y="8240" as="sourcePoint" />
+            <mxPoint x="982.5" y="8140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-99" value="&lt;font color=&quot;#ff0000&quot;&gt;Μορφή Quiz&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#000000;rotation=12;" vertex="1" parent="1">
+          <mxGeometry x="795.77" y="7950" width="118.45" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
