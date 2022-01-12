@@ -1,6 +1,7 @@
 package org.hua.dit.distributedsystems.controllers;
 
 import org.hua.dit.distributedsystems.models.Class;
+import org.hua.dit.distributedsystems.models.Question;
 import org.hua.dit.distributedsystems.models.Subject;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.ClassPost;
@@ -131,15 +132,20 @@ public class TeacherRest {
 
     // /updateQuestion --> form for update the Question (put)
     @PutMapping("question/{id}")
-    Optional<Subject> replaceQuestion(@RequestBody Subject newSubject, @PathVariable Long id) {
+    Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable Long id) {
 
-        return subjectRepo.findById(id)
-                .map(updateSubject -> {
+        return questionRepo.findById(id)
+                .map(updateQuestion -> {
                     //the id will be random from the system
-                    updateSubject.setSubject_class(newSubject.getSubject_class());
-                    updateSubject.setSubject_name(newSubject.getSubject_name());
-                    System.out.println(updateSubject);
-                    return subjectRepo.save(updateSubject);
+                    updateQuestion.setImage(newQuestion.getImage());
+                    updateQuestion.setOption1(newQuestion.getOption1());
+                    updateQuestion.setOption2(newQuestion.getOption2());
+                    updateQuestion.setOption3(newQuestion.getOption3());
+                    updateQuestion.setOption4(newQuestion.getOption4());
+                    updateQuestion.setText(newQuestion.getText());
+                    updateQuestion.setScript(newQuestion.getScript());
+                    System.out.println(updateQuestion);
+                    return questionRepo.save(updateQuestion);
                 });
 
     }
@@ -168,6 +174,25 @@ public class TeacherRest {
     void deleteStudent(@PathVariable Long id) {
         studentRepo.deleteById(id);
         System.out.println("here");
+    }
+
+    //update student
+    @PutMapping("student/{id}")
+    Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable Long id) {
+
+        return studentRepo.findById(id)
+                .map(updateStudent -> {
+                    //the id will be random from the system
+                    updateStudent.setEmail(newStudent.getEmail());
+                    updateStudent.setFullName(newStudent.getFullName());
+                    updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
+                    updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
+                    //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
+                    //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
+                    System.out.println(updateStudent);
+                    return studentRepo.save(updateStudent);
+                });
+
     }
 
     // /getStudentsList --> (get)

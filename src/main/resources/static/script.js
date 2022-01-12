@@ -502,6 +502,67 @@ document.getElementById("putSubject").addEventListener("click", (event) => {
 
 });
 
+document.getElementById("putQuestion").addEventListener("click", (event) => {
+
+    // Update a user
+
+    var id = 1;
+
+    var questionNew = {};
+    questionNew.image = "maths";
+    questionNew.text = "toDo";
+    questionNew.option1 = "question_option1";
+    questionNew.option2 = "question_option2";
+    questionNew.option3 = "question_option3";
+    questionNew.option4 = "question_option4";
+    questionNew.script = "toDo";
+
+    var json = JSON.stringify(questionNew);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("PUT", "http://localhost:8080/teacher/question/"+id, true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+    xhr.onload = function () {
+        var text = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(text);
+        } else {
+            console.error(text);
+        }
+    }
+    xhr.send(json);
+
+});
+
+document.getElementById("putStudent").addEventListener("click", (event) => {
+
+    // Update a user
+
+    var id = 1;
+
+    var studentNew = {};
+    studentNew.email = "maths@gmail.com";
+    studentNew.phoneNumber = 345677;
+    studentNew.password = "dretfgdgdf";//prepei na perasei prvta apo to security kanonika
+    studentNew.fullName = "Artemis";
+
+    var json = JSON.stringify(studentNew);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("PUT", "http://localhost:8080/teacher/student/"+id, true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+    xhr.onload = function () {
+        var text = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            console.table(text);
+        } else {
+            console.error(text);
+        }
+    }
+    xhr.send(json);
+
+});
+
 
 
 
