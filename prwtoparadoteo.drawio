@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T13:31:08.465Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="8BGQigaCpdHoH0UdAntq" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T14:21:27.917Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="pL83OAUXgUuERMUILQ0k" version="16.2.4" type="github">
   <diagram id="TjVTqbN8CfI_NzCVvxR8" name="Page-1">
     <mxGraphModel dx="2489" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
       <root>
@@ -3016,11 +3016,8 @@
         <mxCell id="rOyNG-rFi1SQirv_jvgf-15" value="Main Page" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="557.3" y="7050" width="132.2" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-16" value="Οι βαθμολογίες μου" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-16" value="Οι απαντήσεις μου" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="570.08" y="7150" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-17" value="Κάνε Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="914.22" y="7150" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-18" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="rOyNG-rFi1SQirv_jvgf-24" target="rOyNG-rFi1SQirv_jvgf-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -3034,14 +3031,11 @@
             <mxPoint x="884.5" y="7279.999999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-20" value="&lt;font color=&quot;#ff0000&quot;&gt;Οι βαθμολογίες μου&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=338;" parent="1" vertex="1">
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-20" value="&lt;font color=&quot;#ff0000&quot;&gt;Οι απαντήσεις μου&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=338;" parent="1" vertex="1">
           <mxGeometry x="539.5" y="7321" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-22" value="&lt;font color=&quot;#ff0000&quot;&gt;Κάνε Quiz&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=22;" parent="1" vertex="1">
-          <mxGeometry x="997.26" y="7317" width="155.93" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-24" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="185.58" y="7400" width="650" height="340" as="geometry" />
+          <mxGeometry x="10" y="7400" width="825.58" height="340" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-25" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="934.98" y="7400" width="595.02" height="340" as="geometry" />
@@ -3058,14 +3052,11 @@
             <mxPoint x="1530" y="7459" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-29" value="Οι βαθμολογίες μου&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="196.83000000000004" y="7410" width="243.53" height="30" as="geometry" />
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-29" value="Οι απαντήσεις μου&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="7.2000000000000455" y="7413" width="243.53" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-30" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" parent="1" vertex="1">
           <mxGeometry x="687.2" y="7413" width="135.5" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-31" value="Κάνε Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="937.7999999999998" y="7413" width="132.2" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-32" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" parent="1" vertex="1">
           <mxGeometry x="1387.06" y="7413" width="131.43" height="30" as="geometry" />
@@ -3109,8 +3100,8 @@
         <mxCell id="rOyNG-rFi1SQirv_jvgf-45" value="&lt;font color=&quot;#66ff66&quot; style=&quot;font-size: 20px;&quot;&gt;75%&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF0000;" parent="1" vertex="1">
           <mxGeometry x="660.1700000000001" y="7631" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-48" value="Ευρεση Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1277.2" y="7670" width="240" height="60" as="geometry" />
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-48" value="Εύρεση Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="899.54" y="7150" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-49" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;" parent="1" source="rOyNG-rFi1SQirv_jvgf-51" target="rOyNG-rFi1SQirv_jvgf-50" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -3121,7 +3112,7 @@
         <mxCell id="rOyNG-rFi1SQirv_jvgf-50" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="939.98" y="7880" width="595.02" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-51" value="&lt;font color=&quot;#ff0000&quot;&gt;Εύρεση Quiz&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=0;" parent="1" vertex="1">
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-51" value="&lt;span style=&quot;color: rgb(255 , 0 , 0)&quot;&gt;Κάνε Quiz&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#799CFC;rotation=0;" parent="1" vertex="1">
           <mxGeometry x="1135.5" y="7810" width="199.71" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-52" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=25;fontColor=#799CFC;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rOyNG-rFi1SQirv_jvgf-25" target="rOyNG-rFi1SQirv_jvgf-51" edge="1">
@@ -3136,23 +3127,17 @@
             <mxPoint x="1200" y="7730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-54" value="εύρεση Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="956.0999999999998" y="7906" width="132.2" height="30" as="geometry" />
+        <mxCell id="rOyNG-rFi1SQirv_jvgf-54" value="Εύρεση Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="939.9799999999998" y="7413" width="132.2" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-55" value="Student&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#008A00;" parent="1" vertex="1">
           <mxGeometry x="1391.58" y="7906" width="131.43" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rOyNG-rFi1SQirv_jvgf-56" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=20;fontColor=#66FF66;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="rOyNG-rFi1SQirv_jvgf-24" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="890" y="7580" as="sourcePoint" />
-            <mxPoint x="100" y="7570" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-57" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" parent="1" vertex="1">
-          <mxGeometry x="16.35" y="7496.44" width="88.2" height="107.56" as="geometry" />
+          <mxGeometry x="-148.77" y="7496.44" width="88.2" height="107.56" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-58" value="&lt;font style=&quot;font-size: 21px&quot; color=&quot;#000000&quot;&gt;DBserver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#66FF66;" parent="1" vertex="1">
-          <mxGeometry x="2.1999999999999993" y="7460" width="100" height="30" as="geometry" />
+          <mxGeometry x="-92.8" y="7519" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rOyNG-rFi1SQirv_jvgf-59" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;fontSize=20;fontColor=#66FF66;" parent="1" vertex="1">
           <mxGeometry x="659" y="6800.44" width="88.2" height="107.56" as="geometry" />
@@ -3747,6 +3732,21 @@
             <mxPoint x="1000" y="9950" as="sourcePoint" />
             <mxPoint x="1050" y="9900" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="b8whXSRi5vJxh0cb2YS--1" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=20;fontColor=#66FF66;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-6.350000000000001" y="7549" as="sourcePoint" />
+            <mxPoint x="-91.92999999999992" y="7549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8whXSRi5vJxh0cb2YS--2" value="Κάνε Quiz" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1280.94" y="7670" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8whXSRi5vJxh0cb2YS--3" value="Κάνε Quiz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="956.0999999999998" y="7902" width="132.2" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8whXSRi5vJxh0cb2YS--5" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; font-size: 25px&quot;&gt;Εύρεση Quiz&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=20;" vertex="1" parent="1">
+          <mxGeometry x="1016.27" y="7321" width="160" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
