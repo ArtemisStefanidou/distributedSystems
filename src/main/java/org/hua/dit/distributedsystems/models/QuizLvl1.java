@@ -18,6 +18,11 @@ public class QuizLvl1 implements Serializable {
     @Column(name = "question_lv1_id")
     private Long questionId;
 
+    @Column(name = "question_name")
+    private String name;
+
+
+
     public QuizLvl1() {
     }
 
@@ -32,5 +37,9 @@ public class QuizLvl1 implements Serializable {
 
     public Long getQuestionId() {
         return questionId;
+    }
+
+    public String getName() {
+        return name;
     }
 }

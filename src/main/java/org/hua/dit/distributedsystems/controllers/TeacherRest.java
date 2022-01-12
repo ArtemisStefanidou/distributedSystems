@@ -41,11 +41,10 @@ public class TeacherRest {
             MediaType.APPLICATION_JSON_VALUE
     })
 
-    public void classPost(@RequestBody ClassPost classPost) {
+     void classPost(@RequestBody ClassPost classPost) {
 
         //todo
         System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
-
 
     }
 
@@ -86,6 +85,13 @@ public class TeacherRest {
         classRepo.deleteById(id);
     }
 
+    // /getClass --> get the classes for drop down list in html (get)
+    @GetMapping("classList/")
+     List<Class> allClass() {
+        return classRepo.findAll();
+    }
+
+
     // createSubject --> /subject (post)
     @PostMapping(value="subject" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
@@ -117,6 +123,12 @@ public class TeacherRest {
     @DeleteMapping("subject/{id}")
     void deleteSubject(@PathVariable Long id) {
         subjectRepo.deleteById(id);
+    }
+
+    // /getClass --> get the classes for drop down list in html (get)
+    @GetMapping("subjectList/")
+    List<Subject> allSubject() {
+        return subjectRepo.findAll();
     }
 
     // createQuestion --> /question (post)

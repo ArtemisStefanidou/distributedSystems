@@ -19,6 +19,7 @@ public class Question {
     @Column(name = "question_text")
     private String text;
 
+    //in this field go only the correct answers
     @Column(name = "question_option1")
     private String option1;
 
@@ -33,6 +34,10 @@ public class Question {
 
     @Column(name = "question_script")
     private String script;
+
+    @Column(name = "question_teacher")
+    private int question_teacher_id;
+
 
     public Question() {
 
@@ -104,5 +109,14 @@ public class Question {
 
     public void setScript(String script) {
         this.script = script;
+    }
+
+
+    public int getQuestion_teacher_id() {
+        return question_teacher_id;
+    }
+
+    public void setQuestion_teacher_id(int question_teacher_id) {
+        this.question_teacher_id = question_teacher_id;
     }
 }
