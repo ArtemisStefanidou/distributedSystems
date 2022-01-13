@@ -19,12 +19,13 @@ class SubjectPost {
     }
 }
 
-// class ClassPost {
-//     constructor(class_id,class_name) {
-//         this.class_id = class_id;
-//         this.class_name = class_name;
-//     }
-// }
+class ClassPost {
+    constructor(class_id,class_name) {
+        this.class_id = class_id;
+        this.class_name = class_name;
+    }
+}
+
 class UserPost {
     constructor(user_id,user_email,user_phone_number,user_password,user_fullname,user_role,user_teacher) {
         this.user_id = user_id;
@@ -46,23 +47,7 @@ class GradePost {
 }
 
 
-// document.getElementById("colSubmit").addEventListener("click", (event) => {
-//
-//     const questionPost = new QuestionPost('image', 'test', 'opt1', 'opt2', 'opt3', 'opt4' , 'script');
-//     const classPost = new ClassPost(12,"DHMOTIKO");
-//
-//     const xhr = new XMLHttpRequest();
-//     xhr.open("POST", "http://localhost:8080/question", true);
-//     xhr.setRequestHeader("Content-Type", "application/json");
-//     xhr.send(JSON.stringify(questionPost));
-//     xhr.onreadystatechange = function () {
-//         if (xhr.readyState == 4) {
-//             if (xhr.status == 200) {
-//
-//             }
-//         }
-//     };
-// });
+
 
 document.getElementById("classSubmit").addEventListener("click", (event) => {
 
