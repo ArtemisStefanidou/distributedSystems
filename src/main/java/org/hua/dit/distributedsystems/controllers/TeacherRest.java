@@ -199,11 +199,11 @@ public class TeacherRest {
 
     }
 
-    // /getStudentsList --> (get)
-    @GetMapping("studentsList/{idTeacher}")
-    List<User> all(@PathVariable Long idTeacher) {
-        return studentRepo.findByIdTeacher(idTeacher); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
-    }
+//    // /getStudentsList --> (get)
+//    @GetMapping("studentsList/{idTeacher}")
+//    List<User> all(@PathVariable Long idTeacher) {
+//        //return studentRepo.findByIdTeacher(idTeacher); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
+//    }
 
 
     // /getDetails --> get details for a student (get)
