@@ -34,80 +34,80 @@ public class TeacherRest {
         this.questionRepo = questionRepo;
     }
 
-    // createClass --> /class (post)
-    @PostMapping(value="class" , consumes = {
-            MediaType.APPLICATION_JSON_VALUE
-    })
-
-     void classPost(@RequestBody ClassPost classPost) {
-
-        //todo
-        System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
-        //classRepo.save(classPost);
-
-    }
-
-
-    //update class
-    @PutMapping("class/{id}")
-    Optional<Class> replaceEmployee(@RequestBody Class newClass, @PathVariable Long id) {
-
-        return classRepo.findById(id)
-                .map(updateClass -> {
-                    //the id will be random from the system
-                    updateClass.setClass_name(newClass.getClass_name());
-                    System.out.println(updateClass);
-                    return classRepo.save(updateClass);
-                });
-
-   }
+//    // createClass --> /class (post)
+//    @PostMapping(value="class" , consumes = {
+//            MediaType.APPLICATION_JSON_VALUE
+//    })
+//
+//     void classPost(@RequestBody ClassPost classPost) {
+//
+//        //todo
+//        System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
+//        //classRepo.save(classPost);
+//
+//    }
 
 
-    // /deleteClass --> pop up for confirmation to delete the class (delete)
-    @DeleteMapping("class/{id}")
-    void deleteClass(@PathVariable Long id) {
-        classRepo.deleteById(id);
-    }
-
-    // /getClass --> get the classes for drop down list in html (get)
-    @GetMapping("classList/")
-     List<Class> allClass() {
-        return classRepo.findAll();
-    }
-
-
-    // createSubject --> /subject (post)
-    @PostMapping(value="subject" , consumes = {
-            MediaType.APPLICATION_JSON_VALUE
-    })
-    public void classPost(@RequestBody SubjectPost subjectPost) {
-
-        System.out.println(subjectPost.getSubject_class()+","+subjectPost.getSubject_id()+","+subjectPost.getSubject_name());
-        return;
-
-    }
-
-    // /updateSubject --> form for update the Subject (put)
-    @PutMapping("subject/{id}")
-    Optional<Subject> replaceSubject(@RequestBody Subject newSubject, @PathVariable Long id) {
-
-        return subjectRepo.findById(id)
-                .map(updateSubject -> {
-                    //the id will be random from the system
-                    updateSubject.setSubject_class(newSubject.getSubject_class());
-                    updateSubject.setSubject_name(newSubject.getSubject_name());
-                    System.out.println(updateSubject);
-                    return subjectRepo.save(updateSubject);
-                });
-
-    }
-
-
-    // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
-    @DeleteMapping("subject/{id}")
-    void deleteSubject(@PathVariable Long id) {
-        subjectRepo.deleteById(id);
-    }
+//    //update class
+//    @PutMapping("class/{id}")
+//    Optional<Class> replaceEmployee(@RequestBody Class newClass, @PathVariable Long id) {
+//
+//        return classRepo.findById(id)
+//                .map(updateClass -> {
+//                    //the id will be random from the system
+//                    updateClass.setClass_name(newClass.getClass_name());
+//                    System.out.println(updateClass);
+//                    return classRepo.save(updateClass);
+//                });
+//
+//   }
+//
+//
+//    // /deleteClass --> pop up for confirmation to delete the class (delete)
+//    @DeleteMapping("class/{id}")
+//    void deleteClass(@PathVariable Long id) {
+//        classRepo.deleteById(id);
+//    }
+//
+//    // /getClass --> get the classes for drop down list in html (get)
+//    @GetMapping("classList/")
+//     List<Class> allClass() {
+//        return classRepo.findAll();
+//    }
+//
+//
+//    // createSubject --> /subject (post)
+//    @PostMapping(value="subject" , consumes = {
+//            MediaType.APPLICATION_JSON_VALUE
+//    })
+//    public void classPost(@RequestBody SubjectPost subjectPost) {
+//
+//        System.out.println(subjectPost.getSubject_class()+","+subjectPost.getSubject_id()+","+subjectPost.getSubject_name());
+//        return;
+//
+//    }
+//
+//    // /updateSubject --> form for update the Subject (put)
+//    @PutMapping("subject/{id}")
+//    Optional<Subject> replaceSubject(@RequestBody Subject newSubject, @PathVariable Long id) {
+//
+//        return subjectRepo.findById(id)
+//                .map(updateSubject -> {
+//                    //the id will be random from the system
+//                    updateSubject.setSubject_class(newSubject.getSubject_class());
+//                    updateSubject.setSubject_name(newSubject.getSubject_name());
+//                    System.out.println(updateSubject);
+//                    return subjectRepo.save(updateSubject);
+//                });
+//
+//    }
+//
+//
+//    // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
+//    @DeleteMapping("subject/{id}")
+//    void deleteSubject(@PathVariable Long id) {
+//        subjectRepo.deleteById(id);
+//    }
 
     // /getClass --> get the classes for drop down list in html (get)
     @GetMapping("subjectList/")
@@ -122,7 +122,7 @@ public class TeacherRest {
 
     public void collaborativePost(@RequestBody QuestionPost questionPost) {
 
-        System.out.println(questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_script());
+        System.out.println(questionPost.getQuestion_id() +","+questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_option4()+","+questionPost.getQuestion_script()+","+questionPost.getLvl()+","+ questionPost.getQuestion_teacher_id()+","+questionPost.getQuestion_subject_id());
         return;
     }
 
@@ -155,9 +155,9 @@ public class TeacherRest {
 
     // /questionList --> get teacher's question (get)
     @GetMapping("questionList/{idTeacher}")
-    Optional<Question> getList(@PathVariable Long idTeacher) {
+    List<Question> getList(@PathVariable int idTeacher) {
 
-        return questionRepo.findById(idTeacher);
+        return questionRepo.findByTeacher(idTeacher);
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
     }
 
@@ -169,7 +169,7 @@ public class TeacherRest {
     public void userPost(@RequestBody UserPost userPost) {
 
         //todo
-        System.out.println(userPost.getUser_email()+","+userPost.getUser_role()+","+userPost.getUser_fullname()+","+userPost.getUser_teacher()+","+userPost.getUser_id()+","+userPost.getUser_password()+","+userPost.getUser_phone_number());
+        System.out.println(userPost.getUser_email()+","+userPost.getUser_role()+","+userPost.getUser_fullname()+","+userPost.getTeacher()+","+userPost.getUser_id()+","+userPost.getUser_password()+","+userPost.getUser_phone_number());
     }
 
     // /deleteStudent --> pop up for confirmation to delete the Student (delete)
@@ -199,11 +199,11 @@ public class TeacherRest {
 
     }
 
-//    // /getStudentsList --> (get)
-//    @GetMapping("studentsList/{idTeacher}")
-//    List<User> all(@PathVariable Long idTeacher) {
-//        //return studentRepo.findByIdTeacher(idTeacher); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
-//    }
+    // /getStudentsList --> (get)
+    @GetMapping("studentsList/{teacher}")
+    List<User> all(@PathVariable String teacher) {
+        return studentRepo.findByTeacher(teacher);
+    }
 
 
     // /getDetails --> get details for a student (get)

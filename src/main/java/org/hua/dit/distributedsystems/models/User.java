@@ -28,5 +28,5 @@ public class User implements Serializable {
     @ManyToMany (fetch = FetchType.EAGER)
     private Collection<Role> roles = new ArrayList<>();
 
-    private String teacherName  ;
+    private String teacher  ;
 }

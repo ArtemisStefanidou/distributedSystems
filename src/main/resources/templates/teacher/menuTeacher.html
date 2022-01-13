@@ -13,9 +13,9 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <input type="button" id="makequestion" value="Δημιουργία Ερώτησης"> &nbsp;&nbsp;
-    <input type="button" id="myquestions" value="Show my questions"> &nbsp;&nbsp;
-    <input type="button" id="showgrades" value="Show student`s grades"> <br> <br>
+    <input type="button" id="question" onclick="location.href='http://localhost:8080/teacher/menu/question';" value="Δημιουργία Ερώτησης"> &nbsp;&nbsp;
+    <input type="button" id="myQuestions" value="Οι Ερωτήσεις Μου"> &nbsp;&nbsp;
+    <input type="button" id="showStudents" value="Οι Μαθητές Μου"> <br> <br>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <input type="text" id="something" placeholder="Write something " size="54">
 
@@ -23,10 +23,18 @@
         do something
     </button>
 
+    <button class="btn"><input type="submit" id="deleteQuestion" value="deleteQuestion" /></button><br>
+    <button class="btn"><input type="submit" id="putQuestion" value="updateQuestion" /></button><br>
+    <button class="btn"><input type="submit" id="deleteStudent" value="deleteStudent" /></button><br>
+    <button class="btn"><input type="submit" id="putStudent" value="updateStudent" /></button><br>
+
+
+<div id="questionList"></div>
+<div id="studentList"></div>
+
 
 
 </p>
-
 <script type="text/javascript" th:src="@{/menuTeacher.js}"></script>
 </body>
 </html>

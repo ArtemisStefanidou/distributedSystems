@@ -11,7 +11,7 @@ public class UserPost {
     private int user_password  ;
     private String user_fullname  ;
     private String user_role  ;
-    private String user_teacher  ;
+    private String teacher  ;
 
     public Long getUser_id() {
         return user_id;
@@ -61,11 +61,11 @@ public class UserPost {
         this.user_role = user_role;
     }
 
-    public String getUser_teacher() {
-        return user_teacher;
+    public String getTeacher() {
+        return teacher;
     }
 
-    public void setUser_teacher(String user_teacher) {
-        this.user_teacher = user_teacher;
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
     }
 }

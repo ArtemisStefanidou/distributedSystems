@@ -48,8 +48,10 @@ public class StudentRest {
     }
 
     // /myGrades (get) emfanish bathologiwn se ola ta quiz pou exei kanei
-    @GetMapping("gradesList")
+//    @GetMapping("answerList")
+//    List<Grade> all(@PathVariable Long grade_user_id) {
+//        return gradeRepo.findById(grade_user_id);}
+    @GetMapping("answerList")
     List<Grade> all() {
-        return gradeRepo.findAll(); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
-    }
+            return gradeRepo.findAll();}
 }

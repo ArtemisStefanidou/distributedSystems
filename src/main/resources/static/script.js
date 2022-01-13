@@ -329,7 +329,7 @@ document.getElementById("getGrades").addEventListener("click", (event) => {
     const request = new XMLHttpRequest();
 
     //for asynchronised
-    request.open('GET', "http://localhost:8080/student/gradesList", true);
+    request.open('GET', "http://localhost:8080/student/answerList", true);
     request.send();
     //to check when the request is okay to leave
     request.onreadystatechange = function () {

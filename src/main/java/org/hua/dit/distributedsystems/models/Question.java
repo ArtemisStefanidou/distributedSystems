@@ -1,9 +1,6 @@
 package org.hua.dit.distributedsystems.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="Question")
@@ -35,11 +32,16 @@ public class Question {
     @Column(name = "question_script")
     private String script;
 
+    //@manytoone
     @Column(name = "question_teacher")
-    private int question_teacher_id;
+    private int teacher;
 
     @Column(name = "question_lvl")
     private int lvl;
+
+    //@polla question se ena subject
+    @Column(name = "question_subject_id")
+    private int question_subject_id;
 
 
     public Question() {
@@ -123,11 +125,19 @@ public class Question {
     }
 
 
-    public int getQuestion_teacher_id() {
-        return question_teacher_id;
+    public int getQuestion_teacher() {
+        return teacher;
     }
 
-    public void setQuestion_teacher_id(int question_teacher_id) {
-        this.question_teacher_id = question_teacher_id;
+    public void setQuestion_teacher(int question_teacher) {
+        this.teacher = question_teacher;
+    }
+
+    public int getQuestion_subject_id() {
+        return question_subject_id;
+    }
+
+    public void setQuestion_subject_id(int question_subject_id) {
+        this.question_subject_id = question_subject_id;
     }
 }
