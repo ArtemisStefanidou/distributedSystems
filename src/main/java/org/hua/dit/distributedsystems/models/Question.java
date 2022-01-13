@@ -38,6 +38,9 @@ public class Question {
     @Column(name = "question_teacher")
     private int question_teacher_id;
 
+    @Column(name = "question_lvl")
+    private int lvl;
+
 
     public Question() {
 
@@ -45,6 +48,14 @@ public class Question {
 
     public Question(Long id) {
         this.id = id;
+    }
+
+    public int getLvl() {
+        return lvl;
+    }
+
+    public void setLvl(int lvl) {
+        this.lvl = lvl;
     }
 
     public Long getId() {

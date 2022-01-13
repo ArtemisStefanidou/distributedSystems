@@ -9,9 +9,7 @@ import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.SubjectPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
 import org.hua.dit.distributedsystems.repositories.*;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -45,22 +43,8 @@ public class TeacherRest {
 
         //todo
         System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
+        //classRepo.save(classPost);
 
-    }
-
-    @PostMapping(path = "class",
-            consumes = MediaType.APPLICATION_JSON_VALUE,
-            produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ClassPost> create(@RequestBody ClassPost classPost) {
-        ClassPost postClass = new ClassPost();
-        //ClassPost postClass = classRepo.save(classRepo); // prepei o bill na ftiaxei to service tou class
-        if (postClass == null) {
-            System.out.println("todo");
-            //throw new ServerException() ;
-            return null;
-        } else {
-            return new ResponseEntity<>(postClass, HttpStatus.CREATED);
-        }
     }
 
 
@@ -169,6 +153,14 @@ public class TeacherRest {
         System.out.println("here");
     }
 
+    // /questionList --> get teacher's question (get)
+    @GetMapping("questionList/{idTeacher}")
+    Optional<Question> getList(@PathVariable Long idTeacher) {
+
+        return questionRepo.findById(idTeacher);
+        //.orElseThrow(() -> new EmployeeNotFoundException(id));
+    }
+
     // createUser --> /user (post)
     @PostMapping(value="user" , consumes = {
             MediaType.APPLICATION_JSON_VALUE
@@ -208,9 +200,9 @@ public class TeacherRest {
     }
 
     // /getStudentsList --> (get)
-    @GetMapping("studentsList/")
-    List<User> all() {
-        return studentRepo.findAll(); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
+    @GetMapping("studentsList/{idTeacher}")
+    List<User> all(@PathVariable Long idTeacher) {
+        return studentRepo.findByIdTeacher(idTeacher); //πρεπει ο βασιλης να φτιαξει ενα find με τους roles
     }
 
 

@@ -19,12 +19,12 @@ class SubjectPost {
     }
 }
 
-class ClassPost {
-    constructor(class_id,class_name) {
-        this.class_id = class_id;
-        this.class_name = class_name;
-    }
-}
+// class ClassPost {
+//     constructor(class_id,class_name) {
+//         this.class_id = class_id;
+//         this.class_name = class_name;
+//     }
+// }
 class UserPost {
     constructor(user_id,user_email,user_phone_number,user_password,user_fullname,user_role,user_teacher) {
         this.user_id = user_id;
@@ -66,12 +66,16 @@ class GradePost {
 
 document.getElementById("classSubmit").addEventListener("click", (event) => {
 
-    const classPost = new ClassPost("12","DHMOTIKO");
+    //const classPost = new ClassPost(12,"DHMOTIKO");
+
+    var classNew = {};
+    classNew.class_id = 12;
+    classNew.class_name = "gimnasio";
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:8080/teacher/class", true);
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(JSON.stringify(classPost));
+    xhr.send(JSON.stringify(classNew));
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {

@@ -9,6 +9,24 @@ public class QuestionPost {
     private String question_option3;
     private String question_option4;
     private String question_script;
+    private int  question_teacher_id;
+    private int  lvl;
+
+    public int getQuestion_teacher_id() {
+        return question_teacher_id;
+    }
+
+    public void setQuestion_teacher_id(int question_teacher_id) {
+        this.question_teacher_id = question_teacher_id;
+    }
+
+    public int getLvl() {
+        return lvl;
+    }
+
+    public void setLvl(int lvl) {
+        this.lvl = lvl;
+    }
 
     public String getQuestion_id() {
         return question_id;
