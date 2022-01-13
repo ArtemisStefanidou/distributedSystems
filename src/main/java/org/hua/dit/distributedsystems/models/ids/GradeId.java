@@ -10,14 +10,14 @@ public class GradeId implements Serializable {
 
     private Long grade_question_id;
 
-    private Long grade_user_id;
+    private Long user;
 
     public GradeId() {
     }
 
     public GradeId(Long grade_question_id, Long grade_user_id) {
         this.grade_question_id = grade_question_id;
-        this.grade_user_id = grade_user_id;
+        this.user = grade_user_id;
     }
 
     @Override
@@ -31,12 +31,12 @@ public class GradeId implements Serializable {
 
         GradeId gradeId = (GradeId) obj;
         return grade_question_id.equals(gradeId.grade_question_id) &&
-                grade_user_id.equals(gradeId.grade_user_id);
+                user.equals(gradeId.user);
     }
 
 
     @Override
     public int hashCode() {
-        return Objects.hash(grade_question_id, grade_user_id);
+        return Objects.hash(grade_question_id, user);
     }
 }

@@ -7,7 +7,7 @@ public class GradePost {
 
     private int grade_of_question;
     private Long grade_question_id;
-    private Long grade_user_id;
+    private Long user;
 
     public int getGrade_of_question() {
         return grade_of_question;
@@ -25,11 +25,11 @@ public class GradePost {
         this.grade_question_id = grade_question_id;
     }
 
-    public Long getGrade_user_id() {
-        return grade_user_id;
+    public Long getUser() {
+        return user;
     }
 
-    public void setGrade_user_id(Long grade_user_id) {
-        this.grade_user_id = grade_user_id;
+    public void setUser(Long user) {
+        this.user = user;
     }
 }

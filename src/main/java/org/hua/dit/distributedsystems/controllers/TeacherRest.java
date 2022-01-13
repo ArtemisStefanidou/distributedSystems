@@ -69,11 +69,7 @@ public class TeacherRest {
 //        classRepo.deleteById(id);
 //    }
 //
-//    // /getClass --> get the classes for drop down list in html (get)
-//    @GetMapping("classList/")
-//     List<Class> allClass() {
-//        return classRepo.findAll();
-//    }
+
 //
 //
 //    // createSubject --> /subject (post)
@@ -109,11 +105,7 @@ public class TeacherRest {
 //        subjectRepo.deleteById(id);
 //    }
 
-    // /getClass --> get the classes for drop down list in html (get)
-    @GetMapping("subjectList/")
-    List<Subject> allSubject() {
-        return subjectRepo.findAll();
-    }
+
 
     // createQuestion --> /question (post)
     @PostMapping(value="question" , consumes = {

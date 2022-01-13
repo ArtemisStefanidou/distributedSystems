@@ -1,18 +1,39 @@
 package org.hua.dit.distributedsystems.controllers;
 
-import org.hua.dit.distributedsystems.models.post.ClassPost;
-import org.hua.dit.distributedsystems.models.post.QuestionPost;
-import org.hua.dit.distributedsystems.models.post.SubjectPost;
-import org.hua.dit.distributedsystems.models.post.UserPost;
-import org.springframework.http.MediaType;
+import org.hua.dit.distributedsystems.models.Class;
+import org.hua.dit.distributedsystems.models.Subject;
+import org.hua.dit.distributedsystems.repositories.ClassRepo;
+import org.hua.dit.distributedsystems.repositories.SubjectRepo;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("/")
 public class RestController {
 
 
-    //API
+    private final ClassRepo classRepo;
+    private final SubjectRepo subjectRepo;
+
+    public RestController(ClassRepo classRepo, SubjectRepo subjectRepo) {
+        this.classRepo = classRepo;
+        this.subjectRepo = subjectRepo;
+    }
+
+    // /getClass --> get the classes for drop down list in html (get)
+    @GetMapping("classList/")
+    List<Class> allClass() {
+        return classRepo.findAll();
+    }
+
+    // /getClass --> get the classes for drop down list in html (get)
+    @GetMapping("subjectList/")
+    List<Subject> allSubject() {
+        return subjectRepo.findAll();
+    }
+
+
 
 
 

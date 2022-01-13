@@ -1,8 +1,10 @@
 document.getElementById("showMyAnswers").addEventListener("click", (event) => {
+
+    var user = 4;
     const request = new XMLHttpRequest();
 
     //for asynchronised
-    request.open('GET', "http://localhost:8080/student/answerList", true);
+    request.open('GET', "http://localhost:8080/student/answerList/"+user, true);
     request.send();
     //to check when the request is okay to leave
     request.onreadystatechange = function () {
@@ -51,7 +53,7 @@ document.getElementById("showMyAnswers").addEventListener("click", (event) => {
                 grades.forEach(student => {
                     let row = document.createElement('tr');
 
-                    Object.values(grade).forEach(text => {
+                    Object.values(grades).forEach(text => {
                         let cell = document.createElement('td');
                         let textNode = document.createTextNode(text);
                         cell.appendChild(textNode);
