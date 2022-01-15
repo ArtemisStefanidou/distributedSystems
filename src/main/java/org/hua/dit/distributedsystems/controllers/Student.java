@@ -10,7 +10,7 @@ public class Student {
 
     @GetMapping("menu")
     public String menuStudent() {
-        return "menuStudent";
+        return "login/menuStudent";
     }
 
     @GetMapping("quiz")

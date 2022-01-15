@@ -37,7 +37,7 @@ document.getElementById("login").addEventListener("click",
                     refreshToken='Bearer ' + response.refresh_token;
                     role=response.role_name;
 
-                    window.location.href = "http://localhost:8080/"+ role+"/menu";
+                    window.location.href = "http://localhost:8080/login/"+ role+"/menu";
 
                 }
             }
@@ -56,7 +56,7 @@ request.onreadystatechange = function () {
     if (request.readyState == 4) {
         if (request.status == 200) {
 
-            window.location.href = "http://localhost:8080/" + role + "/menu";
+
 
         };
     };
