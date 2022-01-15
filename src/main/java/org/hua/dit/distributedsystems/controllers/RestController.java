@@ -35,19 +35,6 @@ public class RestController {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     // delete Question --> /question (delete)
     @DeleteMapping("class/{id}")
     public void deleteClass(@PathVariable Long id) {

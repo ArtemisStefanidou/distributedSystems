@@ -14,7 +14,6 @@ import java.util.Collection;
 public class User implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "user_id")
     private Long user_id ;
 
     private String email ;
@@ -28,5 +27,6 @@ public class User implements Serializable {
     @ManyToMany (fetch = FetchType.EAGER)
     private Collection<Role> roles = new ArrayList<>();
 
-    private String teacher  ;
+    @OneToOne
+    private User teacher  ;
 }

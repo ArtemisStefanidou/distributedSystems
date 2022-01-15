@@ -2,11 +2,9 @@ package org.hua.dit.distributedsystems.controllers;
 
 import org.hua.dit.distributedsystems.models.Grade;
 import org.hua.dit.distributedsystems.models.Question;
-import org.hua.dit.distributedsystems.models.QuizLvl1;
 import org.hua.dit.distributedsystems.models.post.GradePost;
 import org.hua.dit.distributedsystems.repositories.GradeRepo;
 import org.hua.dit.distributedsystems.repositories.QuestionsRepo;
-import org.hua.dit.distributedsystems.repositories.QuizLv1Repo;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +18,7 @@ public class StudentRest {
     private final GradeRepo gradeRepo;
     private final QuestionsRepo questionsRepo;
 
-    public StudentRest(GradeRepo gradeRepo, QuizLv1Repo lv1Repo, QuestionsRepo questionsRepo) {
+    public StudentRest(GradeRepo gradeRepo, QuestionsRepo questionsRepo) {
         //arxikopoihseis
 
         this.gradeRepo = gradeRepo;
@@ -50,7 +48,7 @@ public class StudentRest {
     }
 
 //     /myGrades (get) emfanish bathologiwn se ola ta quiz pou exei kanei
-    @GetMapping("answerList/{user}")
+/*    @GetMapping("answerList/{user}")
     List<Grade> all(@PathVariable Long user) {
-        return gradeRepo.findByUser(user);}
+        return gradeRepo.findByUser(user);}*/
 }

@@ -1,60 +1,21 @@
 package org.hua.dit.distributedsystems.models;
 
-import org.hua.dit.distributedsystems.models.ids.GradeId;
-import org.springframework.stereotype.Component;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Objects;
 
-@Entity
+@Entity @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Grade")
-@IdClass(GradeId.class)
 public class Grade implements Serializable {
 
-    @Column(name = "grade_of_question")
-    private int grade_of_question;
-
-    @Id
-    @Column(name = "grade_question_id")
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long grade_question_id;
 
-    @Id
-    @Column(name = "user")
-    private Long user;
-
-    public Grade(){
-
-    }
-
-    public Grade(int grade_of_question, Long grade_question_id, Long user) {
-        this.grade_of_question = grade_of_question;
-        this.grade_question_id = grade_question_id;
-        this.user = user;
-    }
-
-    public int getGrade_of_question() {
-        return grade_of_question;
-    }
-
-    public void setGrade_of_question(int grade_of_question) {
-        this.grade_of_question = grade_of_question;
-    }
-
-    public Long getGrade_question_id() {
-        return grade_question_id;
-    }
-
-    public void setGrade_question_id(Long grade_question_id) {
-        this.grade_question_id = grade_question_id;
-    }
-
-    public Long getUser() {
-        return user;
-    }
-
-    public void setUser(Long user) {
-        this.user = user;
-    }
+    private int grade_of_question;
 
 }

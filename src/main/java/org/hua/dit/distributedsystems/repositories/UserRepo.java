@@ -1,6 +1,5 @@
 package org.hua.dit.distributedsystems.repositories;
 
-import org.hua.dit.distributedsystems.models.QuizLvl1;
 import org.hua.dit.distributedsystems.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
