@@ -34,13 +34,16 @@ public class DistributedSystemsApplication {
 
 
 
-            User bill = new User(null, "bill@gmail.com", 1234, "1234", "Bill", new ArrayList<>(), null);
+            User bill = new User(null, "bill@gmail.com", 1234, "1234", "Bill"
+                    , new ArrayList<>(), null);
             userService.saveUser(bill);
 
-            User artemis = new User(null, "artemis@gmail.com", 1234, "5678", "Artemis", new ArrayList<>(), null);
+            User artemis = new User(null, "artemis@gmail.com", 1234, "5678"
+                    , "Artemis", new ArrayList<>(), null);
             userService.saveUser(artemis);
 
-            User meletis = new User(null, "meletis@gmail.com", 1234, "9012", "Meletis", new ArrayList<>(), null);
+            User meletis = new User(null, "meletis@gmail.com", 1234, "9012"
+                    , "Meletis", new ArrayList<>(), null);
             userService.saveUser(meletis);
 
             userService.addRoleToUser("bill@gmail.com", "student");

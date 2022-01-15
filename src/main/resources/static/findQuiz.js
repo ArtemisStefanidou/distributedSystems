@@ -25,5 +25,4 @@ document.getElementById("findQuiz").addEventListener("click", (event) => {
         }
     }
     xhr.send(json);
-
 });

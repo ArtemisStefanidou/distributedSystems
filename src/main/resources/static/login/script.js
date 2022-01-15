@@ -1,6 +1,7 @@
 
 class QuestionPost {
-    constructor(question_image, question_text, question_option1, question_option2, question_option3, question_option4, question_script) {
+    constructor(question_image, question_text, question_option1, question_option2, question_option3, question_option4
+                , question_script) {
         this.question_image = question_image;
         this.question_text = question_text;
         this.question_option1 = question_option1;
@@ -89,7 +90,8 @@ document.getElementById("subjectSubmit").addEventListener("click", (event) => {
 
 document.getElementById("userSubmit").addEventListener("click", (event) => {
 
-    const userPost = new UserPost("12","meletis@gmail.com",1234567,1234,"meletis","teacher","none");
+    const userPost = new UserPost("12","meletis@gmail.com",1234567
+        ,1234,"meletis","teacher","none");
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:8080/user", true);
