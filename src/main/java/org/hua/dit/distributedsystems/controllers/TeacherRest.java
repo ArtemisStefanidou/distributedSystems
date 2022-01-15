@@ -1,12 +1,8 @@
 package org.hua.dit.distributedsystems.controllers;
 
-import org.hua.dit.distributedsystems.models.Class;
 import org.hua.dit.distributedsystems.models.Question;
-import org.hua.dit.distributedsystems.models.Subject;
 import org.hua.dit.distributedsystems.models.User;
-import org.hua.dit.distributedsystems.models.post.ClassPost;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
-import org.hua.dit.distributedsystems.models.post.SubjectPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
 import org.hua.dit.distributedsystems.repositories.*;
 import org.springframework.http.MediaType;
@@ -21,14 +17,13 @@ import java.util.Optional;
 public class TeacherRest {
     //ENERGEIES KATHIGHTH
 
-    private final ClassRepo classRepo;
     private final UserRepo studentRepo;
     private final SubjectRepo subjectRepo;
     private final QuestionsRepo questionRepo;
 
 
-    public TeacherRest(ClassRepo classRepo, UserRepo userRepo, UserRepo studentRepo, SubjectRepo subjectRepo, QuestionsRepo questionRepo, RoleRepo roleRepo) {
-        this.classRepo = classRepo;
+    public TeacherRest(UserRepo userRepo, UserRepo studentRepo, SubjectRepo subjectRepo, QuestionsRepo questionRepo, RoleRepo roleRepo) {
+
         this.studentRepo = studentRepo;
         this.subjectRepo = subjectRepo;
         this.questionRepo = questionRepo;
@@ -145,13 +140,13 @@ public class TeacherRest {
         System.out.println("here");
     }
 
-    // /questionList --> get teacher's question (get)
+/*    // /questionList --> get teacher's question (get)
     @GetMapping("questionList/{idTeacher}")
     List<Question> getList(@PathVariable int idTeacher) {
 
         return questionRepo.findByTeacher(idTeacher);
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
-    }
+    }*/
 
     // createUser --> /user (post)
     @PostMapping(value="user" , consumes = {

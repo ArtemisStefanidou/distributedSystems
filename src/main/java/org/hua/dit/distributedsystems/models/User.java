@@ -28,5 +28,8 @@ public class User implements Serializable {
     private Collection<Role> roles = new ArrayList<>();
 
     @OneToOne
-    private User teacher  ;
+    private User teacher ;
+
+    @OneToMany
+    private Collection<Subject> subjects = new ArrayList<>();
 }

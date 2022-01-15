@@ -3,9 +3,11 @@ package org.hua.dit.distributedsystems.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.hua.dit.distributedsystems.models.Role;
+import org.hua.dit.distributedsystems.models.Subject;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.repositories.RoleRepo;
 import org.hua.dit.distributedsystems.repositories.UserRepo;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -17,6 +19,7 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service @RequiredArgsConstructor @Transactional @Slf4j
 public class UserServiceImpl implements UserService, UserDetailsService {
@@ -59,6 +62,21 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         log.info("Fetching all users");
         return userRepo.findAll();
     }
+
+    @Override
+    public int addSubjectToTeacher(Subject subject, String email) {
+        User user = userRepo.findByEmail(email);
+
+        if(user.getRoles().iterator().next().equals(email)){
+            System.out.println(email+ "  Yesssss");
+            return 1;
+        }
+
+        user.getSubjects().add(subject);
+
+        return 0;
+    }
+
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepo.findByEmail(email);

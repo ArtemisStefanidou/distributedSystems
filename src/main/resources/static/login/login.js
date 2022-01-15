@@ -2,6 +2,7 @@
 var accessToken;
 var refreshToken;
 var role;
+var email;
 
 class loginCredentials{
     constructor(email, password) {
@@ -35,7 +36,8 @@ document.getElementById("login").addEventListener("click",
                     var response = JSON.parse(xhr.response);
                     accessToken='Bearer ' + response.access_token;
                     refreshToken='Bearer ' + response.refresh_token;
-                    role=response.role_name;
+                    role=response.role_name ;
+                    email=response.user_email_for_id;
 
                     window.location.href = "http://localhost:8080/login/"+ role+"/menu";
 

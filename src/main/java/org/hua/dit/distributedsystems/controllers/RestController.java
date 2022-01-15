@@ -1,8 +1,6 @@
 package org.hua.dit.distributedsystems.controllers;
 
-import org.hua.dit.distributedsystems.models.Class;
 import org.hua.dit.distributedsystems.models.Subject;
-import org.hua.dit.distributedsystems.repositories.ClassRepo;
 import org.hua.dit.distributedsystems.repositories.SubjectRepo;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,20 +10,17 @@ import java.util.List;
 @RequestMapping("/")
 public class RestController {
 
-
-    private final ClassRepo classRepo;
     private final SubjectRepo subjectRepo;
 
-    public RestController(ClassRepo classRepo, SubjectRepo subjectRepo) {
-        this.classRepo = classRepo;
+    public RestController( SubjectRepo subjectRepo) {
         this.subjectRepo = subjectRepo;
     }
 
     // /getClass --> get the classes for drop down list in html (get)
-    @GetMapping("classList/")
+/*    @GetMapping("classList/")
     List<Class> allClass() {
         return classRepo.findAll();
-    }
+    }*/
 
     // /getClass --> get the classes for drop down list in html (get)
     @GetMapping("subjectList/")

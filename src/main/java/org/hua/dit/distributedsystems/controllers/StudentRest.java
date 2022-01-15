@@ -26,13 +26,13 @@ public class StudentRest {
 
     }
 
-    //  /doQuiz/ (get) emfanish quiz me bash tis plhrofories (random)
+/*    //  /doQuiz/ (get) emfanish quiz me bash tis plhrofories (random)
     @GetMapping("doQuiz/{combination}")
     List<Question> getQuiz(@PathVariable int teacher) {
 
         return questionsRepo.findByTeacher(teacher);
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
-    }
+    }*/
 
 
     //  /quizanswers (post) kataxwrhsh apanthsewn sto quiz
