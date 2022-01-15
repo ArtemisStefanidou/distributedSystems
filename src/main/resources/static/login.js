@@ -1,6 +1,7 @@
 
 var accessToken;
 var refreshToken;
+var role;
 
 class loginCredentials{
     constructor(email, password) {
@@ -34,12 +35,29 @@ document.getElementById("login").addEventListener("click",
                     var response = JSON.parse(xhr.response);
                     accessToken='Bearer ' + response.access_token;
                     refreshToken='Bearer ' + response.refresh_token;
+                    role=response.role_name;
 
-                    alert(accessToken+'\n'+refreshToken);
+                    window.location.href = "http://localhost:8080/"+ role+"/menu";
+
                 }
             }
         };
-
-
-
 });
+
+
+
+/*const request = new XMLHttpRequest();
+
+request.open('GET', "http://localhost:8080/" + role + "/menu", true);
+request.setRequestHeader("Authorization"
+    ,accessToken);
+request.send();
+request.onreadystatechange = function () {
+    if (request.readyState == 4) {
+        if (request.status == 200) {
+
+            window.location.href = "http://localhost:8080/" + role + "/menu";
+
+        };
+    };
+};*/

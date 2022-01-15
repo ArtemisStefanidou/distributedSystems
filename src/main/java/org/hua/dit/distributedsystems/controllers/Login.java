@@ -10,7 +10,7 @@ public class Login {
 
     @GetMapping("login/menu")
     public String login() {
-        return "/system/login";
+        return "/login";
     }
 
 

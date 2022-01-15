@@ -3,7 +3,7 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
 
     let idTeacher = 4; //Artemis in the Data Base
 
-    //for asynchronised
+    //for asynchronised                                 θελει το email του ή θα γίνει η ταυτοποίηση μέσα από το τόκεν
     request.open('GET', "http://localhost:8080/teacher/questionList/"+idTeacher, true);
     request.send();
     //to check when the request is okay to leave
@@ -18,7 +18,7 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
                 let table = document.createElement('table');
                 let headersRows = document.createElement('tr');
 
-                //delete all the childrens besause maybe already exists a table with not updated info
+                //delete all the children because they may already exist in a table without updated info
                 while (divElem.firstChild) {
                     divElem.removeChild(divElem.firstChild);
                 }

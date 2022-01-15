@@ -56,7 +56,7 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
 
         String accessToken = JWT.create()
                 .withSubject(user.getUsername())
-                .withExpiresAt(new Date((System.currentTimeMillis() + 10 * 60 *1000 )))
+                .withExpiresAt(new Date((System.currentTimeMillis() + 10 * 60 * 60 *1000 )))
                 .withIssuer(request.getRequestURL().toString())
                 .withClaim("roles", user.getAuthorities().stream()
                         .map(GrantedAuthority::getAuthority).collect(Collectors.toList()))
@@ -72,6 +72,7 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
 
         tokens.put("access_token", accessToken);
         tokens.put("refresh_token", refreshToken);
+        tokens.put("role_name", user.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList()).get(0));
 
         response.setContentType(APPLICATION_JSON_VALUE);
 

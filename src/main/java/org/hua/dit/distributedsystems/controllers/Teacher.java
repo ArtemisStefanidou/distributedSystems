@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/teacher/menu")
 public class Teacher {
 
-    @GetMapping("/")
+    @GetMapping("")
     public String menuTeacher() {
         return "/teacher/menuTeacher";
     }
