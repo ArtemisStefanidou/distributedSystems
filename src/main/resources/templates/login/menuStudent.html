@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu Student</title>
+    <link th:href="@{/login/menuStudent.css}" rel="stylesheet">
 </head>
 <body>
-<h1>Καλώς ήλθατε στον κόσμο των μαθηματικών!</h1>
-<input type="button" id="goToQuiz" onclick="location.href='http://localhost:8080/student/quiz';"
-       value="Εύρεση Quiz!" > &nbsp;&nbsp; <br>
-<input type="button" id="showMyAnswers" value="Οι Απαντήσεις Μου!"> <br> <br>
+
+<h1><span>K</span>αλώς <span>ή</span>λθατε στον <span>κ</span>όσμο των <span>μ</span>αθηματικών!</h1>
+
+<div>
+    <button id="showMyAnswers" class="button">Οι Απαντήσεις Μου!</button>
+    <button id="goToQuiz" class="button">Εύρεση Quiz!</button>
+</div>
+
+
 <div id="listAnswers"></div>
 
 <script type="text/javascript" th:src="@{/login/menuStudent.js}"></script>
