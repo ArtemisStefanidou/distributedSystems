@@ -2,25 +2,31 @@
     --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
 }
 
-*{
+body{
+    display: flex;
     font-family: 'Open Sans', sans-serif;
-    margin:0; padding:0;
     box-sizing: border-box;
-    border:none; outline: none;
+    border:none;
+    outline: none;
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
     background-color: #F3B982;
+    align-content: space-around;
+    flex-direction : column;
 }
 
-*::selection{
+body::selection{
     background:#f39c12;
     color:#fff;
 }
 
 section{
-    min-height: 100vh;
-    padding: 15rem 7% 2rem;
+    display: flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
 }
 
 .btn{
@@ -88,4 +94,37 @@ section{
         background-position-x: 100rem;
     }
 
+}
+
+.social-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-menu ul li {
+    text-align: center;
+    list-style: none;
+}
+
+#contact h1{
+    position: relative;
+    font-size: 4em;
+    color: #fff;
+    overflow: hidden;
+}
+
+#contact h1:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 100%);
+    animation:  animate 10s linear forwards;
+}
+
+#contact h1 span
+{
+    color: #8f9a8a;
 }
