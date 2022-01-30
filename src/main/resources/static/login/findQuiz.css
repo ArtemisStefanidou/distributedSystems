@@ -1,0 +1,151 @@
+*{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    align-content: space-around;
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    height: 200px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    align-content: space-around;
+
+    width:100%;
+
+    box-sizing: border-box;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.61),
+            rgba(0, 0, 0, 0.73)
+    ),
+    url("./photos/maths.png");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+
+}
+
+.container {
+
+    width: 200px;
+
+    padding: 100px 100px 100px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    align-content: space-around;
+
+    position: relative;
+
+    row-gap: 10px;
+
+    column-gap: 20px;
+
+}
+
+.subject,#findQuiz{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    align-content: space-around;
+
+    background-color: #F3B982;
+
+}
+
+
+.subject:hover {
+
+    background-color: #F3B982;
+
+}
+
+#findQuiz:hover {
+
+    background-color: #F3B982;
+
+}
+
+.links,.subject,#findQuiz {
+
+    padding: 12px;
+
+    font-size: 1.2em;
+
+    font-family: futura Md BT, serif;
+
+    border: none;
+
+    outline: none;
+
+    width:200px;
+
+    color:#fff;
+
+    transition: 0.3s;
+
+
+}
+
+.list0 {
+
+    position: absolute;
+
+    transform: scaleY(0);
+
+    transform-origin: top;
+
+    transition: 0.3s;
+
+}
+
+
+.links {
+
+    background-color: #283c63;
+
+    width: 200px;
+
+}
+
+.links:hover {
+
+    background-color: #01579B;
+
+    transform: scale(1.1);
+
+}

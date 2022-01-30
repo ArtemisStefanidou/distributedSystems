@@ -1,7 +1,7 @@
 
 class QuestionPost {
     constructor(question_image, question_text, question_option1, question_option2, question_option3, question_option4
-                , question_script) {
+        , question_script) {
         this.question_image = question_image;
         this.question_text = question_text;
         this.question_option1 = question_option1;

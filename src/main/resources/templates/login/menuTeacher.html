@@ -4,37 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu Teacher</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link th:href="@{/login/menuStudent.css}" rel="stylesheet">
+
 </head>
+
 <body>
-<h1> <b>Καλώς ήλθες καθηγητά! </b></h1>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<h1><span>K</span>αλώς <span>ή</span>λθες  <span>Κ</span>αθηγητά </h1>
 
-    <input type="button" id="question" onclick="location.href='http://localhost:8080/teacher/menu/question';" value="Δημιουργία Ερώτησης"> &nbsp;&nbsp;
-    <input type="button" id="myQuestions" value="Οι Ερωτήσεις Μου"> &nbsp;&nbsp;
-    <input type="button" id="showStudents" value="Οι Μαθητές Μου"> <br> <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" id="something" placeholder="Write something " size="54">
+<div class="centerButtons">
+    <div>
+        <button id="question" class="button">Δημιουργία Ερώτησης!</button>
+    </div>
+    <div>
+        <button id="myQuestions" class="button">Οι Ερωτήσεις Μου!</button>
+    </div>
+    <div>
+        <button id="showStudents" class="button">Οι Μαθητές Μου!</button>
+    </div>
+</div><br>
+<div class="centerInfo">
 
-    <button type="button" id="dosomething" class="btn btn-primary" >
-        do something
-    </button>
+    <div id="questionList"></div><br>
 
-    <button class="btn"><input type="submit" id="deleteQuestion" value="deleteQuestion" /></button><br>
-    <button class="btn"><input type="submit" id="putQuestion" value="updateQuestion" /></button><br>
-    <button class="btn"><input type="submit" id="deleteStudent" value="deleteStudent" /></button><br>
-    <button class="btn"><input type="submit" id="putStudent" value="updateStudent" /></button><br>
+    <div id="studentList"></div><br>
+
+    <div id="quizSearch">
+        <div class="controls">
+
+            <select name="subject" id="subject" class="hide" >
+                <div class="list1">
+                    <option label="--Επέλεξε Κεφάλαιο--" value="select" class="links" ></option>
+                    <option value="aSub" class="links">Εξισώσεις</option>
+                    <option value="bSub" class="links">Ισότητα Τριγώνων</option>
+                    <option value="cSub" class="links">Ταυτότητες</option>
+                    <option value="cSub" class="links">Παραγοντοποίηση</option>
+                </div>
+            </select><br><br>
 
 
-<div id="questionList"></div>
-<div id="studentList"></div>
+            <button id="doQuiz" class="hide" >Ξεκίνα το Quiz</button>
+
+
+        </div>
+    </div>
+</div>
+
+<!--<h1> <b>Καλώς ήλθες καθηγητά! </b></h1>-->
+
+<!--<p>&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+<!--&lt;!&ndash;    <input type="button" id="question" onclick="location.href='http://localhost:8080/teacher/menu/question';" value="Δημιουργία Ερώτησης"> &nbsp;&nbsp;&ndash;&gt;-->
+<!--    <input type="button" id="myQuestions" value="Οι Ερωτήσεις Μου">-->
+<!--    <input type="button" id="showStudents" value="Οι Μαθητές Μου">-->
+<!--     &nbsp;&nbsp;-->
+<!--    <input type="text" id="something" placeholder="Write something " size="54">-->
+
+<!--    <button type="button" id="dosomething" class="btn btn-primary" >-->
+<!--        do something-->
+<!--    </button>-->
+
+<!--    <button class="btn"><input type="submit" id="deleteQuestion" value="deleteQuestion" /></button><br>-->
+<!--    <button class="btn"><input type="submit" id="putQuestion" value="updateQuestion" /></button><br>-->
+<!--    <button class="btn"><input type="submit" id="deleteStudent" value="deleteStudent" /></button><br>-->
+<!--    <button class="btn"><input type="submit" id="putStudent" value="updateStudent" /></button><br>-->
+
+<!--<div>-->
+<!--    <button id="findQuiz" >Βρες το Quiz</button>-->
+<!--</div>-->
+
+<!--<div id="questionList"></div>-->
+<!--<div id="studentList"></div>-->
 
 
 
-</p>
-<script type="text/javascript" th:src="@{/menuTeacher.js}"></script>
+<!--</p>-->
+<script type="text/javascript" th:src="@{/login/menuTeacher.js}"></script>
 </body>
 </html>

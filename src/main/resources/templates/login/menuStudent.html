@@ -10,13 +10,37 @@
 
 <h1><span>K</span>αλώς <span>ή</span>λθατε στον <span>κ</span>όσμο των <span>μ</span>αθηματικών!</h1>
 
-<div>
-    <button id="showMyAnswers" class="button">Οι Απαντήσεις Μου!</button>
-    <button id="goToQuiz" class="button">Εύρεση Quiz!</button>
+<div class="centerButtons">
+    <div>
+        <button id="showMyAnswers" class="button">Οι Απαντήσεις Μου!</button>
+    </div>
+    <div>
+        <button id="findQuiz" class="button">Εύρεση Quiz!</button>
+    </div>
+</div><br>
+<div class="centerInfo">
+    <div id="listAnswers"></div>
+
+    <div id="quizSearch">
+        <div class="controls">
+
+            <select name="subject" id="subject" class="hide" >
+                <div class="list1">
+                    <option label="--Επέλεξε Κεφάλαιο--" value="select" class="links" ></option>
+                    <option value="aSub" class="links">Εξισώσεις</option>
+                    <option value="bSub" class="links">Ισότητα Τριγώνων</option>
+                    <option value="cSub" class="links">Ταυτότητες</option>
+                    <option value="cSub" class="links">Παραγοντοποίηση</option>
+                </div>
+            </select><br><br>
+
+
+                <button id="doQuiz" class="hide" >Ξεκίνα το Quiz</button>
+
+
+        </div>
+    </div>
 </div>
-
-
-<div id="listAnswers"></div>
 
 <script type="text/javascript" th:src="@{/login/menuStudent.js}"></script>
 </body>

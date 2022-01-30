@@ -1,28 +1,48 @@
 
 document.getElementById("findQuiz").addEventListener("click", (event) => {
 
-    // Update a user
 
-    var id = 1;
+    document.getElementById('subject').style.borderColor = '';
+    const subjectSelect = document.getElementById('subject').value;
 
-    var studentNew = {};
-    studentNew.email = "maths@gmail.com";
-    studentNew.phoneNumber = 345677;
-    studentNew.password = "dretfgdgdf";//prepei na perasei prvta apo to security kanonika
-    studentNew.fullName = "Artemis";
+    if (subjectSelect == 'select') {
 
-    var json = JSON.stringify(studentNew);
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("PUT", "http://localhost:8080/teacher/student/"+id, true);
-    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
-    xhr.onload = function () {
-        var text = JSON.parse(xhr.responseText);
-        if (xhr.readyState == 4 && xhr.status == "200") {
-            console.table(text);
-        } else {
-            console.error(text);
-        }
+        document.getElementById('subject').style.borderColor = 'OrangeRed';
+        alert("All the fields must be filled out. Fill out the subject please");
+        return;
     }
-    xhr.send(json);
+
+    // class SelectedItems {
+    //     constructor(subject,classSelected,level) {
+    //         this.subject = subject;
+    //         this.classSelected = classSelected;
+    //         this.level = level;
+    //
+    //     }
+    // }
+
+    const request = new XMLHttpRequest();
+
+    //const selectedItems = new SelectedItems(subjectSelect,userClass,levelSelect);
+
+    const subjectSend= subjectSelect;
+    //for asynchronised
+    request.open('GET', "http://localhost:8080/login/student/doQuiz", true);
+    request.send();
+    //to check when the request is okay to leave
+    request.onreadystatechange = function () {
+
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+
+
+                const grades = JSON.parse(request.responseText);
+                alert(grades.toString());
+
+            }
+        }
+    };
+
 });
+
+

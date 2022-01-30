@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link th:href="@{/login/login.css}" rel="stylesheet">
 </head>
 <body>
-<h1> One step  to join in fun!</h1>
-<p>
-    <span>Email:</span>
-</p>
-<input type="text" id="email" placeholder="Write here your Email " size="54">
 
-<p>
-    <span>Password:</span>
-</p>
-<input type="text" id="password" placeholder="Write here your password " size="54">
+<section class="home" id="home">
 
-<input type="button" id="login" value="login"> <br> <br>
+    <h1>education from home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum neque aliquid similique error velit placeat vitae accusantium est nam magnam?</p>
+    <a href="#email"><button class="btn">get started</button></a>
+
+    <div class="shape"></div>
+
+</section>
+
+<section>
+    <h1> One step  to join in fun!</h1><br>
+    <p>
+        <span>Email:</span>
+    </p>
+    <input type="text" id="email" placeholder="Write here your Email " size="54">
+
+    <p>
+        <span>Password:</span>
+    </p>
+    <input type="password" id="password" placeholder="Write here your password " size="54"><br><br>
+
+    <input class="btn" type="button" id="login" value="login"> <br> <br>
+</section>>
 
 <script type="text/javascript" th:src="@{/login/login.js}"></script>
 </body>
