@@ -10,12 +10,17 @@ import java.io.Serializable;
 @Entity @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Grade")
 public class Grade implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long grade_question_id;
 
-    private int grade_of_question;
+    private Integer grade_of_question;
+
+    @ManyToOne
+    private User student;
+
+    @ManyToOne
+    private Question question;
 
 }

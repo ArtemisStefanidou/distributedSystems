@@ -15,7 +15,7 @@ document.getElementById("login").addEventListener("click",
     (event) => {
 
 
-        const user = new loginCredentials('bill@gmail.com', '1234');
+        const user = new loginCredentials('artemis@gmail.com', '5678');
 
         var formBody = [];
         for (var property in user) {

@@ -64,6 +64,19 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    public List<User> getStudents(String teacherName) {
+        return userRepo.findByTeacher(teacherName);
+    }
+
+    @Override
+    public void addTeacherToStudent(String teacherName, String studentName) {
+        User teacher = userRepo.findByEmail(teacherName);
+        User student = userRepo.findByEmail(studentName);
+
+        student.setTeacher(teacherName);
+    }
+
+    @Override
     public int addSubjectToTeacher(Subject subject, String email) {
         User user = userRepo.findByEmail(email);
 

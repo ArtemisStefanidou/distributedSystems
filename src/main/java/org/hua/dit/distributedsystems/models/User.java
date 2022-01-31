@@ -27,8 +27,7 @@ public class User implements Serializable {
     @ManyToMany (fetch = FetchType.EAGER)
     private Collection<Role> roles = new ArrayList<>();
 
-    @OneToOne
-    private User teacher ;
+    private String teacher ;
 
     @OneToMany
     private Collection<Subject> subjects = new ArrayList<>();

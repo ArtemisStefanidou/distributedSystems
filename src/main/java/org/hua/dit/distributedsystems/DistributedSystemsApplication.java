@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class DistributedSystemsApplication {
@@ -53,6 +54,8 @@ public class DistributedSystemsApplication {
             userService.addRoleToUser("artemis@gmail.com", "teacher");
             userService.addRoleToUser("meletis@gmail.com", "teacher");
 
+            userService.addTeacherToStudent("artemis@gmail.com", "bill@gmail.com");
+
             Subject subject = new Subject(null, "Εξισώσεις", "Α Γυμνασίου", null);
 
             questionService.saveSubject(subject);
@@ -62,7 +65,9 @@ public class DistributedSystemsApplication {
             Question question = new Question(null, null, "1*2+x=5", "3", "2",
                     "1", "4", "1*2+x=5", null, null, 1);
 
+            List<User> artemisStudents = userService.getStudents("artemis@gmail.com");
 
+            System.out.println(artemisStudents.get(0).getEmail());
 
         };
     }

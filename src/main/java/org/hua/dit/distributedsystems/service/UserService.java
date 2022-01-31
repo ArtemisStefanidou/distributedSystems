@@ -14,5 +14,9 @@ public interface UserService {
     User getUser(String username);
     List<User> getUsers();
 
+    List<User> getStudents(String teacherName);
+
+    void addTeacherToStudent(String teacherName, String studentName);
+
     int addSubjectToTeacher(Subject subject, String email);
 }
