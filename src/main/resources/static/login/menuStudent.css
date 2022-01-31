@@ -1,15 +1,13 @@
-
-body{
-
-    font-family: 'Open Sans', sans-serif;
+body {
+    height: 100%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
+    background-size: cover;
     margin:0; padding:0;
     box-sizing: border-box;
     border:none; outline: none;
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
-    background-color: #F3B982;
-
 }
 
 .centerButtons {
@@ -31,7 +29,7 @@ h1
     text-align: center;
     position: relative;
     font-size: 4em;
-    color: #fff;
+    color: #000000;
     overflow: hidden;
 
 }
@@ -43,7 +41,7 @@ h1:before{
     left: 130%;
     width: 120%;
     height: 100%;
-    background: linear-gradient(90deg,transparent 0%, #F3B982 5%, #F3B982 100%);
+    background: linear-gradient(90deg,transparent 0%, #F6F1ED 5%, #F6F1ED 100%);
     animation:  animate 10s linear forwards;
 }
 
@@ -75,7 +73,7 @@ button, select {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
+    color: #000000;
     background-color: #4CAF50;
     border: none;
     border-radius: 15px;
@@ -110,7 +108,7 @@ table {
 
 tr {
     background-color: #4CAF50;
-    color: #ffffff;
+    color: #000000;
     text-align: left;
     font-weight: bold;
 }
@@ -213,5 +211,4 @@ tr.active-row {
     transform: scale(1.1);
 
 }
-
 
