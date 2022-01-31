@@ -4,45 +4,61 @@
     <meta charset="UTF-8">
     <title>Make your Question</title>
     <link th:href="@{/login/makeQuestion.css}" rel="stylesheet">
+    <link th:href="@{/login/navBar.css}" rel="stylesheet">
 </head>
 <body>
-<div class="centerInfo">
-    <h1> <b>Φτιάξε μια ερώτηση που σίγουρα θα θυμούνται οι μαθητές! </b></h1><br>
-    <div>
-            <span>Φωτογραφία:</span>
-        </b> <input type="text" id="image" placeholder="Γράψε εδώ το url της φωτογραφίας" size="42"> <br>
-    </div><br>
-
-    <div>
-        <b><span>Κείμενο Ερώτησης:</span></b>
-        <input type="text" id="txt" placeholder="Write here  a text" size="39"> <br>
-    </div><br>
-
-    <div>
-        <b><span>Επιλογή 1:</span></b>
-        <input type="text" id="option1" placeholder="Γράψε την σωστή απάντηση εδώ" size="40"><br>
-    </div><br>
-    <div>
-        <b><span>Επιλογή 2:</span></b>
-        <input type="text" id="option2" placeholder="Γράψε μια δεύτερη απάντηση που δεν είναι σωστή" size="40"><br>
-    </div><br>
-    <div>
-        <b><span>Επιλογή 3:</span></b>
-        <input type="text" id="option3" placeholder="Γράψε μια τρίτη απάντηση που δεν είναι σωστή" size="40"><br>
-    </div><br>
-    <div>
-        <b><span>Επιλογή 4:</span></b>
-        <input type="text" id="option4" placeholder="Γράψε μια τέταρτη απάντηση που δεν είναι σωστή" size="40"><br>
-    </div><br>
-    <div>
-        <b><span>Script Ερώτησης:</span></b>
-        <input type="text" id="qScript" placeholder="Write here  question script" size="33"><br>
-    </div><br>
-    <br>
-    <button id="addQuestion" >Έτοιμη</button>
+<nav>
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+</nav><br><br><br><br>
+<div class="shade">
+    <div class="blackboard">
+        <div class="form">
+            <h1>Φτιάξε μια ερώτηση που σίγουρα θα θυμούνται οι μαθητές!</h1>
+            <p>
+                <label>Φωτογραφία: </label>
+                <input type="text" id="image" placeholder="Γράψε εδώ το url της φωτογραφίας" size="42">
+            </p>
+            <p>
+                <label>Κείμενο Ερώτησης: </label>
+                <input type="text" id="txt" placeholder="Γράψε Εδώ το Κείμενο" size="39">
+            </p>
+            <p>
+                <label>Επιλογή 1: </label>
+                <input type="text" id="option1" placeholder="Γράψε την σωστή απάντηση εδώ" size="40">
+            </p>
+            <p>
+                <label>Επιλογή 2: </label>
+                <input type="text" id="option2" placeholder="Γράψε μια δεύτερη απάντηση που δεν είναι σωστή" size="40">
+            </p>  <p>
+                <label>Επιλογή 3: </label>
+                <input type="text" id="option3" placeholder="Γράψε μια τρίτη απάντηση που δεν είναι σωστή" size="40">
+            </p>  <p>
+                <label>Επιλογή 4: </label>
+                <input type="text" id="option4" placeholder="Γράψε μια τέταρτη απάντηση που δεν είναι σωστή" size="40">
+            </p>
+            <p>
+                <label>Script Ερώτησης: </label>
+                <input type="text" id="qScript" placeholder="Γράψε εδώ το script αν χρειάζεται" size="33">
+            </p>
+            <p class="wipeout">
+                <input type="submit" value="Έτοιμη" id="addQuestion" />
+            </p>
+        </div>
+    </div>
 </div>
-
-
 
 <script type="text/javascript" th:src="@{/login/makeQuestion.js}"></script>
 </body>
