@@ -8,39 +8,42 @@
 <body>
 
 <section class="home" id="home">
-
-    <h1>education from home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum neque aliquid similique error velit placeat vitae accusantium est nam magnam?</p>
-    <a href="#email"><button class="btn">Get started</button></a><br><br>
-
+    <div> <h1>Λίγα Λόγια Για Την Εργασία</h1> </div>
+    <div>
+        <p>Είναι Σαν μια μικρή εφαρμογή για να μπορεί ο καθηγητής να έχει τον δικό του χώρο και να φτιάχνει δικά του quiz με</p>
+        <p>  τα οποία να κάνει πιο ευχάριστο το μάθημα αλλά ταυτόχρονα οι μαθητές του να μαθαίνουν καλύτερα τα όσα κάνουν στην τάξη.</p>
+        <p> Ο καθηγητής μπορεί να δημιουργήσει δικούς του μαθητές και να τους δώσει τον κωδικό για να μπουν στον δικό τους</p>
+        <p>  λογαριασμό και νa ξεκινήσουν τα quiz.(θα γράψουμε όλες τις παραδοχές εδώ)Πιο κάτω θα δείτε και τα email μας καθώς</p>
+        <p> και το link για το project που βρίσκεται στο github</p>
+    </div>
     <div id="contact">
-        <div>
-            <h1>Contact Us</h1><br>
-            <h1>if it needs and if the website has any problems </h1><br>
-            <a href="https://github.com/ArtemisStefanidou/distributedSystems.git" target="_blank">
-                <img th:src="@{/login/photos/github.svg}" alt="github">
-            </a><br>
-        </div>
         <div class="social-menu">
             <ul>
+                <li>
+                    <a href="https://github.com/ArtemisStefanidou/distributedSystems.git" target="_blank">
+                        <img th:src="@{/login/photos/github.svg}" alt="github">
+                    </a>
+                </li>
                 <li> <img th:src="@{/login/photos/email.png}" alt="e-mail"> it21996@hua.gr</li>
                 <li> <img th:src="@{/login/photos/email.png}" alt="e-mail"> it219105@hua.gr</li>
                 <li> <img th:src="@{/login/photos/email.png}" alt="e-mail"> it219118@hua.gr</li>
             </ul>
-        </div><br><br>
+        </div><br>
     </div>
+    <div><a href="#email"><button class="btn">Ας Ξεκινήσουμε</button></a></div>
 
-</section>
-<div class="login-page" id="email">
-    <div class="form">
-        <form class="login-form acrylic">
-            <span>Login </span>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <input class="btn" type="button" id="login" value="Σύνδεση">
-        </form>
+    <div class="login-page" id="email">
+        <div class="form">
+
+                <span>Login </span>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+                <input class="btn" type="button" id="login" value="Σύνδεση">
+
+        </div>
     </div>
-</div>
+</section>
+
 <!--<section>-->
 <!--    <h1> One step  to join in fun!</h1><br>-->
 <!--    <p>-->

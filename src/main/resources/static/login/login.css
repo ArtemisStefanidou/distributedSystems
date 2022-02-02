@@ -1,134 +1,13 @@
-:root{
-    --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
-}
-
-/*body{*/
-/*    display: flex;*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    box-sizing: border-box;*/
-/*    border:none;*/
-/*    outline: none;*/
-/*    text-decoration: none;*/
-/*    text-transform: capitalize;*/
-/*    transition: all .2s linear;*/
-/*    background-color: #F3B982;*/
-/*    align-content: space-around;*/
-/*    flex-direction : column;*/
-/*}*/
-
-/*body::selection{*/
-/*    background:#f39c12;*/
-/*    color:#fff;*/
-/*}*/
-
-/*section{*/
-/*    display: flex;*/
-/*    flex-direction : column;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*    align-content: space-around;*/
-/*}*/
-
-/*.btn{*/
-/*    padding:.7rem 3rem;*/
-/*    font-size: 2rem;*/
-/*    color:#fff;*/
-/*    background:var(--gradient);*/
-/*    border-radius: 5rem;*/
-/*    margin-top: 1rem;*/
-/*    cursor: pointer;*/
-/*    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    z-index: 0;*/
-/*}*/
-
-/*.btn::before{*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top:-1rem; left:-100%;*/
-/*    background:#fff9;*/
-/*    height:150%;*/
-/*    width:20%;*/
-/*    transform: rotate(25deg);*/
-/*    z-index: -1;*/
-/*}*/
-
-/*.btn:hover::before{*/
-/*    transition: .3s linear;*/
-/*    left: 120%;*/
-/*}*/
-
-
-/*@media (max-width:768px){*/
-
-/*    html{*/
-/*        font-size: 55%;*/
-/*    }*/
-
-/*    .fa-times{*/
-/*        transform: rotate(180deg);*/
-/*    }*/
-
-/*}*/
-
-/*@media (max-width:500px){*/
-
-/*    html{*/
-/*        font-size: 50%;*/
-/*    }*/
-
-/*    .contact .row form .box{*/
-/*        width:100%;*/
-/*    }*/
-
-/*}*/
-
-/*@keyframes animate{*/
-
-/*    0%{*/
-/*        background-position-x: 0rem;*/
-/*    }*/
-
-/*    100%{*/
-/*        background-position-x: 100rem;*/
-/*    }*/
-
-/*}*/
-
-/*.social-menu ul {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.social-menu ul li {*/
-/*    text-align: center;*/
-/*    list-style: none;*/
-/*}*/
-
-/*#contact h1{*/
-/*    position: relative;*/
-/*    font-size: 4em;*/
-/*    color: #fff;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*#contact h1:before{*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    left: 120%;*/
-/*    width: 120%;*/
-/*    height: 100%;*/
-/*    background: linear-gradient(90deg,transparent 0%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 100%);*/
-/*    animation:  animate 10s linear forwards;*/
-/*}*/
-
-/*#contact h1 span*/
-/*{*/
-/*    color: #8f9a8a;*/
-/*}*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.home{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
 
 .login-page {
     width: 360px;
@@ -138,7 +17,7 @@
 .form {
     position: relative;
     z-index: 1;
-    background: #FFFFFF;
+    background: #000000;
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 50px;
@@ -148,7 +27,7 @@
 .form input {
     font-family: "Roboto", sans-serif;
     outline: 0;
-    background: #f2f2f2;
+    background:linear-gradient(90deg, #f1c40f, #f39c12);
     width: 100%;
     border: 0;
     margin: 0 0 15px;
@@ -159,23 +38,9 @@
     transition: all 0.5s ease;
     opacity: 0.6;
 }
-.form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #fff;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #000;
-    font-size: 14px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    opacity: 0.6;
-}
+
 .form button:hover,.form button:active {
-    background: #f0f0f0;
+    background:linear-gradient(90deg, #f1c40f, #f39c12);
 }
 .form button:focus {
     box-shadow:0 0 20px #7BB1FF,0 0 20px #7BB1FF;
@@ -249,10 +114,7 @@
 }
 
 body, .acrylic::before {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) no-repeat fixed center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -261,7 +123,7 @@ body, .acrylic::before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/*Thanks Chris Shank*/
+
 .acrylic::before {
     filter: blur(10px);
     content: "";
@@ -287,11 +149,11 @@ body, .acrylic::before {
 }
 
 
-.btn{
+.btn , .form button{
     padding:.7rem 3rem;
     font-size: 2rem;
     color:#fff;
-    background:var(--gradient);
+    background:linear-gradient(90deg, #f1c40f, #f39c12);
     border-radius: 5rem;
     margin-top: 1rem;
     cursor: pointer;
