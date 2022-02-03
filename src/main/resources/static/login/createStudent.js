@@ -18,8 +18,10 @@ document.getElementById("addStudent").addEventListener("click", (event) => {
     const fullName_student = document.getElementById('fullName').value;
     const teacher_email = "artemis@gmail.com";//πρέπει να το παίρνει από το token
 
-    const user = new UserPost(12,email_student,phone_student,password_student,fullName_student,"student",teacher_email);
+    const user = new UserPost(12,email_student,phone_student,password_student,fullName_student,"student"
+        ,teacher_email);
 
+    // EDWWWWWWWWWW
     const accessToken = localStorage.getItem("accessToken");
     const email = localStorage.getItem("email");
 
