@@ -47,7 +47,7 @@ public class TeacherRest {
 
     public void collaborativePost(@RequestBody QuestionPost questionPost) {
 
-        System.out.println(questionPost.getQuestion_id() +","+questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_option4()+","+questionPost.getQuestion_script()+","+questionPost.getLvl()+",");
+       // questionService.sa
 
         return;
     }
@@ -65,7 +65,6 @@ public class TeacherRest {
                     updateQuestion.setOption3(newQuestion.getOption3());
                     updateQuestion.setOption4(newQuestion.getOption4());
                     updateQuestion.setText(newQuestion.getText());
-                    updateQuestion.setScript(newQuestion.getScript());
                     System.out.println(updateQuestion);
                     return questionRepo.save(updateQuestion);
                 });
