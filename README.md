@@ -45,42 +45,46 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 &emsp; 3. Ένας μαθητής θα μπορεί να κάνει όσες φορές θέλει ένα τύπο quiz (ανα κεφάλαιο) , και ένας τύπος quiz θα μπορεί να γίνεται απο πολλούς μαθητές<br />
 &emsp; 4. Ο μαθητής μπορεί να επιλέξει να κάνει quiz ανεξάρτητα με την τάξη στην οποία βρίσκεται εφόσον επιλέγει με βάση το κεφάλαιο<br />
 
-create table question(
-                         question_id INT NOT NULL AUTO_INCREMENT,
-                         question_image VARCHAR(100),
-                         question_text VARCHAR(100) NOT NULL,
-                         question_option1 VARCHAR(100) NOT NULL,
-                         question_option2 VARCHAR(100) NOT NULL,
-                         question_option3 VARCHAR(100),
-                         question_option4 VARCHAR(100),
-                         question_script VARCHAR(100),
-                         PRIMARY KEY ( question_id )
-);
-
-create table subject(
-                        subject_id INT NOT NULL AUTO_INCREMENT,
-                        subject_name VARCHAR(50) NOT NULL,
-                        subject_class VARCHAR(50) ,
-                        PRIMARY KEY ( subject_id )
-);
 
 
-create table user(
-                     user_id INT NOT NULL AUTO_INCREMENT,
-                     user_email VARCHAR(50) NOT NULL,
-                     user_phone_number INT NOT NULL,
-                     user_password VARCHAR(50) NOT NULL,
-                     user_fullname VARCHAR(50) NOT NULL,
-                     user_role VARCHAR(50) NOT NULL,
-                     user_teacher VARCHAR(50),
-                     PRIMARY KEY (user_id)
-);
+CREATE TABLES--------------------------------------------------- 
 
-create table grade(
-                      grade_of_question INT NOT NULL,
-                      grade_question_id INT NOT NULL,
-                      grade_user_id INT NOT NULL,
-                      FOREIGN KEY (grade_question_id) REFERENCES question(question_id),
-                      FOREIGN KEY (grade_user_id) REFERENCES user(user_id),
-                      PRIMARY KEY (grade_question_id,grade_user_id)
-);
+create table question(<br />
+                         question_id INT NOT NULL AUTO_INCREMENT,<br />
+                         question_image VARCHAR(100),<br />
+                         question_text VARCHAR(100) NOT NULL,<br />
+                         question_option1 VARCHAR(100) NOT NULL,<br />
+                         question_option2 VARCHAR(100) NOT NULL,<br />
+                         question_option3 VARCHAR(100),<br />
+                         question_option4 VARCHAR(100),<br />
+                         question_script VARCHAR(100),<br />
+                         PRIMARY KEY ( question_id )<br />
+);<br /><br />
+
+create table subject(<br />
+                        subject_id INT NOT NULL AUTO_INCREMENT,<br />
+                        subject_name VARCHAR(50) NOT NULL,<br />
+                        subject_class VARCHAR(50) ,<br />
+                        PRIMARY KEY ( subject_id )<br />
+);<br /><br />
+
+
+create table user(<br />
+                     user_id INT NOT NULL AUTO_INCREMENT,<br />
+                     user_email VARCHAR(50) NOT NULL,<br />
+                     user_phone_number INT NOT NULL,<br />
+                     user_password VARCHAR(50) NOT NULL,<br />
+                     user_fullname VARCHAR(50) NOT NULL,<br />
+                     user_role VARCHAR(50) NOT NULL,<br />
+                     user_teacher VARCHAR(50),<br />
+                     PRIMARY KEY (user_id)<br />
+);<br /><br />
+
+create table grade(<br />
+                      grade_of_question INT NOT NULL,<br />
+                      grade_question_id INT NOT NULL,<br />
+                      grade_user_id INT NOT NULL,<br />
+                      FOREIGN KEY (grade_question_id) REFERENCES question(question_id),<br />
+                      FOREIGN KEY (grade_user_id) REFERENCES user(user_id),<br />
+                      PRIMARY KEY (grade_question_id,grade_user_id)<br />
+);<br /><br />
