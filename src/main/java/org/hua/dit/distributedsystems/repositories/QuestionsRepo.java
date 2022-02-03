@@ -8,8 +8,6 @@ import java.util.List;
 
 @Repository
 public interface QuestionsRepo extends JpaRepository<Question, Long> {
-    //no code needed to be written
-    /*List<Question> findByTeacher(int question_teacher);*/
 
     List<Question> findByTeacher(Long teacher);
 

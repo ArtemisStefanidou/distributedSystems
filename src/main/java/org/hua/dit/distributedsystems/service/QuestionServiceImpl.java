@@ -55,4 +55,37 @@ public class QuestionServiceImpl implements QuestionService{
         return gradeRepo.findByStudent(student);
     }
 
+    @Override
+    public void saveQuestion(String image, String text, String opt1, String opt2, String opt3, String opt4
+            , String script, String teacherEmail, int difficultyLvl, String subject) {
+
+        User teacher = userRepo.findByEmail(teacherEmail);
+        Subject sub = subjectRepo.findByName(subject);
+
+        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, script, teacher, null, difficultyLvl);
+
+        questionsRepo.save(question);
+        sub.getQuestions().add(question);
+    }
+
+    @Override
+    public List<Question> getSubjectQuestions(String teacherEmail, String subject) {
+
+        User teacher = userRepo.findByEmail(teacherEmail);
+
+        List<Subject> subjectList = (List<Subject>) teacher.getSubjects();
+
+        Subject subject1 = new Subject();
+
+        for(Subject s : subjectList) {
+            if(subject.equals(s.getName()) ) {
+                subject1 = s;
+            }
+        }
+
+        subject1.getQuestions();
+
+        return (List<Question>) subject1.getQuestions();
+    }
+
 }

@@ -10,7 +10,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @SpringBootApplication
 public class DistributedSystemsApplication {
@@ -56,16 +58,25 @@ public class DistributedSystemsApplication {
 
             userService.addTeacherToStudent("artemis@gmail.com", "bill@gmail.com");
 
-            Subject subject = new Subject( "Εξισώσεις", "Α Γυμνασίου", null);
+            Subject subject = new Subject(null, "Εξισώσεις", "Α Γυμνασίου", null);
 
             questionService.saveSubject(subject);
 
             userService.addSubjectToTeacher(subject, meletis.getEmail());
 
-            Question question = new Question(null, null, "1*2+x=5", "3", "2",
-                    "1", "4", "1*2+x=5", null, null, 1);
+            questionService.saveQuestion(null, null, "1*2+x=5", "b", "c", "d"
+                    , "1*2+x=5", "artemis@gmail.com", 2, subject.getName());
 
             List<User> artemisStudents = userService.getStudents("artemis@gmail.com");
+
+            Map<Long, Integer> results = new HashMap<>();
+
+     /*       results.put(questionService.)*/
+
+     /*       questionService.saveQuizResults();*/
+
+            //todo
+
 
             System.out.println(artemisStudents.get(0).getEmail());
 

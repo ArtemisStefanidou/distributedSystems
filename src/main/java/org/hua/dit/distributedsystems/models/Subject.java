@@ -16,8 +16,10 @@ import java.util.Collection;
 @Table(name="subject")
 public class Subject implements Serializable {
 
-    @Id
-    private String subject_name;
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private String name;
 
     private String classLevel;
 
