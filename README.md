@@ -4,7 +4,7 @@ a team project for Distributed Systems Class HUA
 a team project for Distributed Systems Class HUA
 -----------------------------------------------------------------------
 
-online doc https://docs.google.com/document/d/1xtqQCBkSEX6O3Z0vvs7zvSIu-oAtml-82NfRlfJ3N_0/edit
+**online doc** https://docs.google.com/document/d/1xtqQCBkSEX6O3Z0vvs7zvSIu-oAtml-82NfRlfJ3N_0/edit
 
 Οδηγίες εργασιών
 
@@ -32,26 +32,18 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 Ο Καθηγητής θα μπορεί:<br />
    &emsp; 1.Να κάνει εγγραφή στο σύστημα ( email, κωδικό , αριθμό τηλεφώνου, ονοματεπώνυμο) <br />
    &emsp; 2.Να συνδέεται στο σύστημα (με email και κωδικό...στην επιλογή "Συνδέσου ως  Καθηγητής") <br />
-   &emsp; 3.Να δημιουργήσει φακέλους για να ξεχωρίζει τις τάξεις του γυμνασίου <br />
-   &emsp; 4.Να δημιουργήσει ένα quiz (με κατάλληηλο όνομα για να εκφράζεται το κεφάλαιο) <br />
-   &emsp; 5.Να διαγράψει ένα quiz <br />
-   &emsp; 6.Να τροποποιήσει ένα quiz <br />
-   &emsp; 7.Να εμφανίσει ανα μαθητή το ιστορικό επίδοσης ανα τύπου quiz <br /> 
+   &emsp; 3.Να δημιουργήσει μια ερώτηση δηλώνοντας το κεφάλαιο <br />
+   &emsp; 4.Να διαγράψει μια ερώτηση <br/>
+   &emsp; 5.Να τροποποιήσει μια ερώτηση <br/>
+   &emsp; 6.Να εμφανίσει ανα μαθητή το ιστορικό επίδοσης ανα ερώτηση <br /> 
 
-Μερικές λειτουργίες ακόμα είναι πως: <br />
-   &emsp; 1.θα παρέχεται επιλογή στους χρήστες "Ξεχάσατε τον Κωδικό σας" και θα επιστρέφεται κατάλληλο μήνυμα επαλήθευσεις και ανάκτησης κωδικού <br />
 
 
 Παραδοχές<br />
-&emsp; 1. Ο καθηγητής θα μπορεί να μπαίνει σαν μαθητής για να δοκιμάζει<br />
-&emsp; 2. Κάθε μαθητής και κάθε καθηγητής μπορεί να έχει μόνο έναν συνδυασμό στοιχείων για να συνδεθεί<br />
-&emsp; 3. Το σύστημα θα εμφανίζει τυχαία τις ερωτήσεις των quiz οι οποίες ανα κεφάλαιο θα έχουν χωρίστει σε 3 επίπεδα ( LVL1 LVL2 LVL3) .<br />
-    &emsp;&emsp;Δηλαδή το quiz θα αποτελείται από 30 ερωτήσεις,  10 τύπου LVL1 , 10 τύπου LVL2  και 10 τύπου LVL3<br />
-&emsp; 4.Ένας μαθητής θα μπορεί να κάνει όσες φορές θέλει ένα quiz , και ένα quiz θα μπορεί να γίνεται από πολλούς μαθητές<br />
-&emsp; 5.Ένα κεφάλαιο θα μπορεί να έχει πολλές ερωτήσεις, όμως μια ερώτηση θα αντιστοιχίζεται σε μόνο ένα κεφάλαιο<br />
-&emsp; 6.Ο μαθητής μπορεί να επιλέξει να κάνει quiz ανεξάρτητα με την τάξη στην οποία βρίσκεται <br />
-&emsp; 7. Για να επιλέξει ο μαθητής κάποιο quiz πρέπει πρώτα να έχει επιλέξει την τάξη που θέλει<br />
-&emsp; 8.για να δημιουργήσει ο καθηγητής quiz θα πρέπει πρώτα να χει δηλώσει σε ποια τάξη ανήκει <br />
+&emsp; 1. Κάθε μαθητής και κάθε καθηγητής μπορεί να έχει μόνο έναν συνδυασμό στοιχείων για να συνδεθεί<br />
+&emsp; 2. Το σύστημα θα εμφανίζει τυχαία τις ερωτήσεις των quiz <br />
+&emsp; 3. Ένας μαθητής θα μπορεί να κάνει όσες φορές θέλει ένα τύπο quiz (ανα κεφάλαιο) , και ένας τύπος quiz θα μπορεί να γίνεται απο πολλούς μαθητές<br />
+&emsp; 4. Ο μαθητής μπορεί να επιλέξει να κάνει quiz ανεξάρτητα με την τάξη στην οποία βρίσκεται εφόσον επιλέγει με βάση το κεφάλαιο<br />
 
 create table question(
                          question_id INT NOT NULL AUTO_INCREMENT,
@@ -72,29 +64,6 @@ create table subject(
                         PRIMARY KEY ( subject_id )
 );
 
-create table quiz_lv1(
-                         subject_lv1_id INT NOT NULL,
-                         question_lv1_id INT NOT NULL,
-                         PRIMARY KEY ( subject_lv1_id , question_lv1_id),
-                         FOREIGN KEY (subject_lv1_id) REFERENCES subject(subject_id),
-                         FOREIGN KEY (question_lv1_id) REFERENCES question(question_id)
-);
-
-create table quiz_lv2(
-                         subject_lv2_id INT NOT NULL,
-                         question_lv2_id INT NOT NULL,
-                         PRIMARY KEY ( subject_lv2_id , question_lv2_id),
-                         FOREIGN KEY (subject_lv2_id) REFERENCES subject(subject_id),
-                         FOREIGN KEY (question_lv2_id) REFERENCES question(question_id)
-);
-
-create table quiz_lv3(
-                         subject_lv3_id INT NOT NULL,
-                         question_lv3_id INT NOT NULL,
-                         PRIMARY KEY ( subject_lv3_id , question_lv3_id),
-                         FOREIGN KEY (subject_lv3_id) REFERENCES subject(subject_id),
-                         FOREIGN KEY (question_lv3_id) REFERENCES question(question_id)
-);
 
 create table user(
                      user_id INT NOT NULL AUTO_INCREMENT,
