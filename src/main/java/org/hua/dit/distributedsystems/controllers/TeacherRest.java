@@ -95,9 +95,17 @@ public class TeacherRest {
 
     public void userPost(@RequestBody UserPost userPost) {
 
-        //todo
-        System.out.println(userPost.getUser_email()+","+userPost.getUser_role()+","+userPost.getUser_fullname()+","+userPost.getTeacher()+","+userPost.getUser_id()+","+userPost.getUser_password()+","+userPost.getUser_phone_number());
+        User user = new User((long)userPost.getUser_id(),userPost.getUser_email(),userPost.getUser_phone_number(),userPost.getUser_password(),userPost.getUser_fullname(),userPost.getTeacher());
+        //add user
+        userService.saveUser(user);
+        //add role
+        String email_user = userPost.getUser_email();
+        String role = userPost.getUser_role();
+        userService.addRoleToUser(email_user,role);
+
     }
+
+
 
     // /deleteStudent --> pop up for confirmation to delete the Student (delete)
     //kathe mathiths mporei na exei mono ena kathighth
@@ -106,26 +114,14 @@ public class TeacherRest {
 
         userService.deleteUser((long) id);
 
-        System.out.println("here");
-
     }
 
     //update student
-    @PutMapping("student/{id}")
-    Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable Long id) {
+    @PutMapping("student/{email}")
+    Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable String email) {
 
-        return studentRepo.findById(id)
-                .map(updateStudent -> {
-                    //the id will be random from the system
-                    updateStudent.setEmail(newStudent.getEmail());
-                    updateStudent.setFullName(newStudent.getFullName());
-                    updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-                    updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-                    //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-                    //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-                    System.out.println(updateStudent);
-                    return studentRepo.save(updateStudent);
-                });
+        Long id = userService.getUser(email).getUser_id();
+        return userService.updateUser(id,newStudent);
 
     }
 

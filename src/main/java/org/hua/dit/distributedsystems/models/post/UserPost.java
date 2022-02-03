@@ -2,24 +2,31 @@ package org.hua.dit.distributedsystems.models.post;
 
 import org.hua.dit.distributedsystems.models.User;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-
 public class UserPost {
 
-    private Long user_id ;
+    private int user_id ;
     private String user_email ;
     private int user_phone_number  ;
-    private int user_password  ;
-    private String user_fullname  ;
+    private String user_password  ;
+    private String user_fullName  ;
     private String user_role  ;
-    private User teacher  ;
+    private String email_teacher  ;
 
-    public Long getUser_id() {
+    public UserPost(int user_id, String user_email, int user_phone_number, String user_password, String user_fullName, String user_role, String email_teacher) {
+        this.user_id = user_id;
+        this.user_email = user_email;
+        this.user_phone_number = user_phone_number;
+        this.user_password = user_password;
+        this.user_fullName = user_fullName;
+        this.user_role = user_role;
+        this.email_teacher = email_teacher;
+    }
+
+    public int getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(Long user_id) {
+    public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
 
@@ -39,20 +46,20 @@ public class UserPost {
         this.user_phone_number = user_phone_number;
     }
 
-    public int getUser_password() {
+    public String getUser_password() {
         return user_password;
     }
 
-    public void setUser_password(int user_password) {
+    public void setUser_password(String user_password) {
         this.user_password = user_password;
     }
 
     public String getUser_fullname() {
-        return user_fullname;
+        return user_fullName;
     }
 
     public void setUser_fullname(String user_fullname) {
-        this.user_fullname = user_fullname;
+        this.user_fullName = user_fullname;
     }
 
     public String getUser_role() {
@@ -63,11 +70,11 @@ public class UserPost {
         this.user_role = user_role;
     }
 
-    public User getTeacher() {
-        return teacher;
+    public String getTeacher() {
+        return email_teacher;
     }
 
-    public void setTeacher(User teacher) {
-        this.teacher = teacher;
+    public void setTeacher(String teacher) {
+        this.email_teacher = teacher;
     }
 }

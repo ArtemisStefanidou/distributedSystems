@@ -5,6 +5,7 @@ import org.hua.dit.distributedsystems.models.Subject;
 import org.hua.dit.distributedsystems.models.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 
@@ -20,4 +21,6 @@ public interface UserService {
     void addTeacherToStudent(String teacherName, String studentName);
 
     int addSubjectToTeacher(Subject subject, String email);
+
+    Optional<User> updateUser(Long id, User newStudent);
 }
