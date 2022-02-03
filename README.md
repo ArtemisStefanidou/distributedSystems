@@ -4,7 +4,7 @@ a team project for Distributed Systems Class HUA
 a team project for Distributed Systems Class HUA
 -----------------------------------------------------------------------
 
-**online doc** https://docs.google.com/document/d/1xtqQCBkSEX6O3Z0vvs7zvSIu-oAtml-82NfRlfJ3N_0/edit
+**online doc**https://docs.google.com/document/d/1jAbl3qfcJdOLAeb-BAcrI_uYFsfwyqYo3WkrFhEoOtY/edit
 
 Οδηγίες εργασιών
 
