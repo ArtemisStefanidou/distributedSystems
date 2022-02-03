@@ -20,9 +20,14 @@ document.getElementById("addStudent").addEventListener("click", (event) => {
 
     const user = new UserPost(12,email_student,phone_student,password_student,fullName_student,"student",teacher_email);
 
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
+
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:8080/teacher/user", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
+    console.log(accessToken);
+    xhr.setRequestHeader("Authorization", accessToken);
+    xhr.setRequestHeader('Content-type','application/json;');
     xhr.send(JSON.stringify(user));
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
