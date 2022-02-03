@@ -1,14 +1,18 @@
 package org.hua.dit.distributedsystems.controllers;
 
+import org.hua.dit.distributedsystems.models.Grade;
 import org.hua.dit.distributedsystems.models.Question;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
 import org.hua.dit.distributedsystems.repositories.*;
+import org.hua.dit.distributedsystems.service.QuestionService;
+import org.hua.dit.distributedsystems.service.UserService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,85 +25,19 @@ public class TeacherRest {
     private final SubjectRepo subjectRepo;
     private final QuestionsRepo questionRepo;
 
+    private final UserService userService;
+    private final QuestionService questionService;
 
-    public TeacherRest(UserRepo userRepo, UserRepo studentRepo, SubjectRepo subjectRepo, QuestionsRepo questionRepo, RoleRepo roleRepo) {
+
+    public TeacherRest(UserRepo userRepo, UserRepo studentRepo, SubjectRepo subjectRepo, QuestionsRepo questionRepo, RoleRepo roleRepo, UserService userService, QuestionService questionService) {
 
         this.studentRepo = studentRepo;
         this.subjectRepo = subjectRepo;
         this.questionRepo = questionRepo;
+
+        this.userService = userService;
+        this.questionService = questionService;
     }
-
-//    // createClass --> /class (post)
-//    @PostMapping(value="class" , consumes = {
-//            MediaType.APPLICATION_JSON_VALUE
-//    })
-//
-//     void classPost(@RequestBody ClassPost classPost) {
-//
-//        //todo
-//        System.out.println(classPost.getClass_id()+","+classPost.getClass_name());
-//        //classRepo.save(classPost);
-//
-//    }
-
-
-//    //update class
-//    @PutMapping("class/{id}")
-//    Optional<Class> replaceEmployee(@RequestBody Class newClass, @PathVariable Long id) {
-//
-//        return classRepo.findById(id)
-//                .map(updateClass -> {
-//                    //the id will be random from the system
-//                    updateClass.setClass_name(newClass.getClass_name());
-//                    System.out.println(updateClass);
-//                    return classRepo.save(updateClass);
-//                });
-//
-//   }
-//
-//
-//    // /deleteClass --> pop up for confirmation to delete the class (delete)
-//    @DeleteMapping("class/{id}")
-//    void deleteClass(@PathVariable Long id) {
-//        classRepo.deleteById(id);
-//    }
-//
-
-//
-//
-//    // createSubject --> /subject (post)
-//    @PostMapping(value="subject" , consumes = {
-//            MediaType.APPLICATION_JSON_VALUE
-//    })
-//    public void classPost(@RequestBody SubjectPost subjectPost) {
-//
-//        System.out.println(subjectPost.getSubject_class()+","+subjectPost.getSubject_id()+","+subjectPost.getSubject_name());
-//        return;
-//
-//    }
-//
-//    // /updateSubject --> form for update the Subject (put)
-//    @PutMapping("subject/{id}")
-//    Optional<Subject> replaceSubject(@RequestBody Subject newSubject, @PathVariable Long id) {
-//
-//        return subjectRepo.findById(id)
-//                .map(updateSubject -> {
-//                    //the id will be random from the system
-//                    updateSubject.setSubject_class(newSubject.getSubject_class());
-//                    updateSubject.setSubject_name(newSubject.getSubject_name());
-//                    System.out.println(updateSubject);
-//                    return subjectRepo.save(updateSubject);
-//                });
-//
-//    }
-//
-//
-//    // /deleteSubject --> pop up for confirmation to delete the Subject (delete)
-//    @DeleteMapping("subject/{id}")
-//    void deleteSubject(@PathVariable Long id) {
-//        subjectRepo.deleteById(id);
-//    }
-
 
 
     // createQuestion --> /question (post)
@@ -109,7 +47,8 @@ public class TeacherRest {
 
     public void collaborativePost(@RequestBody QuestionPost questionPost) {
 
-        System.out.println(questionPost.getQuestion_id() +","+questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_option4()+","+questionPost.getQuestion_script()+","+questionPost.getLvl()+","+ questionPost.getQuestion_teacher_id()+","+questionPost.getQuestion_subject_id());
+        System.out.println(questionPost.getQuestion_id() +","+questionPost.getQuestion_image()+","+questionPost.getQuestion_text()+","+questionPost.getQuestion_option1()+","+questionPost.getQuestion_option2()+","+questionPost.getQuestion_option3()+","+questionPost.getQuestion_option4()+","+questionPost.getQuestion_script()+","+questionPost.getLvl()+",");
+
         return;
     }
 
@@ -140,13 +79,14 @@ public class TeacherRest {
         System.out.println("here");
     }
 
-/*    // /questionList --> get teacher's question (get)
+    // /questionList --> get teacher's question (get)
     @GetMapping("questionList/{idTeacher}")
-    List<Question> getList(@PathVariable int idTeacher) {
+    List<Question> getList(@PathVariable Long idTeacher) {
 
-        return questionRepo.findByTeacher(idTeacher);
+        Long teacher = studentRepo.findById(idTeacher).get().getUser_id();
+        return questionRepo.findByTeacher(teacher);
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
-    }*/
+    }
 
     // createUser --> /user (post)
     @PostMapping(value="user" , consumes = {
@@ -162,9 +102,12 @@ public class TeacherRest {
     // /deleteStudent --> pop up for confirmation to delete the Student (delete)
     //kathe mathiths mporei na exei mono ena kathighth
     @DeleteMapping("/student/{id}")
-    void deleteStudent(@PathVariable Long id) {
-        studentRepo.deleteById(id);
+    void deleteStudent(@PathVariable int id) {
+
+        userService.deleteUser((long) id);
+
         System.out.println("here");
+
     }
 
     //update student
@@ -187,17 +130,26 @@ public class TeacherRest {
     }
 
     // /getStudentsList --> (get)
-    @GetMapping("studentsList/{teacher}")
-    List<User> all(@PathVariable String teacher) {
-        return studentRepo.findByTeacher(teacher);
+    @GetMapping("studentsList/{emailTeacher}")
+    List<User> all(@PathVariable String emailTeacher) {
+
+//        int i=0;
+        User teacher = userService.getUser(emailTeacher);
+//        List<User> usersList = userService.getStudents(teacher.getEmail());
+//        for (i=0; i<usersList.size();i++){
+//            System.out.println(userService.getStudents(teacher.getEmail()).get(i).getFullName());
+//        }
+        return userService.getStudents(teacher.getEmail());
+
     }
 
 
     // /getDetails --> get details for a student (get)
-    @GetMapping("student/{id}")
-    Optional<User> one(@PathVariable Long id) {
+    @GetMapping("studentInfo/{studentEmail}")
+    List<Grade> infoStudent(@PathVariable String studentEmail) {
 
-        return studentRepo.findById(id);
-                //.orElseThrow(() -> new EmployeeNotFoundException(id));
+        List<Grade> grades = questionService.getStudentAllGrades(studentEmail);
+        return grades;
+
     }
 }

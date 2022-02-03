@@ -8,10 +8,11 @@ import java.util.List;
 
 public interface UserService {
 
+    void deleteUser(Long userId);
     User saveUser(User user);
     Role saveRole(Role role);
     void addRoleToUser(String email, String roleName);
-    User getUser(String username);
+    User getUser(String email);
     List<User> getUsers();
 
     List<User> getStudents(String teacherName);

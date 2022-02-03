@@ -1,5 +1,7 @@
 package org.hua.dit.distributedsystems.models.post;
 
+import org.hua.dit.distributedsystems.models.User;
+
 public class QuestionPost {
     private String question_id;
     private String question_image;
@@ -9,15 +11,14 @@ public class QuestionPost {
     private String question_option3;
     private String question_option4;
     private String question_script;
-    private int  teacher;
+    private User teacher;
     private int  lvl;
-    private int  question_subject_id;
 
-    public int getQuestion_teacher_id() {
+    public User getTeacher() {
         return teacher;
     }
 
-    public void setQuestion_teacher(int teacher) {
+    public void setTeacher(User teacher) {
         this.teacher = teacher;
     }
 
@@ -96,11 +97,4 @@ public class QuestionPost {
         this.question_script = question_script;
     }
 
-    public int getQuestion_subject_id() {
-        return question_subject_id;
-    }
-
-    public void setQuestion_subject_id(int question_subject_id) {
-        this.question_subject_id = question_subject_id;
-    }
 }

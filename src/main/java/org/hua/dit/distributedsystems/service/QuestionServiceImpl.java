@@ -50,8 +50,8 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
-    public List<Grade> getStudentAllGrades(String studentName) {
-        User student = userRepo.findByEmail(studentName);
+    public List<Grade> getStudentAllGrades(String studentEmail) {
+        User student = userRepo.findByEmail(studentEmail);
         return gradeRepo.findByStudent(student);
     }
 

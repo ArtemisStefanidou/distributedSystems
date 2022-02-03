@@ -15,37 +15,32 @@ public class Login {
 
     @GetMapping("/student/menu")
     public String menuStudent() {
-        return "login/menuStudent";
+        return "login/student/menuStudent";
     }
 
     @GetMapping("/student/quiz")
     public String findQuiz() {
-        return "login/findQuiz";
+        return "login/student/findQuiz";
     }
 
     @GetMapping("/student/grades")
     public String myGrades() {
-        return "login/myGrades";
+        return "AboutTeacher";
     }
 
     @GetMapping("teacher/menu")
     public String menuTeacher() {
-        return "/login/menuTeacher";
+        return "/login/teacher/menuTeacher";
     }
 
-    @GetMapping("teacher/class")
-    public String classMenu() {
-        return "/login/classMenu";
-    }
-
-    @GetMapping("teacher/subject")
-    public String chapterMenu() {
-        return "/login/subjectMenu";
-    }
-
-    @GetMapping("teacher/question")
+    @GetMapping("teacher/makeQuestion")
     public String questionMenu() {
-        return "/login/questionMenu";
+        return "/login/teacher/makeQuestion";
+    }
+
+    @GetMapping("teacher/createStudent")
+    public String studentMenu() {
+        return "/login/teacher/createStudent";
     }
 
     @GetMapping("teacher/studentManage")
@@ -53,7 +48,10 @@ public class Login {
         return "/login/studentManageMenu";
     }
 
-
+    @GetMapping("teacher/aboutMe")
+    public String teacherAboutMe() {
+        return "/login/teacher/AboutTeacher";
+    }
 
 
 

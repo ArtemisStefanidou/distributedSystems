@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Teacher</title>
+    <link th:href="@{/login/menu.css}" rel="stylesheet">
+    <link th:href="@{/login/navBar.css}" rel="stylesheet">
+
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="http://localhost:8080/login/teacher/menu">Αρχική</a>
+        </li>
+        <li>
+            <a href="http://localhost:8080/login/teacher/aboutMe">Για Εμένα</a>
+        </li>
+        <li>
+            <a href="#" id="logOut">Αποσύνδεση</a>
+        </li>
+    </ul>
+</nav><br><br><br><br>
+<h1><span>K</span>αλώς <span>ή</span>λθες  <span>Κ</span>αθηγητά </h1>
+
+<div class="centerButtons">
+    <div>
+        <a href="http://localhost:8080/login/teacher/makeQuestion">
+        <button id="question" class="button">Δημιουργία Ερώτησης!</button>
+        </a>
+    </div>
+
+    <div>
+        <a href="http://localhost:8080/login/teacher/createStudent">
+            <button id="student" class="button">Δημιουργία Μαθητή!</button>
+        </a>
+    </div>
+
+</div><br>
+
+</body>
+</html>

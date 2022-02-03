@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make your Question</title>
+    <link th:href="@{/login/makeCreate.css}" rel="stylesheet">
+    <link th:href="@{/login/navBar.css}" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="http://localhost:8080/login/teacher/menu">Αρχική</a>
+        </li>
+        <li>
+            <a href="http://localhost:8080/login/teacher/aboutMe">Για Εμένα</a>
+        </li>
+        <li>
+            <a href="#" id="logOut">Αποσύνδεση</a>
+        </li>
+    </ul>
+</nav><br><br><br><br>
+
+    <div class="blackboard">
+        <div class="form">
+            <h1>Δημιούργησε ή Ανανέωσε έναν μαθητή!</h1>
+            <p>
+                <label>Email: </label>
+                <input type="text" id="email" placeholder="Γράψε εδώ το email του μαθητή" size="42">
+            </p>
+            <p>
+                <label>Ονοματεπώνυμο: </label>
+                <input type="text" id="fullName" placeholder="Γράψε Εδώ το Ονοματεπώνυμο του Μαθητή" size="39">
+            </p>
+            <p>
+                <label>Κωδικός Πρόσβασης: </label>
+                <input type="text" id="password" placeholder="Γράψε τον Κωδικό του Μαθητή εδώ" size="40">
+            </p>
+            <p>
+                <label>Κινητό: </label>
+                <input type="number" id="phone" placeholder="Γράψε το κινητό του μαθητή" size="40">
+            </p>  <p>
+            <p class="wipeout">
+                <input type="submit" value="Δημιουργία" id="addStudent" />
+            </p>
+            <p class="wipeout">
+                <input type="submit" value="Ανανέωση" id="updateStudent" />
+            </p>
+        </div>
+    </div>
+
+
+<script type="text/javascript" th:src="@{/login/makeQuestion.js}"></script>
+</body>
+</html>

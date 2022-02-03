@@ -28,6 +28,12 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     private final RoleRepo roleRepo;
     private final PasswordEncoder passwordEncoder;
 
+
+    @Override
+    public void deleteUser(Long idStudent){
+        userRepo.deleteById(idStudent);
+    }
+
     @Override
     public User saveUser(User user) {
         log.info("Encoding password...");

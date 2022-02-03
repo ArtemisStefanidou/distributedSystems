@@ -56,7 +56,7 @@ public class DistributedSystemsApplication {
 
             userService.addTeacherToStudent("artemis@gmail.com", "bill@gmail.com");
 
-            Subject subject = new Subject(null, "Εξισώσεις", "Α Γυμνασίου", null);
+            Subject subject = new Subject( "Εξισώσεις", "Α Γυμνασίου", null);
 
             questionService.saveSubject(subject);
 

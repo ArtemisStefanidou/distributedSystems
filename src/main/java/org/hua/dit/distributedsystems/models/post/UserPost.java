@@ -1,5 +1,7 @@
 package org.hua.dit.distributedsystems.models.post;
 
+import org.hua.dit.distributedsystems.models.User;
+
 import javax.persistence.Column;
 import javax.persistence.Id;
 
@@ -11,7 +13,7 @@ public class UserPost {
     private int user_password  ;
     private String user_fullname  ;
     private String user_role  ;
-    private String teacher  ;
+    private User teacher  ;
 
     public Long getUser_id() {
         return user_id;
@@ -61,11 +63,11 @@ public class UserPost {
         this.user_role = user_role;
     }
 
-    public String getTeacher() {
+    public User getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(String teacher) {
+    public void setTeacher(User teacher) {
         this.teacher = teacher;
     }
 }

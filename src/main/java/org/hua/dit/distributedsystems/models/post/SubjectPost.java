@@ -5,17 +5,9 @@ import javax.persistence.Id;
 
 public class SubjectPost {
 
-    private Long subject_id;
     private String subject_name;
     private String subject_class;
 
-    public Long getSubject_id() {
-        return subject_id;
-    }
-
-    public void setSubject_id(Long subject_id) {
-        this.subject_id = subject_id;
-    }
 
     public String getSubject_name() {
         return subject_name;

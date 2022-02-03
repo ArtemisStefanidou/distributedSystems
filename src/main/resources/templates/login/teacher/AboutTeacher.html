@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link th:href="@{/login/menu.css}" rel="stylesheet">
+    <link th:href="@{/login/navBar.css}" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="http://localhost:8080/login/teacher/menu">Αρχική</a>
+        </li>
+        <li>
+            <a href="http://localhost:8080/login/teacher/aboutMe">Για Εμένα</a>
+        </li>
+        <li>
+            <a href="#" id="logOut">Αποσύνδεση</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="centerButtons">
+    <div>
+        <button id="myQuestions" class="button">Οι Ερωτήσεις Μου!</button>
+    </div>
+    <div>
+        <button id="showStudents" class="button">Οι Μαθητές Μου!</button>
+    </div>
+</div><br><br><br><br>
+<div class="centerInfo">
+
+    <div id="questionList"></div>
+
+    <div>
+        <button id="deleteQuestion" class="button hide"> Διαγραφή </button>
+        <button id="updateQuestion" class="button hide"><a href="http://localhost:8080/login/teacher/makeQuestion"> Ανανέωση </a></button>
+    </div><br><br><br><br>
+
+    <div id="studentList"></div>
+
+    <div>
+        <button id="deleteStudent" class="button hide"> Διαγραφή </button>
+        <button id="updateStudent" class="button hide"><a href="http://localhost:8080/login/teacher/createStudent"> Ανανέωση </a></button>
+        <button id="infoStudent"   class="button hide"> Απόδοση  </button>
+    </div>
+
+    <div id="infoList">
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript" th:src="@{/login/aboutTeacher.js}"></script>
+</body>
+</html>

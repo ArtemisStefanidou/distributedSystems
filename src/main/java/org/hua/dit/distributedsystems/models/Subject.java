@@ -16,9 +16,7 @@ import java.util.Collection;
 @Table(name="subject")
 public class Subject implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long subject_id;
-
+    @Id
     private String subject_name;
 
     private String classLevel;
