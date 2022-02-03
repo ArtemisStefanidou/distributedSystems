@@ -50,41 +50,41 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 CREATE TABLES--------------------------------------------------- 
 
 create table question(<br />
-                         question_id INT NOT NULL AUTO_INCREMENT,<br />
-                         question_image VARCHAR(100),<br />
-                         question_text VARCHAR(100) NOT NULL,<br />
-                         question_option1 VARCHAR(100) NOT NULL,<br />
-                         question_option2 VARCHAR(100) NOT NULL,<br />
-                         question_option3 VARCHAR(100),<br />
-                         question_option4 VARCHAR(100),<br />
-                         question_script VARCHAR(100),<br />
-                         PRIMARY KEY ( question_id )<br />
+                         &emsp;question_id INT NOT NULL AUTO_INCREMENT,<br />
+                         &emsp;question_image VARCHAR(100),<br />
+                         &emsp;question_text VARCHAR(100) NOT NULL,<br />
+                         &emsp;question_option1 VARCHAR(100) NOT NULL,<br />
+                         &emsp;question_option2 VARCHAR(100) NOT NULL,<br />
+                         &emsp;question_option3 VARCHAR(100),<br />
+                         &emsp;question_option4 VARCHAR(100),<br />
+                         &emsp;question_script VARCHAR(100),<br />
+                         &emsp;PRIMARY KEY ( question_id )<br />
 );<br /><br />
 
 create table subject(<br />
-                        subject_id INT NOT NULL AUTO_INCREMENT,<br />
-                        subject_name VARCHAR(50) NOT NULL,<br />
-                        subject_class VARCHAR(50) ,<br />
-                        PRIMARY KEY ( subject_id )<br />
+                        &emsp;subject_id INT NOT NULL AUTO_INCREMENT,<br />
+                        &emsp;subject_name VARCHAR(50) NOT NULL,<br />
+                        &emsp;subject_class VARCHAR(50) ,<br />
+                        &emsp;PRIMARY KEY ( subject_id )<br />
 );<br /><br />
 
 
 create table user(<br />
-                     user_id INT NOT NULL AUTO_INCREMENT,<br />
-                     user_email VARCHAR(50) NOT NULL,<br />
-                     user_phone_number INT NOT NULL,<br />
-                     user_password VARCHAR(50) NOT NULL,<br />
-                     user_fullname VARCHAR(50) NOT NULL,<br />
-                     user_role VARCHAR(50) NOT NULL,<br />
-                     user_teacher VARCHAR(50),<br />
-                     PRIMARY KEY (user_id)<br />
+                     &emsp;user_id INT NOT NULL AUTO_INCREMENT,<br />
+                     &emsp;user_email VARCHAR(50) NOT NULL,<br />
+                     &emsp;user_phone_number INT NOT NULL,<br />
+                     &emsp;user_password VARCHAR(50) NOT NULL,<br />
+                     &emsp;user_fullname VARCHAR(50) NOT NULL,<br />
+                     &emsp;user_role VARCHAR(50) NOT NULL,<br />
+                     &emsp;user_teacher VARCHAR(50),<br />
+                     &emsp;PRIMARY KEY (user_id)<br />
 );<br /><br />
 
 create table grade(<br />
-                      grade_of_question INT NOT NULL,<br />
-                      grade_question_id INT NOT NULL,<br />
-                      grade_user_id INT NOT NULL,<br />
-                      FOREIGN KEY (grade_question_id) REFERENCES question(question_id),<br />
-                      FOREIGN KEY (grade_user_id) REFERENCES user(user_id),<br />
-                      PRIMARY KEY (grade_question_id,grade_user_id)<br />
+                      &emsp;grade_of_question INT NOT NULL,<br />
+                      &emsp;grade_question_id INT NOT NULL,<br />
+                      &emsp;grade_user_id INT NOT NULL,<br />
+                      &emsp;FOREIGN KEY (grade_question_id) REFERENCES question(question_id),<br />
+                      &emsp;FOREIGN KEY (grade_user_id) REFERENCES user(user_id),<br />
+                      &emsp;PRIMARY KEY (grade_question_id,grade_user_id)<br />
 );<br /><br />
