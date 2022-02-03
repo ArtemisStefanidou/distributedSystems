@@ -31,14 +31,10 @@ public class Question implements Serializable {
 
     private String option4;
 
-    private String script;
-
     @ManyToOne
     private User teacher;
 
     @OneToMany
     private Collection<Grade> grades = new ArrayList<>();
-
-    private int lvl;
 
 }

@@ -1,7 +1,5 @@
 package org.hua.dit.distributedsystems.models.post;
 
-import org.hua.dit.distributedsystems.models.User;
-
 public class QuestionPost {
     private String question_id;
     private String question_image;
@@ -10,24 +8,25 @@ public class QuestionPost {
     private String question_option2;
     private String question_option3;
     private String question_option4;
-    private String question_script;
-    private User teacher;
-    private int  lvl;
+    private String email_teacher;
 
-    public User getTeacher() {
-        return teacher;
+
+    public QuestionPost( String question_image, String question_text, String question_option1, String question_option2, String question_option3, String question_option4, String email_teacher) {
+        this.question_image = question_image;
+        this.question_text = question_text;
+        this.question_option1 = question_option1;
+        this.question_option2 = question_option2;
+        this.question_option3 = question_option3;
+        this.question_option4 = question_option4;
+        this.email_teacher = email_teacher;
     }
 
-    public void setTeacher(User teacher) {
-        this.teacher = teacher;
+    public String getTeacher() {
+        return email_teacher;
     }
 
-    public int getLvl() {
-        return lvl;
-    }
-
-    public void setLvl(int lvl) {
-        this.lvl = lvl;
+    public void setTeacher(String teacher) {
+        this.email_teacher = teacher;
     }
 
     public String getQuestion_id() {
@@ -36,9 +35,6 @@ public class QuestionPost {
 
     public void setQuestion_id(String question_id) {
         this.question_id = question_id;
-    }
-
-    public QuestionPost() {
     }
 
     public String getQuestion_image() {
@@ -88,13 +84,4 @@ public class QuestionPost {
     public void setQuestion_option4(String question_option4) {
         this.question_option4 = question_option4;
     }
-
-    public String getQuestion_script() {
-        return question_script;
-    }
-
-    public void setQuestion_script(String question_script) {
-        this.question_script = question_script;
-    }
-
 }

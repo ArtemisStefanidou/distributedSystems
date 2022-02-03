@@ -5,60 +5,22 @@ import org.hua.dit.distributedsystems.models.Subject;
 import org.hua.dit.distributedsystems.models.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 
-    /**
-     *
-     *
-     * */
     void deleteUser(Long userId);
-
-    /**
-     *
-     *
-     * */
     User saveUser(User user);
-
-    /**
-     *
-     *
-     * */
     Role saveRole(Role role);
-
-    /**
-     *
-     *
-     * */
     void addRoleToUser(String email, String roleName);
-
-    /**
-     *
-     *
-     * */
     User getUser(String email);
-
-    /**
-     *
-     *
-     * */
     List<User> getUsers();
 
-    /**
-     *
-     *
-     * */
     List<User> getStudents(String teacherName);
 
-    /**
-     *
-     *
-     * */
     void addTeacherToStudent(String teacherName, String studentName);
 
-    /**
-     *
-     *
-     * */
-    void addSubjectToTeacher(Subject subject, String email);
+    int addSubjectToTeacher(Subject subject, String email);
+
+    Optional<User> updateUser(Long id, User newStudent);
 }
