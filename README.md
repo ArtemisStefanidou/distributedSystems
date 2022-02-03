@@ -47,7 +47,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 
 
 
-CREATE TABLES--------------------------------------------------- 
+---------------------------------------------------CREATE TABLES--------------------------------------------------- 
 
 create table question(<br />
                          &emsp;question_id INT NOT NULL AUTO_INCREMENT,<br />
