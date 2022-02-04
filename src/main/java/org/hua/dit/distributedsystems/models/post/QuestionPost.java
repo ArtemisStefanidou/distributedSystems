@@ -384,6 +384,60 @@ public class QuestionPost {
         setQuestion_option4("τίποτα απο αυτά");
 
 
+        //No36
+        setQuestion_id("36");
+        setQuestion_image("https://drive.google.com/uc?export=view&id=1WeDHsxvXXfvzaZY68oUuz-6ooh7y6oHv");
+        setChapter("Εμβαδά Σχημάτων");
+        setQuestion_text("Αν χ=5 να υπολογίσετε το εμβαδόν του σχήματος");
+        setQuestion_option1("40");
+        setQuestion_option2("-4");
+        setQuestion_option3("12");
+        setQuestion_option4("τίποτα απο αυτά");
+
+
+        //No37
+        setQuestion_id("37");
+        setQuestion_image("https://drive.google.com/uc?export=view&id=1WeDHsxvXXfvzaZY68oUuz-6ooh7y6oHv");
+        setChapter("Εμβαδά Σχημάτων");
+        setQuestion_text("Αν χ=2 να υπολογίσετε το εμβαδόν του σχήματος");
+        setQuestion_option1("10");
+        setQuestion_option2("-2");
+        setQuestion_option3("16");
+        setQuestion_option4("τίποτα απο αυτά");
+
+
+        //No38
+        setQuestion_id("38");
+        setQuestion_image("https://drive.google.com/uc?export=view&id=1WeDHsxvXXfvzaZY68oUuz-6ooh7y6oHv");
+        setChapter("Εμβαδά Σχημάτων");
+        setQuestion_text("Αν χ=10 να υπολογίσετε το εμβαδόν του σχήματος");
+        setQuestion_option1("130");
+        setQuestion_option2("-2");
+        setQuestion_option3("33");
+        setQuestion_option4("τίποτα απο αυτά");
+
+
+        //No39
+        setQuestion_id("39");
+        setQuestion_image("https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI");
+        setChapter("Εμβαδά Σχημάτων");
+        setQuestion_text("Αν χ=8 να υπολογίσετε το εμβαδόν του σχήματος");
+        setQuestion_option1("88");
+        setQuestion_option2("-77");
+        setQuestion_option3("808");
+        setQuestion_option4("τίποτα απο αυτά");
+
+        //No40
+        setQuestion_id("40");
+        setQuestion_image("https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI");
+        setChapter("Εμβαδά Σχημάτων");
+        setQuestion_text("Αν χ=10 να υπολογίσετε το εμβαδόν του σχήματος");
+        setQuestion_option1("130");
+        setQuestion_option2("-55");
+        setQuestion_option3("80");
+        setQuestion_option4("τίποτα απο αυτά");
+
+
     }
     public QuestionPost( String question_image, String question_text, String question_option1, String question_option2, String question_option3, String question_option4, String email_teacher) {
         this.question_image = question_image;
