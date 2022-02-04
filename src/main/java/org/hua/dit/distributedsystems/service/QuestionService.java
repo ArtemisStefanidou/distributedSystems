@@ -34,10 +34,8 @@ public interface QuestionService {
     List<Grade> getStudentAllGrades(String studentName);
 
 
-    /**
+    /** Αποθηκεύει μια νέα ερώτηση στη βάση
      *
-     * @param
-     * @return
      */
     void saveQuestion(String image, String text, String opt1, String opt2,String opt3,String opt4, String script
             , String teacherEmail, int difficultyLvl, String subject);
@@ -53,4 +51,12 @@ public interface QuestionService {
      */
     List<Question> getSubjectQuestions(String teacherEmail, String subject);
 
+
+    /** todo
+     *
+     * @param
+     * @return
+     */
+    Question updateQuestion(Long questionId, String image, String text, String opt1, String opt2, String opt3
+            , String opt4, String script, int difficulty);
 }

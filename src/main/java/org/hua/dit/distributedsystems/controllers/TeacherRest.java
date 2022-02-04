@@ -56,6 +56,7 @@ public class TeacherRest {
     @PutMapping("question/{id}")
     Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable Long id) {
 
+        // Καλέστε το questionService.saveQuestion()!!!
         return questionRepo.findById(id)
                 .map(updateQuestion -> {
                     //the id will be random from the system
@@ -96,7 +97,8 @@ public class TeacherRest {
 
     public void userPost(@RequestBody UserPost userPost) {
 
-        User user = new User((long)userPost.getUser_id(),userPost.getUser_email(),userPost.getUser_phone_number(),userPost.getUser_password(),userPost.getUser_fullname(),userPost.getTeacher());
+        User user = new User(null,userPost.getUser_email(),userPost.getUser_phone_number(),
+                userPost.getUser_password(),userPost.getUser_fullname(), null,userPost.getTeacher(), null);
         //add user
         userService.saveUser(user);
         //add role

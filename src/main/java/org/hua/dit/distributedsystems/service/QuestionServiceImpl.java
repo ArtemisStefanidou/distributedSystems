@@ -88,4 +88,9 @@ public class QuestionServiceImpl implements QuestionService{
         return (List<Question>) subject1.getQuestions();
     }
 
+    @Override
+    public Question updateQuestion(Long questionId, String image, String text, String opt1, String opt2, String opt3, String opt4, String script, int difficulty) {
+        return null;
+    }
+
 }

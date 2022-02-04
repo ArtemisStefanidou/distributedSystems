@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
-@Table(name = "User")
 public class User implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,13 +30,4 @@ public class User implements Serializable {
 
     @OneToMany
     private Collection<Subject> subjects = new ArrayList<>();
-
-    public User(Long user_id, String email, int phoneNumber, String password, String fullName, String teacher) {
-        this.user_id = user_id;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.password = password;
-        this.fullName = fullName;
-        this.teacher = teacher;
-    }
 }
