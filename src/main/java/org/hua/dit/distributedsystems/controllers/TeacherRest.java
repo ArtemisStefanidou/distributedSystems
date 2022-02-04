@@ -120,8 +120,9 @@ public class TeacherRest {
     Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable String email) {
 
         Long id = userService.getUser(email).getUser_id();
-        return userService.updateUser(id,newStudent);
+//        return userService.updateUser(id,newStudent);
 
+        return Optional.empty();
     }
 
     // /getStudentsList --> (get)

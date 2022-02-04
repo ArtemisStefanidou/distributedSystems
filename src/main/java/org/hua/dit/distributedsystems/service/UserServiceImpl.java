@@ -144,17 +144,16 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
-    public int addSubjectToTeacher(Subject subject, String email) {
+    public void addSubjectToTeacher(Subject subject, String email) {
         User user = userRepo.findByEmail(email);
 
         if(user.getRoles().iterator().next().equals(email)){
             System.out.println(email+ "  Yesssss");
-            return 0;
+            return;
         }
 
         user.getSubjects().add(subject);
 
-        return 0;
     }
 
     @Override
