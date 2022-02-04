@@ -3,10 +3,38 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement= document.getElementById('answer-buttons')
-
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
+
+document.getElementById("start-btn").addEventListener("click", (event) => {
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
+
+    const request = new XMLHttpRequest();
+
+    //for asynchronised
+    request.open('GET', "http://localhost:8080/student/doQuiz/" + email, true);
+    request.setRequestHeader("Authorization", accessToken);
+    request.setRequestHeader('Content-type', 'application/json;');
+    request.send();
+    //to check when the request is okay to leave
+    request.onreadystatechange = function () {
+
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+
+
+                const questionsJSON = JSON.parse(request.responseText);
+                localStorage.setItem("questionsJSON",questionsJSON);
+                startGame(questionsJSON);
+
+            }
+        }
+    }
+});
+
+
+// startButton.addEventListener('click', startGame)
 
 nextButton.addEventListener('click',()=>{
     currentQuestionIndex++
@@ -14,9 +42,12 @@ nextButton.addEventListener('click',()=>{
 })
 
 
-function startGame(){
+function startGame(questionsJSON){
+
+    alert(questionsJSON);
     startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    // shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questionsJSON.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
@@ -29,15 +60,17 @@ function setNextQuestion(){
 }
 
 function showQuestion(q){
-    console.log(q.question);
-    questionElement.innerText = q.question
+    console.log(q.text);
+    questionElement.innerText = q.text
+
+    q.answers = q.answers.sort(() => Math.random() - .5)
 
     q.answers.forEach(answer=> {
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('btn')
 
-        if (answer.correct) {
+        if (answer.correct === 'true') {
             button.dataset.correct = answer.correct
         }
         button.addEventListener('click', selectAnswer)
@@ -81,7 +114,6 @@ function resetState(){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
-
 
 
 const questions=
@@ -184,3 +216,4 @@ const questions=
 
         }
     ]
+

@@ -21,8 +21,6 @@ public class Subject implements Serializable {
 
     private String name;
 
-    private String classLevel;
-
     @OneToMany
     private Collection<Question> questions = new ArrayList<>();
 }

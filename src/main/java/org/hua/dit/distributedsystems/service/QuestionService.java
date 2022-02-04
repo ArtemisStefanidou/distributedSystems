@@ -36,8 +36,8 @@ public interface QuestionService {
      * @param
      * @return
      */
-    void saveQuestion(String image, String text, String opt1, String opt2,String opt3,String opt4, String script
-            , String teacherEmail, int difficultyLvl, String subject);
+    void saveQuestion(String image, String text, String opt1, String opt2, String opt3, String opt4
+            , String teacherEmail, String subject);
 
     /**
      * Επιστρέφει όλες τις ερωτήσεις που έχει αποθηκευμένες ο καθηγητής
@@ -48,5 +48,8 @@ public interface QuestionService {
      * @return      Μια λίστα με ερωτήσεις
      */
     List<Question> getSubjectQuestions(String teacherEmail, String subject);
+
+    Question getQuestion(String text);
+
 
 }

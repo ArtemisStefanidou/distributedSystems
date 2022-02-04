@@ -55,14 +55,16 @@ public class QuestionServiceImpl implements QuestionService{
         return gradeRepo.findByStudent(student);
     }
 
+
+
     @Override
     public void saveQuestion(String image, String text, String opt1, String opt2, String opt3, String opt4
-            , String script, String teacherEmail, int difficultyLvl, String subject) {
+            , String teacherEmail, String subject) {
 
         User teacher = userRepo.findByEmail(teacherEmail);
         Subject sub = subjectRepo.findByName(subject);
 
-        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, script, teacher, null, difficultyLvl);
+        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, teacher);
 
         questionsRepo.save(question);
         sub.getQuestions().add(question);
@@ -86,6 +88,11 @@ public class QuestionServiceImpl implements QuestionService{
         subject1.getQuestions();
 
         return (List<Question>) subject1.getQuestions();
+    }
+
+    @Override
+    public Question getQuestion(String text) {
+        return questionsRepo.findByText(text);
     }
 
 }

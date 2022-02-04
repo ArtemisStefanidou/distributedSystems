@@ -9,9 +9,10 @@ public class QuestionPost {
     private String question_option3;
     private String question_option4;
     private String email_teacher;
+    private String subject_question;
 
 
-    public QuestionPost( String question_image, String question_text, String question_option1, String question_option2, String question_option3, String question_option4, String email_teacher) {
+    public QuestionPost( String question_image, String question_text, String question_option1, String question_option2, String question_option3, String question_option4, String email_teacher,String subject_question) {
         this.question_image = question_image;
         this.question_text = question_text;
         this.question_option1 = question_option1;
@@ -19,6 +20,15 @@ public class QuestionPost {
         this.question_option3 = question_option3;
         this.question_option4 = question_option4;
         this.email_teacher = email_teacher;
+        this.subject_question = subject_question;
+    }
+
+    public String getSubject_question() {
+        return subject_question;
+    }
+
+    public void setSubject_question(String subject_question) {
+        this.subject_question = subject_question;
     }
 
     public String getTeacher() {

@@ -38,22 +38,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        CustomAuthenticationFilter customAuthenticationFilter =
-//                new CustomAuthenticationFilter(authenticationManagerBean());
-//        customAuthenticationFilter.setFilterProcessesUrl("/login");
-//
-//        http.csrf().disable();
-//        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-//        http.authorizeRequests().antMatchers("/login/**").permitAll();
-//        http.authorizeRequests().antMatchers("/teacher/**").hasAuthority("teacher");
-//        http.authorizeRequests().antMatchers(GET ,"/student/**").hasAuthority("student");
+        CustomAuthenticationFilter customAuthenticationFilter =
+                new CustomAuthenticationFilter(authenticationManagerBean());
+        customAuthenticationFilter.setFilterProcessesUrl("/login");
 
-        http.authorizeRequests().anyRequest().permitAll();
+        http.csrf().disable();
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.authorizeRequests().antMatchers("/login/**").permitAll();
+        http.authorizeRequests().antMatchers("/teacher/**").hasAuthority("teacher");
+        http.authorizeRequests().antMatchers(GET ,"/student/**").hasAuthority("student");
+
+       // http.authorizeRequests().anyRequest().permitAll();
         http.cors().and().csrf().disable();
-//        http.authorizeRequests().anyRequest().authenticated();
-//
-//        http.addFilter(customAuthenticationFilter);
-//        http.addFilterBefore(new CustomAuthorisationFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.authorizeRequests().anyRequest().authenticated();
+
+        http.addFilter(customAuthenticationFilter);
+        http.addFilterBefore(new CustomAuthorisationFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 
     @Bean

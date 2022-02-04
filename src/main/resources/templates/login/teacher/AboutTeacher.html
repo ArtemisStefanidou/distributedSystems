@@ -16,7 +16,7 @@
             <a href="http://localhost:8080/login/teacher/aboutMe">Για Εμένα</a>
         </li>
         <li>
-            <a href="#" id="logOut">Αποσύνδεση</a>
+            <button id="logOut">Αποσύνδεση</button>
         </li>
     </ul>
 </nav>
@@ -50,7 +50,16 @@
         <button id="updateStudent" class="button hide"><a href="http://localhost:8080/login/teacher/createStudent"> Ανανέωση </a></button>
         <button id="infoStudent"   class="button hide"> Απόδοση  </button>
     </div>
-
+    <div>
+        <label class="hide" id="labelDelete"> Δείτε από τον παραπάνω πίνακα το id του μαθητή που θέλετε να διαγράψετε και γράψτε το εδώ: </label>
+        <input class="hide" id="idStudent" type="email" placeholder="Δείτε από τον παραπάνω πίνακα το id του μαθητή που θέλετε και γράψτε το εδώ" value=""/>
+        <button id="delete"   class="button hide"> Έτοιμο </button>
+    </div><br>
+    <div>
+        <label class="hide" id="label"> Δείτε από τον παραπάνω πίνακα το email του μαθητή που θέλετε και γράψτε το εδώ: </label>
+        <input class="hide" id="emailStudent" type="email" placeholder="Δείτε από τον παραπάνω πίνακα το email του μαθητή που θέλετε και γράψτε το εδώ" value=""/>
+        <button id="search"   class="button hide"> Έτοιμο </button>
+    </div><br>
     <div id="infoList">
 
     </div>

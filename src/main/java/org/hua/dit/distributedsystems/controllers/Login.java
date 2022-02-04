@@ -18,14 +18,14 @@ public class Login {
         return "login/student/menuStudent";
     }
 
-    @GetMapping("/student/quiz")
+    @GetMapping("/student/findQuiz")
     public String findQuiz() {
         return "login/student/findQuiz";
     }
 
-    @GetMapping("/student/grades")
-    public String myGrades() {
-        return "AboutTeacher";
+    @GetMapping("/student/quiz")
+    public String Quiz() {
+        return "login/student/quiz";
     }
 
     @GetMapping("teacher/menu")

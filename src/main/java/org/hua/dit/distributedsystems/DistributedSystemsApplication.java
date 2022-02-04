@@ -56,16 +56,19 @@ public class DistributedSystemsApplication {
             userService.addRoleToUser("artemis@gmail.com", "teacher");
             userService.addRoleToUser("meletis@gmail.com", "teacher");
 
-            userService.addTeacherToStudent("artemis@gmail.com", "bill@gmail.com");
+            userService.addTeacherToStudent("meletis@gmail.com", "bill@gmail.com");
 
-            Subject subject = new Subject(null, "Εξισώσεις", "Α Γυμνασίου", null);
+            //subjects create
+            Subject subject = new Subject(null, "Εξισώσεις",  null);
 
+            //subjects add
             questionService.saveSubject(subject);
 
+            //add ston kathigiti meleti
             userService.addSubjectToTeacher(subject, meletis.getEmail());
 
-            questionService.saveQuestion(null, null, "1*2+x=5", "b", "c", "d"
-                    , "1*2+x=5", "artemis@gmail.com", 2, subject.getName());
+            questionService.saveQuestion(null, "1*2+x=5", "b", "c", "d"
+                    , "1*2+x=5", "artemis@gmail.com", subject.getName());
 
             List<User> artemisStudents = userService.getStudents("artemis@gmail.com");
 
@@ -78,7 +81,7 @@ public class DistributedSystemsApplication {
             //todo
 
 
-            System.out.println(artemisStudents.get(0).getEmail());
+           // System.out.println(artemisStudents.get(0).getEmail());
 
         };
     }

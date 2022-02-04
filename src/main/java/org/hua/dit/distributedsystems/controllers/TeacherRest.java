@@ -47,15 +47,15 @@ public class TeacherRest {
 
     public void collaborativePost(@RequestBody QuestionPost questionPost) {
 
-       // questionService.sa
+       questionService.saveQuestion(questionPost.getQuestion_image(),questionPost.getQuestion_text(),questionPost.getQuestion_option1(),questionPost.getQuestion_option2(),questionPost.getQuestion_option3(),questionPost.getQuestion_option4(),questionPost.getTeacher(),questionPost.getSubject_question());
 
-        return;
     }
 
     // /updateQuestion --> form for update the Question (put)
-    @PutMapping("question/{id}")
-    Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable Long id) {
+    @PutMapping("question/{text}")
+    Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable String text) {
 
+        Long id = questionService.getQuestion(text).getId();
         return questionRepo.findById(id)
                 .map(updateQuestion -> {
                     //the id will be random from the system
