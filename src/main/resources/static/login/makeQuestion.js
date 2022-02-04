@@ -67,10 +67,15 @@ document.getElementById("updateQuestion").addEventListener("click", (event) => {
     questionNew.email_teacher = teacher_email;
     questionNew.subject_question = subject_question;
 
+
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
+
     var question = JSON.stringify(questionNew);
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", "http://localhost:8080/teacher/question/"+text, true);
+    xhr.setRequestHeader("Authorization", accessToken);
     xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
     xhr.onload = function () {
         var text = JSON.parse(xhr.responseText);
