@@ -12,4 +12,6 @@ public interface QuestionsRepo extends JpaRepository<Question, Long> {
     List<Question> findByTeacher(Long teacher);
     Question findByText(String text);
 
+
+
 }
