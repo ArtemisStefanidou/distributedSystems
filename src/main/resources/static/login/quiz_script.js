@@ -3,34 +3,71 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement= document.getElementById('answer-buttons')
+const imageElement= document.getElementById('image')
+const dropDown= document.getElementById('dropDown');
 let shuffledQuestions, currentQuestionIndex
 
+class SelectedItemsPost {
+    constructor(studentEmail,subject){
+        this.studentEmail = studentEmail;
+        this.subject  = subject;
+    }
+}
+
+function validateForm() {
+
+    document.getElementById('subject').style.borderColor = '';
+    const subjectSelect = document.getElementById('subject').value;
+
+    if (subjectSelect == 'select') {
+
+        document.getElementById('subject').style.borderColor = 'OrangeRed';
+        alert("All the fields must be filled out. Fill out the subject please");
+        return false;
+    }
+
+    return true;
+}
 
 document.getElementById("start-btn").addEventListener("click", (event) => {
-    const accessToken = localStorage.getItem("accessToken");
-    const email = localStorage.getItem("email");
-
-    const request = new XMLHttpRequest();
-
-    //for asynchronised
-    request.open('GET', "http://localhost:8080/student/doQuiz/" + email, true);
-    request.setRequestHeader("Authorization", accessToken);
-    request.setRequestHeader('Content-type', 'application/json;');
-    request.send();
-    //to check when the request is okay to leave
-    request.onreadystatechange = function () {
-
-        if (request.readyState == 4) {
-            if (request.status == 200) {
 
 
-                const questionsJSON = JSON.parse(request.responseText);
-                localStorage.setItem("questionsJSON",questionsJSON);
-                startGame(questionsJSON);
+    if(!validateForm()){
+        return false;
+    }else {
 
+        const accessToken = localStorage.getItem("accessToken");
+        const email = localStorage.getItem("email");
+
+        const subjectSelect = document.getElementById('subject').value;
+
+        const items = new SelectedItemsPost(email,subjectSelect);
+        const itemsString = email+","+subjectSelect;
+        const request = new XMLHttpRequest();
+
+        //for asynchronised
+        request.open('GET', "http://localhost:8080/student/doQuiz/"+itemsString, true);
+        request.setRequestHeader("Authorization", accessToken);
+        request.setRequestHeader('Content-type', 'application/json;');
+        request.send();
+        //to check when the request is okay to leave
+        request.onreadystatechange = function () {
+
+            if (request.readyState == 4) {
+                if (request.status == 200) {
+
+
+                    const questionsJSON = JSON.parse(request.responseText);
+                    localStorage.setItem("questionsJSON",questionsJSON);
+                    startGame(questionsJSON);
+
+                }
             }
         }
+
     }
+
+
 });
 
 
@@ -46,6 +83,7 @@ function startGame(questionsJSON){
 
     alert(questionsJSON);
     startButton.classList.add('hide')
+    dropDown.classList.add('hide')
     // shuffledQuestions = questions.sort(() => Math.random() - .5)
     shuffledQuestions = questionsJSON.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -75,10 +113,31 @@ function showQuestion(q){
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
+
     })
 }
 function selectAnswer(e){
     const selectedButton = e.target
+
+
+    console.log(selectedButton.textContent)
+    let q = shuffledQuestions[currentQuestionIndex]
+    console.log(q.text)
+
+    q.answers.forEach(answer=> {
+
+        if (answer.correct === 'true') {
+            console.log(answer.text)
+            if (selectedButton.textContent === answer.text) {
+                console.log("Save Correct Question Here")
+            } else {
+                console.log("Save False Question Here")
+            }
+        }
+
+
+    })
+
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -90,7 +149,9 @@ function selectAnswer(e){
     }else{
         startButton.innerText = 'Ολοκλήρωση Quiz'
         startButton.classList.remove('hide')
+        dropDown.classList.remove('hide')
     }
+
 }
 
 function setStatusClass(element, correct){

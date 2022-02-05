@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/teacher/**").hasAuthority("teacher");
         http.authorizeRequests().antMatchers(GET ,"/student/**").hasAuthority("student");
 
-       // http.authorizeRequests().anyRequest().permitAll();
+        //http.authorizeRequests().anyRequest().permitAll();
         http.cors().and().csrf().disable();
         http.authorizeRequests().anyRequest().authenticated();
 

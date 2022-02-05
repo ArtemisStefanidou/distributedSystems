@@ -41,28 +41,47 @@ public class StudentRest {
 //    }
 
     //  /doQuiz/ (get) emfanish quiz me bash tis plhrofories (random)
-    @GetMapping("doQuiz/{emailStudent}")
-    List<QuestionGet> getQuiz(@PathVariable String emailStudent) {
+    @GetMapping("doQuiz/{items}")
+    List<QuestionGet> getQuiz(@PathVariable String items) {
 
-        String emailTeacher = userService.getUser(emailStudent).getTeacher();
+
+        int j = 0;
+        String[] strings = items.split(",");
+        String emailTeacher = userService.getUser(strings[0]).getTeacher();
         List<CorrectAnswer> correctList = new ArrayList<>();
         List<QuestionGet> questionsGet = new ArrayList<>();
-        List<Question> questions = questionService.getSubjectQuestions(emailTeacher,"Εξισώσεις");
+        List<Question> questions = questionService.getSubjectQuestions(emailTeacher,strings[1]);
         for (int i=0 ; i<questions.size();i++) {
 
+            correctList = new ArrayList<>();
+            CorrectAnswer correct = new CorrectAnswer(questions.get(i).getOption1(), "true");
+            correctList.add(correct);
+            CorrectAnswer false1 = new CorrectAnswer(questions.get(i).getOption2(), "false");
+            correctList.add(false1);
+            CorrectAnswer false2 = new CorrectAnswer(questions.get(i).getOption3(), "false");
+            correctList.add(false2);
+            CorrectAnswer false3 = new CorrectAnswer(questions.get(i).getOption4(), "false");
+            correctList.add(false3);
 
-                CorrectAnswer correct = new CorrectAnswer(questions.get(i).getOption1(), "true");
-                correctList.add(correct);
-                CorrectAnswer false1 = new CorrectAnswer(questions.get(i).getOption2(), "false");
-                correctList.add(false1);
-                CorrectAnswer false2 = new CorrectAnswer(questions.get(i).getOption3(), "false");
-                correctList.add(false2);
-                CorrectAnswer false3 = new CorrectAnswer(questions.get(i).getOption4(), "false");
-                correctList.add(false3);
 
             QuestionGet question = new QuestionGet(questions.get(i).getImage(), questions.get(i).getText(), correctList);
+
             questionsGet.add(question);
+
         }
+
+//        int k = 0;
+//        List<CorrectAnswer> correctAnswerList = null;
+//        while(correctList.size()!=0){
+//            for(int i = 0;i<4;i++){
+//                correctAnswerList = new ArrayList<>();
+//                correctAnswerList.add(correctList.get(i));
+//                correctList.remove(i);
+//
+//            }
+//            questionsGet.get(k).setAnswers(correctAnswerList);
+//            k++;
+//        }
         return questionsGet ;
 
     }

@@ -11,8 +11,10 @@
 <body>
 
 <div class="container">
+
     <div id="question-container" class="hide">
         <div id="question"> Question</div>
+        <div id="image"> </div>
 <!--        prepei na to ruthisw gia na emfanizetai kathe eikona se sugkekrimenh erwthsh, kai na to pairnei apo to drive giati kati phgaine lathos-->
 
 <!--        <img  class="images" id="img_guestion" width=40% height=30% src="../../images/eureshgwnias.png" alt="Σε ενα ορθογώνιο τρίγωνο αν η μια οξεία γωνία είναι 50 να βρείτε την άλλη οξεία γωνία.">-->
@@ -20,16 +22,27 @@
 
         <div id="answer-buttons" class="btn-grid">
 
-            <button class="btn">Answer1</button>
-            <button class="btn">Answer2</button>
-            <button class="btn">Answer3</button>
-            <button class="btn">Answer4</button>
+            <button class="btn" id="button1">Answer1</button>
+            <button class="btn" id="button2">Answer2</button>
+            <button class="btn" id="button3">Answer3</button>
+            <button class="btn" id="button4">Answer4</button>
 
         </div>
     </div>
     <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start this quiz!</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <div><button id="start-btn" class="start-btn btn">Ξεκίνα το Quiz!</button></div><br>
+
+        <div id="dropDown">
+            <select name="subject" id="subject" >
+                <div class="list1">
+                    <option label="--Επέλεξε Κεφάλαιο--" value="select" class="links" ></option>
+                    <option value="Πρωτοβάθμιες Εξισώσεις" class="links">Πρωτοβάθμιες Εξισώσεις</option>
+                    <option value="Εμβαδά Σχημάτων" class="links">Εμβαδά Σχημάτων</option>>
+                </div>
+            </select>
+        </div>
+
+        <button id="next-btn" class="next-btn btn hide">Επόμενο</button>
     </div>
 </div>
 </body>
