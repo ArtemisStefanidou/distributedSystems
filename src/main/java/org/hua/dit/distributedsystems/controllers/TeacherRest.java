@@ -82,7 +82,8 @@ public class TeacherRest {
     @GetMapping("questionList/{idTeacher}")
     List<Question> getList(@PathVariable Long idTeacher) {
 
-        Long teacher = studentRepo.findById(idTeacher).get().getUser_id();
+//        Long teacher = studentRepo.findById(idTeacher).get().getUser_id();
+        Long teacher = studentRepo.findByUserId(idTeacher).getUserId();
         return questionRepo.findByTeacher(teacher);
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
     }
@@ -94,7 +95,8 @@ public class TeacherRest {
 
     public void userPost(@RequestBody UserPost userPost) {
 
-        User user = new User((long)userPost.getUser_id(),userPost.getUser_email(),userPost.getUser_phone_number(),userPost.getUser_password(),userPost.getUser_fullname(),userPost.getTeacher());
+        User user = new User(null, userPost.getUser_email(), userPost.getUser_phone_number(),
+                userPost.getUser_password(),userPost.getUser_fullname(), null, userPost.getTeacher(), null);
         //add user
         userService.saveUser(user);
         //add role
@@ -117,11 +119,21 @@ public class TeacherRest {
 
     //update student
     @PutMapping("student/{email}")
-    Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable String email) {
+    Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable String teacherEmail) {
 
-        Long id = userService.getUser(email).getUser_id();
-        return userService.updateUser(id,newStudent);
+        // bale to id tou student mesa sthn klash newStudent kai apla dwse to email tou ka8hghth 3exwrista
+        // pera apo to id tou student oti allo baleis 8a ginei allagh (akomh kai o kwdikos)
+        // oti afhseis keno den ginetai (an den ginetai uparxei problhma ☠️☠️)
 
+        try {
+            userService.updateUser(teacherEmail,newStudent);
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     // /getStudentsList --> (get)

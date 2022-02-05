@@ -15,10 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service @RequiredArgsConstructor @Transactional @Slf4j
 public class UserServiceImpl implements UserService, UserDetailsService {
@@ -34,66 +31,99 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
-    public Optional<User> updateUser(Long id, User newStudent){
+    public void updateUser(String teacherEmail, User newStudent) throws Exception {
 
-        if(newStudent.getFullName() == "" && newStudent.getPassword() == ""){
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-                        return userRepo.save(updateStudent);
-                    });
-        }else if(newStudent.getFullName() == "" && newStudent.getPhoneNumber() == 0){
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-                        return userRepo.save(updateStudent);
-                    });
-        }else if(newStudent.getPhoneNumber() == 0 && newStudent.getPassword() == ""){
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setFullName(newStudent.getFullName());
-                        return userRepo.save(updateStudent);
-                    });
-        }else if (newStudent.getPassword() == ""){
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setFullName(newStudent.getFullName());
-                        //na pernaei apo to security
-                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-                        return userRepo.save(updateStudent);
-                    });
-        }else if(newStudent.getPhoneNumber() == 0){
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setFullName(newStudent.getFullName());
-                        //na pernaei apo to security
-                        updateStudent.setPassword(newStudent.getPassword());
-                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-                        return userRepo.save(updateStudent);
-                    });
-        }else if(newStudent.getFullName() == ""){
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-                        return userRepo.save(updateStudent);
-                    });
-        }else{
-            return userRepo.findById(id)
-                    .map(updateStudent -> {
-                        updateStudent.setFullName(newStudent.getFullName());
-                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-                        return userRepo.save(updateStudent);
-                    });
+        User studentInDb = userRepo.findByUserId(newStudent.getUserId());
+
+        if(!Objects.equals(studentInDb.getTeacher(), teacherEmail)) {
+            throw new Exception("Wrong student");
         }
+
+        if(!Objects.equals(newStudent.getEmail(), "")) {
+            studentInDb.setEmail(newStudent.getEmail());
+        }
+
+        if(newStudent.getPhoneNumber() != 0) {
+            studentInDb.setPhoneNumber(newStudent.getPhoneNumber());
+        }
+
+        if(!Objects.equals(newStudent.getFullName(), "")) {
+            studentInDb.setFullName(newStudent.getFullName());
+        }
+
+        if(!Objects.equals(newStudent.getTeacher(), "")) {
+            studentInDb.setTeacher(newStudent.getTeacher());
+        }
+
+        if (!Objects.equals(studentInDb.getPassword(), "")){
+            studentInDb.setPassword(newStudent.getPassword());
+            saveUser(newStudent);
+            return;
+        }
+
+        userRepo.save(studentInDb);
+
+
+
+//
+//        if(newStudent.getFullName() == "" && newStudent.getPassword() == ""){
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }else if(newStudent.getFullName() == "" && newStudent.getPhoneNumber() == 0){
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }else if(newStudent.getPhoneNumber() == 0 && newStudent.getPassword() == ""){
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setFullName(newStudent.getFullName());
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }else if (newStudent.getPassword() == ""){
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setFullName(newStudent.getFullName());
+//                        //na pernaei apo to security
+//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
+//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
+//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }else if(newStudent.getPhoneNumber() == 0){
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setFullName(newStudent.getFullName());
+//                        //na pernaei apo to security
+//                        updateStudent.setPassword(newStudent.getPassword());
+//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
+//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }else if(newStudent.getFullName() == ""){
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
+//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
+//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
+//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }else{
+//            return userRepo.findById(id)
+//                    .map(updateStudent -> {
+//                        updateStudent.setFullName(newStudent.getFullName());
+//                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
+//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
+//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
+//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
+//                        return userRepo.save(updateStudent);
+//                    });
+//        }
 
     }
 

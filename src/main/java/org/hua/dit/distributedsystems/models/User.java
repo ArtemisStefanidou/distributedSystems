@@ -13,7 +13,7 @@ import java.util.Collection;
 public class User implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long user_id ;
+    private Long userId ;
 
     private String email ;
 
@@ -30,13 +30,4 @@ public class User implements Serializable {
 
     @OneToMany
     private Collection<Subject> subjects = new ArrayList<>();
-
-    public User(Long user_id, String email, int phoneNumber, String password, String fullName, String teacher) {
-        this.user_id = user_id;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.password = password;
-        this.fullName = fullName;
-        this.teacher = teacher;
-    }
 }

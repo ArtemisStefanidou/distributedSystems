@@ -16,7 +16,8 @@ public interface UserService {
     void deleteUser(Long userId);
 
 
-    /** Αποθηκεύουμε έναν νέο χρήστη στην βάση μας
+    /** Αποθηκεύουμε έναν νέο χρήστη στη βάση μας
+     *  Προσοχή! κάνει encode και το password
      *
      * @param user τον χρήστη που θέλουμε να αποθηκεύσουμε
      */
@@ -77,5 +78,10 @@ public interface UserService {
      */
     void addSubjectToTeacher(Subject subject, String email);
 
-    Optional<User> updateUser(Long id, User newStudent);
+    /** todo
+     *
+     * @param
+     * @return
+     */
+    void updateUser(String teacherEmail, User newStudent) throws Exception;
 }
