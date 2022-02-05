@@ -3,6 +3,7 @@ package org.hua.dit.distributedsystems.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -37,14 +38,18 @@ public class Question implements Serializable {
     @OneToMany
     private Collection<Grade> grades = new ArrayList<>();
 
-    public Question(Long id, String image, String text, String option1, String option2, String option3, String option4, User teacher) {
-        this.id = id;
-        this.image = image;
-        this.text = text;
-        this.option1 = option1;
-        this.option2 = option2;
-        this.option3 = option3;
-        this.option4 = option4;
-        this.teacher = teacher;
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", image='" + image + '\'' +
+                ", text='" + text + '\'' +
+                ", option1='" + option1 + '\'' +
+                ", option2='" + option2 + '\'' +
+                ", option3='" + option3 + '\'' +
+                ", option4='" + option4 + '\'' +
+                ", teacher=" + teacher +
+                ", grades=" + grades +
+                '}';
     }
 }

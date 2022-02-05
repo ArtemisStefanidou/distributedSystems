@@ -125,6 +125,8 @@ public class TeacherRest {
         // pera apo to id tou student oti allo baleis 8a ginei allagh (akomh kai o kwdikos)
         // oti afhseis keno den ginetai (an den ginetai uparxei problhma ☠️☠️)
 
+        System.out.println(newStudent);
+
         try {
             userService.updateUser(teacherEmail,newStudent);
 

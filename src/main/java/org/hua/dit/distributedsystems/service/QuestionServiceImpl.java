@@ -64,7 +64,7 @@ public class QuestionServiceImpl implements QuestionService{
         User teacher = userRepo.findByEmail(teacherEmail);
         Subject sub = subjectRepo.findByName(subject);
 
-        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, teacher);
+        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, teacher, null);
 
         questionsRepo.save(question);
         sub.getQuestions().add(question);

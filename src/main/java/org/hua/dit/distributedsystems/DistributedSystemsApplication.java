@@ -473,7 +473,13 @@ public class DistributedSystemsApplication {
                     "meletis@gmail.com",
                     embada.getName());
 
+            List<Question> questionList = questionService.getSubjectQuestions(
+                    "meletis@gmail.com",
+                    "Εμβαδά Σχημάτων");
 
+            for(Question q : questionList) {
+                System.out.println(q.getText());
+            }
 
 
 
