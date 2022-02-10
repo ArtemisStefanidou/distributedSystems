@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
-    <link th:href="@{/login/menu.css}" rel="stylesheet">
-    <link th:href="@{/login/navBar.css}" rel="stylesheet">
+    <link th:href="@{/login/CSSfiles/menu.css}" rel="stylesheet">
+    <link th:href="@{/login/CSSfiles/navBar.css}" rel="stylesheet">
 </head>
 <body>
 <nav>
@@ -16,7 +16,7 @@
             <a href="http://localhost:8080/login/teacher/aboutMe">Για Εμένα</a>
         </li>
         <li>
-            <button id="logOut">Αποσύνδεση</button>
+            <a href="#" id="logOut">Αποσύνδεση</a>
         </li>
     </ul>
 </nav>
@@ -68,6 +68,6 @@
 
 
 
-<script type="text/javascript" th:src="@{/login/aboutTeacher.js}"></script>
+<script type="text/javascript" th:src="@{/login/JSfiles/teacher/aboutTeacher.js}"></script>
 </body>
 </html>

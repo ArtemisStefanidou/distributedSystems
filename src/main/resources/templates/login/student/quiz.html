@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport " content="width-device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link   href="/login/quiz_styles.css" rel="stylesheet">
-    <script defer src="/login/quiz_script.js"></script>
+    <link   href="/login/CSSfiles/student/quiz_styles.css" rel="stylesheet">
+    <script defer src="/login/JSfiles/student/quiz_script.js"></script>
+    <link th:href="@{/login/CSSfiles/navBar.css}" rel="stylesheet">
     <title>Quiz</title>
 </head>
 <body>
-
+    <div >
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://localhost:8080/login/student/menu">Αρχική</a>
+                </li>
+                <li>
+                    <a id="logOut">Αποσύνδεση</a>
+                </li>
+            </ul>
+        </nav><br> <br> <br></div>
 <div class="container">
 
     <div id="question-container" class="hide">
