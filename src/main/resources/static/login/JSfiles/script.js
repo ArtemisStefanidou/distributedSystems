@@ -548,7 +548,7 @@ document.getElementById("doQuiz").addEventListener("click", (event) => {
                 let table = document.createElement('table');
                 let headersRows = document.createElement('tr');
 
-                //delete all the childrens besause maybe already exists a table with not updated info
+                //delete all the children besause maybe already exists a table with not updated info
                 while (divElem.firstChild) {
                     divElem.removeChild(divElem.firstChild);
                 }

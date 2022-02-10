@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu Student</title>
-    <link th:href="@{/login/menu.css}" rel="stylesheet">
+    <link th:href="@{/login/CSSfiles/menu.css}" rel="stylesheet">
+    <link th:href="@{/login/CSSfiles/navBar.css}" rel="stylesheet">
 </head>
 <body>
+<nav>
+    <ul>
+        <li>
+            <a href="http://localhost:8080/login/student/menu">Αρχική</a>
+        </li>
+        <li>
+            <a  id="logOut">Αποσύνδεση</a>
+        </li>
+    </ul>
+</nav><br><br><br><br>
 <h1><span>K</span>αλώς <span>ή</span>λθατε στον <span>κ</span>όσμο των <span>μ</span>αθηματικών!</h1>
 
 <div class="centerButtons">
@@ -21,6 +32,6 @@
     <div id="listAnswers"></div>
 </div>
 
-<script type="text/javascript" th:src="@{/login/menuStudent.js}"></script>
+<script type="text/javascript" th:src="@{/login/JSfiles/student/menuStudent.js}"></script>
 </body>
 </html>

@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
 <!--    <title>Find Quiz</title>-->
-    <link th:href="@{/login/findQuiz.css}" rel="stylesheet">
+    <link th:href="@{/login/CSSfiles/student/findQuiz.css}" rel="stylesheet">
+    <link th:href="@{/login/CSSfiles/navBar.css}" rel="stylesheet">
 </head>
 <body>
 
+<nav>
+    <ul>
+        <li>
+            <a href="http://localhost:8080/login/student/menu">Αρχική</a>
+        </li>
+        <li>
+            <a  id="logOut">Αποσύνδεση</a>
+        </li>
+    </ul>
+</nav><br><br><br><br>
 <div class="container">
 
     <div>
@@ -24,7 +35,7 @@
         <button id="findQuiz" >Βρες το Quiz</button>
     </div>
 </div>
-<script type="text/javascript" th:src="@{/login/findQuiz.js}"></script>
+<script type="text/javascript" th:src="@{/login/JSfiles/student/findQuiz.js}"></script>
 </body>
 
 
