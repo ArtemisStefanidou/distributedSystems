@@ -50,6 +50,8 @@ public interface QuestionService {
      */
     List<Question> getSubjectQuestions(String teacherEmail, String subject);
 
+    List<Question> getTeacherQuestions(String teacherEmail);
+
     Question getQuestion(String text);
 
 

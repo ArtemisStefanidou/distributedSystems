@@ -79,12 +79,10 @@ public class TeacherRest {
     }
 
     // /questionList --> get teacher's question (get)
-    @GetMapping("questionList/{idTeacher}")
-    List<Question> getList(@PathVariable Long idTeacher) {
+    @GetMapping("questionList/{teacherEmail}")
+    List<Question> getList(@PathVariable String teacherEmail) {
 
-//        Long teacher = studentRepo.findById(idTeacher).get().getUser_id();
-        Long teacher = studentRepo.findByUserId(idTeacher).getUserId();
-        return questionRepo.findByTeacher(teacher);
+        return questionService.getTeacherQuestions(teacherEmail);
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
     }
 
