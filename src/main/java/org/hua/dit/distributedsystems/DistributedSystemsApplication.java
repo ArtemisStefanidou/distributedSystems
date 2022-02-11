@@ -477,9 +477,9 @@ public class DistributedSystemsApplication {
                     "meletis@gmail.com",
                     "Εμβαδά Σχημάτων");
 
-            for(Question q : questionList) {
-                System.out.println(q.getText());
-            }
+//            for(Question q : questionList) {
+//                System.out.println(q.getText());
+//            }
 
 
 

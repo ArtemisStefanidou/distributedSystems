@@ -91,6 +91,24 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
+    public List<Question> getTeacherQuestions(String teacherEmail) {
+
+        User teacher = userRepo.findByEmail(teacherEmail);
+
+        List<Subject> subjectList = (List<Subject>) teacher.getSubjects();
+
+        Subject subject1 = new Subject();
+
+        for(Subject s : subjectList) {
+            subject1.setQuestions(s.getQuestions());
+        }
+
+        subject1.getQuestions();
+
+        return (List<Question>) subject1.getQuestions();
+    }
+
+    @Override
     public Question getQuestion(String text) {
         return questionsRepo.findByText(text);
     }
