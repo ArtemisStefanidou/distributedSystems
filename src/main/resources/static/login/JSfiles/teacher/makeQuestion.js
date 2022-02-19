@@ -14,7 +14,12 @@ class QuestionPost {
     }
 }
 
+
+
 document.getElementById("addQuestion").addEventListener("click", (event) => {
+
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
 
     const image = document.getElementById('image').value;
     const text = document.getElementById('txt').value;
@@ -22,13 +27,14 @@ document.getElementById("addQuestion").addEventListener("click", (event) => {
     const option2 = document.getElementById('option2').value;
     const option3 = document.getElementById('option3').value;
     const option4 = document.getElementById('option4').value;
-    const teacher_email = "artemis@gmail.com";//πρέπει να το παίρνει από το token
+    const teacher_email = email;
 //subject
-    const subject = "Εξισώσεις";
+    const subject = document.getElementById('subjects').value;
     const questionPost = new QuestionPost(image,text, option1, option2, option3, option4, teacher_email,subject);
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:8080/teacher/question", true);
+    xhr.setRequestHeader("Authorization", accessToken);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(questionPost));
     xhr.onreadystatechange = function () {
@@ -43,6 +49,9 @@ document.getElementById("addQuestion").addEventListener("click", (event) => {
 });
 document.getElementById("updateQuestion").addEventListener("click", (event) => {
 
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
+
     // Update a user
 
     const image = document.getElementById('image').value;
@@ -52,10 +61,8 @@ document.getElementById("updateQuestion").addEventListener("click", (event) => {
     const option2 = document.getElementById('option2').value;
     const option3 = document.getElementById('option3').value;
     const option4 = document.getElementById('option4').value;
-    const teacher_email = "artemis@gmail.com";//πρέπει να το παίρνει από το token
-//subject
-//subject
-    const subject_question = "Εξισώσεις";
+    const teacher_email = email;
+    const subject_question = document.getElementById('subjects').value;
 
     var questionNew = {};
     questionNew.image = image;
@@ -66,10 +73,6 @@ document.getElementById("updateQuestion").addEventListener("click", (event) => {
     questionNew.option4 = option4;
     questionNew.email_teacher = teacher_email;
     questionNew.subject_question = subject_question;
-
-
-    const accessToken = localStorage.getItem("accessToken");
-    const email = localStorage.getItem("email");
 
     var question = JSON.stringify(questionNew);
 
