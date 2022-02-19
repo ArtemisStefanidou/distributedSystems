@@ -77,7 +77,7 @@ document.getElementById("updateQuestion").addEventListener("click", (event) => {
     var question = JSON.stringify(questionNew);
 
     var xhr = new XMLHttpRequest();
-    xhr.open("PUT", "http://localhost:8080/teacher/question/"+text, true);
+    xhr.open("PUT", "http://localhost:8080/teacher/question/"+questionNew, true);
     xhr.setRequestHeader("Authorization", accessToken);
     xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
     xhr.onload = function () {

@@ -53,9 +53,9 @@ public class TeacherRest {
 
     // /updateQuestion --> form for update the Question (put)
     @PutMapping("question/{text}")
-    Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable String text) {
+    Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable QuestionPost q) {
 
-        Long id = questionService.getQuestion(text).getId();
+        Long id = questionService.getQuestion(q.getQuestion_text()).getId();
         return questionRepo.findById(id)
                 .map(updateQuestion -> {
                     //the id will be random from the system
