@@ -83,7 +83,11 @@ public class TeacherRest {
     @GetMapping("questionList/{teacherEmail}")
     List<Question> getList(@PathVariable String teacherEmail) {
 
-        return questionService.getTeacherQuestions(teacherEmail);
+        List<Question> questions = questionService.getTeacherQuestions(teacherEmail);
+        for (Question q: questions){
+            q.setImage("");
+        }
+        return questions;
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
     }
 

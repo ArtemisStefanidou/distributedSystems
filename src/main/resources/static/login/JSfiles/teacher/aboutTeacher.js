@@ -433,7 +433,8 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
                     divElem.removeChild(divElem.firstChild);
                 }
 
-                const questions = JSON.parse(request.responseText);
+                let questions = [];
+                questions = JSON.parse(request.responseText);
 
                 //if results is 0 means that the select returns 0 rows because it doesn't find books to database
                 if (questions.length == 0) {

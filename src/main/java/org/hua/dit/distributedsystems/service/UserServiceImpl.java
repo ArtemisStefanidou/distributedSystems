@@ -53,12 +53,11 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
         if (!Objects.equals(studentInDb.getPassword(), "")){
             studentInDb.setPassword(newStudent.getPassword());
-            saveUser(newStudent);
+            //saveUser(newStudent);
             return;
         }
 
-        userRepo.save(studentInDb);
-
+        //userRepo.save(studentInDb);
 
 
 //
