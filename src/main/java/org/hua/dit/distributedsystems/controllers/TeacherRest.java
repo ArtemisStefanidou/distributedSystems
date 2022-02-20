@@ -53,23 +53,35 @@ public class TeacherRest {
     }
 
     // /updateQuestion --> form for update the Question (put)
-    @PutMapping("question/{text}")
-    Optional<Question> replaceQuestion(@RequestBody Question newQuestion, @PathVariable QuestionPost q) {
+    @PutMapping("question/{q}")
+    Optional<Question> replaceQuestion(@PathVariable QuestionPost q) {
 
-        Long id = questionService.getQuestion(q.getQuestion_text()).getId();
-        return questionRepo.findById(id)
-                .map(updateQuestion -> {
-                    //the id will be random from the system
-                    updateQuestion.setImage(newQuestion.getImage());
-                    updateQuestion.setOption1(newQuestion.getOption1());
-                    updateQuestion.setOption2(newQuestion.getOption2());
-                    updateQuestion.setOption3(newQuestion.getOption3());
-                    updateQuestion.setOption4(newQuestion.getOption4());
-                    updateQuestion.setText(newQuestion.getText());
-                    System.out.println(updateQuestion);
-                    return questionRepo.save(updateQuestion);
-                });
+//        Long id = questionService.getQuestion(q.getQuestion_text()).getId();
 
+        return questionService.updateQuestion(new Question(null,
+                q.getQuestion_image(),
+                q.getQuestion_text(),
+                q.getQuestion_option1(),
+                q.getQuestion_option2(),
+                q.getQuestion_option3(),
+                q.getQuestion_option4(),
+                "", null));
+
+
+
+
+//        return questionRepo.findById(id)
+//                .map(updateQuestion -> {
+//                    //the id will be random from the system
+//                    updateQuestion.setImage(newQuestion.getImage());
+//                    updateQuestion.setOption1(newQuestion.getOption1());
+//                    updateQuestion.setOption2(newQuestion.getOption2());
+//                    updateQuestion.setOption3(newQuestion.getOption3());
+//                    updateQuestion.setOption4(newQuestion.getOption4());
+//                    updateQuestion.setText(newQuestion.getText());
+//                    System.out.println(updateQuestion);
+//                    return questionRepo.save(updateQuestion);
+//                });
     }
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
@@ -99,14 +111,14 @@ public class TeacherRest {
     public void userPost(@RequestBody UserPost userPost) {
 
         User user = new User(null, userPost.getUser_email(), userPost.getUser_phone_number(),
-                userPost.getUser_password(),userPost.getUser_fullname(), null, userPost.getTeacher(), null);
+                userPost.getUser_password(),userPost.getUser_fullname(), new ArrayList<>(), userPost.getTeacher(), null);
         //add user
-        userService.saveUser(user,"meletis@gmail.com");
+        userService.saveUser(user);
         //add role
-//        String email_user = userPost.getUser_email();
-//        String role = userPost.getUser_role();
+        String email_user = userPost.getUser_email();
+        String role = userPost.getUser_role();
 //        userService.addRoleToUser(email_user,role);
-//        //userService.addRoleToUser("bill@gmail.com", "student");
+        userService.addRoleToUser(email_user, "student");
 
 
     }

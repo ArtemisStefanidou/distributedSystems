@@ -28,6 +28,6 @@ public class User implements Serializable {
 
     private String teacher ;
 
-    @OneToMany
+    @OneToMany (fetch = FetchType.LAZY)
     private Collection<Subject> subjects = new ArrayList<>();
 }

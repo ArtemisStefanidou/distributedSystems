@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.mapping.Set;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -32,24 +33,12 @@ public class Question implements Serializable {
 
     private String option4;
 
-    @ManyToOne
-    private User teacher;
+//    @ManyToOne (fetch = FetchType.LAZY, optional = false)
+//    private User teacher;
 
-    @OneToMany
+    private String teacher;
+
+    @OneToMany (fetch = FetchType.LAZY)
     private Collection<Grade> grades = new ArrayList<>();
 
-    @Override
-    public String toString() {
-        return "Question{" +
-                "id=" + id +
-                ", image='" + image + '\'' +
-                ", text='" + text + '\'' +
-                ", option1='" + option1 + '\'' +
-                ", option2='" + option2 + '\'' +
-                ", option3='" + option3 + '\'' +
-                ", option4='" + option4 + '\'' +
-                ", teacher=" + teacher +
-                ", grades=" + grades +
-                '}';
-    }
 }

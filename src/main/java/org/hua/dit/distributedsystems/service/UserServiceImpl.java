@@ -51,74 +51,12 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             studentInDb.setTeacher(newStudent.getTeacher());
         }
 
-        if (!Objects.equals(studentInDb.getPassword(), "")){
-            studentInDb.setPassword(newStudent.getPassword());
-            //saveUser(newStudent);
+        if (newStudent.getPassword().equals("")){
+            System.out.println("----------------------");
             return;
         }
 
-        //userRepo.save(studentInDb);
-
-
-//
-//        if(newStudent.getFullName() == "" && newStudent.getPassword() == ""){
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }else if(newStudent.getFullName() == "" && newStudent.getPhoneNumber() == 0){
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }else if(newStudent.getPhoneNumber() == 0 && newStudent.getPassword() == ""){
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setFullName(newStudent.getFullName());
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }else if (newStudent.getPassword() == ""){
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setFullName(newStudent.getFullName());
-//                        //na pernaei apo to security
-//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }else if(newStudent.getPhoneNumber() == 0){
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setFullName(newStudent.getFullName());
-//                        //na pernaei apo to security
-//                        updateStudent.setPassword(newStudent.getPassword());
-//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }else if(newStudent.getFullName() == ""){
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }else{
-//            return userRepo.findById(id)
-//                    .map(updateStudent -> {
-//                        updateStudent.setFullName(newStudent.getFullName());
-//                        updateStudent.setPassword(newStudent.getPassword());//na pernaei apo to security
-//                        updateStudent.setPhoneNumber(newStudent.getPhoneNumber());
-//                        //o rolos paramenei o idios den mporei na ton allajei o teacher opvs kai to teacher name
-//                        //an thelei na mhn ton exei mathhth pia kai na ton exei kapoios allow kathhghths tote apla ton diagrafei apo ayton
-//                        return userRepo.save(updateStudent);
-//                    });
-//        }
+        studentInDb.setPassword(passwordEncoder.encode(newStudent.getPassword()));
 
     }
 

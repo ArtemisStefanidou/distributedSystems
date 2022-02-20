@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -64,7 +65,7 @@ public class QuestionServiceImpl implements QuestionService{
         User teacher = userRepo.findByEmail(teacherEmail);
         Subject sub = subjectRepo.findByName(subject);
 
-        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, teacher, null);
+        Question question = new Question(null, image, text, opt1, opt2, opt3, opt4, teacher.getEmail(), null);
 
         questionsRepo.save(question);
         sub.getQuestions().add(question);
@@ -103,14 +104,40 @@ public class QuestionServiceImpl implements QuestionService{
             subject1.setQuestions(s.getQuestions());
         }
 
-        subject1.getQuestions();
-
         return (List<Question>) subject1.getQuestions();
     }
 
     @Override
     public Question getQuestion(String text) {
         return questionsRepo.findByText(text);
+    }
+
+    public Optional<Question> updateQuestion(Question newQuestion) {
+
+        Question questionInDb = getQuestion(newQuestion.getText());
+
+        if(!newQuestion.getImage().equals("")) {
+            questionInDb.setImage(newQuestion.getImage());
+        }
+
+        if (!newQuestion.getOption1().equals("")) {
+            questionInDb.setOption1(newQuestion.getOption1());
+        }
+
+        if (!newQuestion.getOption2().equals("")) {
+            questionInDb.setOption2(newQuestion.getOption2());
+        }
+
+        if (!newQuestion.getOption3().equals("")) {
+            questionInDb.setOption3(newQuestion.getOption3());
+        }
+
+        if (!newQuestion.getOption4().equals("")) {
+            questionInDb.setOption4(newQuestion.getOption4());
+        }
+
+
+        return null;
     }
 
 }

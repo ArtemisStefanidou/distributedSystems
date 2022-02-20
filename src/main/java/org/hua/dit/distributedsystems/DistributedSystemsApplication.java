@@ -490,8 +490,8 @@ public class DistributedSystemsApplication {
      /*       results.put(questionService.)*/
 
      /*       questionService.saveQuizResults();*/
-            System.out.println(questionService.getTeacherQuestions("meletis@gmail.com").get(0).getText()+"------------------------------------");
-            System.out.println(questionService.getSubjectQuestions("meletis@gmail.com","Εμβαδά Σχημάτων").get(0).getText()+"------------------------------------");
+
+//            User aaa = new User(null, "aaa", 1234, "aaa", "aaa", new ArrayList<>(), )
             //todo
 
 

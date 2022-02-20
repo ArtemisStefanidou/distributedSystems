@@ -6,6 +6,7 @@ import org.hua.dit.distributedsystems.models.Subject;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public interface QuestionService {
 
@@ -53,6 +54,10 @@ public interface QuestionService {
     List<Question> getTeacherQuestions(String teacherEmail);
 
     Question getQuestion(String text);
+
+    public Optional<Question> updateQuestion(Question question);
+
+
 
 
 }
