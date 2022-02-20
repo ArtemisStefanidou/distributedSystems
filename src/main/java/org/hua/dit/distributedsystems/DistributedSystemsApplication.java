@@ -490,11 +490,12 @@ public class DistributedSystemsApplication {
      /*       results.put(questionService.)*/
 
      /*       questionService.saveQuizResults();*/
-
+            //System.out.println(questionService.getSubjectQuestions("meletis@gmail.com")+"------------------------------------");
             //todo
 
 
            // System.out.println(artemisStudents.get(0).getEmail());
+
 
         };
     }

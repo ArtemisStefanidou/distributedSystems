@@ -65,12 +65,12 @@ document.getElementById("updateQuestion").addEventListener("click", (event) => {
     const subject_question = document.getElementById('subjects').value;
 
     var questionNew = {};
-    questionNew.image = image;
-    questionNew.text = text;
-    questionNew.option1 = option1;
-    questionNew.option2 = option2;
-    questionNew.option3 = option3;
-    questionNew.option4 = option4;
+    questionNew.question_image = image;
+    questionNew.question_text = text;
+    questionNew.question_option1 = option1;
+    questionNew.question_option2 = option2;
+    questionNew.question_option3 = option3;
+    questionNew.question_option4 = option4;
     questionNew.email_teacher = teacher_email;
     questionNew.subject_question = subject_question;
 
@@ -85,7 +85,7 @@ document.getElementById("updateQuestion").addEventListener("click", (event) => {
         if (xhr.readyState == 4 && xhr.status == "200") {
             console.table(text);
         } else {
-            console.error(text);
+            console.table(text);
         }
     }
     xhr.send(question);

@@ -2,6 +2,7 @@ package org.hua.dit.distributedsystems.controllers;
 
 import org.hua.dit.distributedsystems.models.Grade;
 import org.hua.dit.distributedsystems.models.Question;
+import org.hua.dit.distributedsystems.models.Role;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
@@ -96,11 +97,13 @@ public class TeacherRest {
         User user = new User(null, userPost.getUser_email(), userPost.getUser_phone_number(),
                 userPost.getUser_password(),userPost.getUser_fullname(), null, userPost.getTeacher(), null);
         //add user
-        userService.saveUser(user);
+        userService.saveUser(user,"meletis@gmail.com");
         //add role
-        String email_user = userPost.getUser_email();
-        String role = userPost.getUser_role();
-        userService.addRoleToUser(email_user,role);
+//        String email_user = userPost.getUser_email();
+//        String role = userPost.getUser_role();
+//        userService.addRoleToUser(email_user,role);
+//        //userService.addRoleToUser("bill@gmail.com", "student");
+
 
     }
 
@@ -116,8 +119,8 @@ public class TeacherRest {
     }
 
     //update student
-    @PutMapping("student/{email}")
-    Optional<User> replaceStudent(@RequestBody User newStudent, @PathVariable String teacherEmail) {
+    @PutMapping("student/{teacherEmail}")
+    Optional<User> replaceStudent(@RequestBody UserPost newStudent, @PathVariable String teacherEmail) {
 
         // bale to id tou student mesa sthn klash newStudent kai apla dwse to email tou ka8hghth 3exwrista
         // pera apo to id tou student oti allo baleis 8a ginei allagh (akomh kai o kwdikos)
@@ -125,8 +128,9 @@ public class TeacherRest {
 
         System.out.println(newStudent);
 
+        User updateUser = new User(null, newStudent.getUser_email(), newStudent.getUser_phone_number(), newStudent.getUser_password(), newStudent.getUser_fullname(),null,newStudent.getTeacher(),null);
         try {
-            userService.updateUser(teacherEmail,newStudent);
+            userService.updateUser(teacherEmail,updateUser);
 
         } catch (Exception e) {
 

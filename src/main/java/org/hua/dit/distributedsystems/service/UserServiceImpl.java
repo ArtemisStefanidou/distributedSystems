@@ -33,14 +33,10 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public void updateUser(String teacherEmail, User newStudent) throws Exception {
 
-        User studentInDb = userRepo.findByUserId(newStudent.getUserId());
+        User studentInDb = userRepo.findByEmail(newStudent.getEmail());
 
         if(!Objects.equals(studentInDb.getTeacher(), teacherEmail)) {
             throw new Exception("Wrong student");
-        }
-
-        if(!Objects.equals(newStudent.getEmail(), "")) {
-            studentInDb.setEmail(newStudent.getEmail());
         }
 
         if(newStudent.getPhoneNumber() != 0) {
@@ -133,6 +129,20 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         log.info("Saving new user {} to the database", user.getFullName());
         return userRepo.save(user);
+    }
+
+    @Override
+    public User saveUser(User user, String emailTeacher) {
+        log.info("Encoding password...");
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        log.info("Saving new user {} to the database", user.getFullName());
+
+        userRepo.save(user);
+        Role role = roleRepo.findByName("student");
+
+        user.getRoles().add(role);
+        return user;
+       // return userRepo.save(user);
     }
 
     @Override

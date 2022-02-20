@@ -20,7 +20,7 @@ document.getElementById("addStudent").addEventListener("click", (event) => {
     const accessToken = localStorage.getItem("accessToken");
     const email = localStorage.getItem("email");
 
-    const user = new UserPost(12,email_student,phone_student,password_student,fullName_student,"student",email);
+    let user = new UserPost(12,email_student,phone_student,password_student,fullName_student,"student",email);
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:8080/teacher/user", true);
@@ -41,10 +41,11 @@ document.getElementById("addStudent").addEventListener("click", (event) => {
     };
 });
 
-
 document.getElementById("updateStudent").addEventListener("click", (event) => {
 
     // Update a user
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
 
     const emailStudent = document.getElementById('email').value;
     const phoneStudent = document.getElementById('phone').value;
@@ -52,28 +53,29 @@ document.getElementById("updateStudent").addEventListener("click", (event) => {
     const fullNameStudent = document.getElementById('fullName').value;
 
     var studentNew = {};
-    studentNew.email = emailStudent;
-    studentNew.phoneNumber = phoneStudent;
-    studentNew.password = passwordStudent;//prepei na perasei prvta apo to security kanonika
-    studentNew.fullName = fullNameStudent;
+    studentNew.user_id = "";
+    studentNew.user_email = emailStudent;
+    studentNew.user_phone_number = phoneStudent;
+    studentNew.user_password = passwordStudent;
+    studentNew.user_fullName = fullNameStudent;
+    studentNew.user_role = "";
+    studentNew.email_teacher = email;
 
     var json = JSON.stringify(studentNew);
 
-    const accessToken = localStorage.getItem("accessToken");
-    const email = localStorage.getItem("email");
-
     const xhr = new XMLHttpRequest();
 
-    xhr.open("PUT", "http://localhost:8080/teacher/student/"+emailStudent, true);
+    xhr.open("PUT", "http://localhost:8080/teacher/student/"+email, true);
     xhr.setRequestHeader("Authorization", accessToken);
     xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
     xhr.onload = function () {
-        var text = JSON.parse(xhr.responseText);
+
         if (xhr.readyState == 4 && xhr.status == "200") {
+            var text = JSON.parse(xhr.responseText);
             console.table(text);
             alert("Successful Update");
         } else {
-            alert.error(text);
+            alert("Failed Update");
         }
     }
     xhr.send(json);

@@ -24,6 +24,8 @@ public interface UserService {
     User saveUser(User user);
 
 
+    User saveUser(User user, String emailTeacher);
+
     /** Αποθηκεύει έναν νέο ρόλο στην βάση
      *
      * @param role o ρόλος που θέλουμε να αποθηκεύτεί
