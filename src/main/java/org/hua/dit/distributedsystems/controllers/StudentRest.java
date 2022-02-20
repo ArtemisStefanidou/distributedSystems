@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -94,10 +95,11 @@ public class StudentRest {
             MediaType.APPLICATION_JSON_VALUE
     })
 
-    public void guizanswers(@RequestBody GradePost gradePost) {
+    public void quizAnswers(@RequestBody GradePost gradePost) {
 
-        //todo edw gurnaw apla ton bathmo sto question thelei ftiaksimo
-        System.out.println(gradePost.getGrade_of_question()+","+gradePost.getGrade_question_id()+","+ gradePost.getUser());
+        HashMap<Long,String> map=new HashMap<Long,String>();//Creating HashMap
+        map.put(8L,gradePost.getGrade_of_question());  //Put elements in Map
+        questionService.saveQuizResults(gradePost.getUser(),map);
 
     }
 

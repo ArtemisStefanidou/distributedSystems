@@ -22,7 +22,7 @@ public interface QuestionService {
      * @param student το μέιλ του μαθητή που έκανε το κουίζ
      * @param grades ένα Map<Long, Integer> όπου Long = ID της ερώτησης και Integer=βαθμός από το 1-10 του μαθητή
      */
-    void saveQuizResults(String student, Map<Long, Integer> grades);
+    void saveQuizResults(String student, Map<Long, String> grades);
 
 
     /** Όλα τα αποτελέσματα ενός μαθητή

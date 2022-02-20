@@ -33,10 +33,10 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
-    public void saveQuizResults(String student, Map<Long, Integer> grades) {
+    public void saveQuizResults(String student, Map<Long, String> grades) {
         User st = userRepo.findByEmail(student);
 
-        for (Map.Entry<Long, Integer> entry : grades.entrySet()) {
+        for (Map.Entry<Long,String> entry : grades.entrySet()) {
             System.out.println(entry.getKey() + "/" + entry.getValue());
 
             Question question = questionsRepo.getById(entry.getKey());

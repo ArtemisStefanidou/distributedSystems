@@ -48,6 +48,8 @@ document.getElementById("login").addEventListener("click",
 
 
 
+                }else{
+                    alert("Incorrect input.Please check your email or password")
                 }
             }
         };

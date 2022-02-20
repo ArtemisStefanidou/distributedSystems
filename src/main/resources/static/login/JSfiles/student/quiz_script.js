@@ -1,3 +1,12 @@
+class GradePost {
+    constructor(grade_of_question,grade_question_text,user) {
+        this.grade_of_question = grade_of_question;
+        this.grade_question_text = grade_question_text;
+        this.user  = user;
+    }
+}
+
+
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -5,6 +14,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement= document.getElementById('answer-buttons')
 const imageElement= document.getElementById('image')
 const dropDown= document.getElementById('dropDown');
+const doneQuiz= document.getElementById('doneQuiz');
 let shuffledQuestions, currentQuestionIndex
 
 class SelectedItemsPost {
@@ -117,42 +127,73 @@ function showQuestion(q){
     })
 }
 function selectAnswer(e){
-    const selectedButton = e.target
+
+    let grade = "";
+    const accessToken = localStorage.getItem("accessToken");
+    const email = localStorage.getItem("email");
+
+        const selectedButton = e.target
 
 
-    console.log(selectedButton.textContent)
-    let q = shuffledQuestions[currentQuestionIndex]
-    console.log(q.text)
+        console.log(selectedButton.textContent)
+        let q = shuffledQuestions[currentQuestionIndex]
+        console.log(q.text)
 
-    q.answers.forEach(answer=> {
+        q.answers.forEach(answer => {
 
-        if (answer.correct === 'true') {
-            console.log(answer.text)
-            if (selectedButton.textContent === answer.text) {
-                console.log("Save Correct Question Here")
-            } else {
-                console.log("Save False Question Here")
+            if (answer.correct === 'true') {
+                console.log(answer.text)
+                if (selectedButton.textContent === answer.text) {
+                    grade = new GradePost("true",q.text,email);
+                    console.log("Save Correct Question Here")
+                } else {
+                    grade = new GradePost("false",q.text,email);
+                    console.log("Save False Question Here")
+                }
             }
+
+
+        })
+
+    const request = new XMLHttpRequest();
+
+    //for asynchronised
+    request.open('POST', "http://localhost:8080/student/quizAnswers/", true);
+    request.setRequestHeader("Authorization", accessToken);
+    request.setRequestHeader('Content-type','application/json;');
+    request.send(JSON.stringify(grade));
+
+    request.onreadystatechange = function () {
+
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+                alert("Successful Addition");
+            } else {
+                alert("Something went wrong");
+            }
+        }
+    }
+
+        const correct = selectedButton.dataset.correct
+        setStatusClass(document.body, correct)
+        Array.from(answerButtonsElement.children).forEach(button => {
+            setStatusClass(button, button.dataset.correct)
+        })
+
+        if (shuffledQuestions.length > currentQuestionIndex + 1) {
+            nextButton.classList.remove('hide')
+        } else {
+            doneQuiz.classList.remove('hide')
+            // startButton.innerText = 'Ολοκλήρωση Quiz'
+            // startButton.classList.remove('hide')
+            //dropDown.classList.remove('hide')
         }
 
 
-    })
-
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button,button.dataset.correct)
-    })
-
-    if (shuffledQuestions.length> currentQuestionIndex+1) {
-        nextButton.classList.remove('hide')
-    }else{
-        startButton.innerText = 'Ολοκλήρωση Quiz'
-        startButton.classList.remove('hide')
-        dropDown.classList.remove('hide')
-    }
 
 }
+
+
 
 function setStatusClass(element, correct){
     clearStatusClass(element)

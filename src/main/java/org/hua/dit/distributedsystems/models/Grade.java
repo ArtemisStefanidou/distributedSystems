@@ -15,7 +15,7 @@ public class Grade implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long grade_question_id;
 
-    private Integer grade_of_question;
+    private String grade_of_question;
 
     @ManyToOne
     private User student;
