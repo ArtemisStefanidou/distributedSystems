@@ -51,11 +51,15 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 
 
 <br /><br />
------------------------------Σύνδεση στην βάση μας-----------------------------------------<br />
+-----------------------------Σύνδεση στην βάση μας μέσω intellij-----------------------------------------<br />
 Για την σύνδεση στην βάση μας, μετα το download του προγραμματος μας θα πρέπει:<br/>
-bluh bluh bluh bluh bluh <br/>
-bluh bluh bluh bluh bluh <br/>
-bluh bluh bluh bluh bluh <br/>
-bluh bluh bluh bluh bluh <br/>
-bluh bluh bluh bluh bluh <br/>
-
+&emsp; 1.Να πατήσεετε στο menu πάνω δεξιά με τις database<br/>
+&emsp; 2.Να πατήσετε το σύμβολο του "+" για την προσθήκη μιας βάσης<br/>
+&emsp; 3.Πατήστε στο Data Source/MySQL
+&emsp; 4.Βάλτε τα στοιχεία 
+  &emsp; &emsp;Endpoint<br />
+  &emsp; &emsp;distributedsystemsdatabase.chtaqpwno8ds.eu-central-1.rds.amazonaws.com <br />
+  &emsp; &emsp;Port<br />
+ &emsp;  &emsp;3306 <br />
+ &emsp;  &emsp;admin <br />den3ereistonkwdiko<br/>
+&emsp; 5.Και πατήστε Apply και μετά Οκ <br />
