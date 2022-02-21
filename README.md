@@ -55,11 +55,11 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 Για την σύνδεση στην βάση μας, μετα το download του προγραμματος μας θα πρέπει:<br/>
 &emsp; 1.Να πατήσεετε στο menu πάνω δεξιά με τις database<br/>
 &emsp; 2.Να πατήσετε το σύμβολο του "+" για την προσθήκη μιας βάσης<br/>
-&emsp; 3.Πατήστε στο Data Source/MySQL
-&emsp; 4.Βάλτε τα στοιχεία 
+&emsp; 3.Πατήστε στο Data Source/MySQL  <br />
+&emsp; 4.Βάλτε τα στοιχεία   <br />
   &emsp; &emsp;Endpoint<br />
-  &emsp; &emsp;distributedsystemsdatabase.chtaqpwno8ds.eu-central-1.rds.amazonaws.com <br />
+  &emsp; &emsp; &emsp;distributedsystemsdatabase.chtaqpwno8ds.eu-central-1.rds.amazonaws.com <br />
   &emsp; &emsp;Port<br />
- &emsp;  &emsp;3306 <br />
- &emsp;  &emsp;admin <br />den3ereistonkwdiko<br/>
+ &emsp; &emsp;  &emsp;3306 <br />
+ &emsp;  &emsp;admin <br /> &emsp;&emsp; &emsp; den3ereistonkwdiko<br/>
 &emsp; 5.Και πατήστε Apply και μετά Οκ <br />
