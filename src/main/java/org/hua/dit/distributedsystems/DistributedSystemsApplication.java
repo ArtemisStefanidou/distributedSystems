@@ -372,16 +372,16 @@ public class DistributedSystemsApplication {
 //                    "meletis@gmail.com",
 //                    prwtobathmies.getName());
 //
-//                //no31
-//            questionService.saveQuestion(
-//                    "https://drive.google.com/uc?export=view&id=1G5GEcZYpco0dtVs7Dxf46TVgVi8tvHnk",
-//                    "Το εμβαδόν του τετραγώνου όπως φαίνεται στο σχήμα είναι",
-//                    "12",
-//                    "-2",
-//                    "9",
-//                    "8",
-//                    "meletis@gmail.com",
-//                    embada.getName());
+                //no31
+            questionService.saveQuestion(
+                    "https://drive.google.com/uc?export=view&id=1G5GEcZYpco0dtVs7Dxf46TVgVi8tvHnk",
+                    "Το εμβαδόν του τετραγώνου όπως φαίνεται στο σχήμα είναι",
+                    "144",
+                    "-2",
+                    "9",
+                    "8",
+                    "meletis@gmail.com",
+                    embada.getName());
 //                //no32
 //            questionService.saveQuestion(
 //                    "https://drive.google.com/uc?export=view&id=1u6aTWxtni3e5NzH1riJctytzxWhhlR7N",
@@ -392,7 +392,7 @@ public class DistributedSystemsApplication {
 //                    "τίποτα απο αυτά",
 //                    "meletis@gmail.com",
 //                    embada.getName());
-//                //no33
+////                //no33
 //            questionService.saveQuestion(
 //                    "https://drive.google.com/uc?export=view&id=1EHi6lwch_LUuRCh80Yk-0IUiOqp_ibN0",
 //                    "Το εμβαδόν του ορθογωνίου όπως φαίνεται στο σχήμα είναι",
@@ -402,7 +402,7 @@ public class DistributedSystemsApplication {
 //                    "τίποτα από αυτά",
 //                    "meletis@gmail.com",
 //                    embada.getName());
-//                //no34
+                //no34
 //            questionService.saveQuestion(
 //                    "https://drive.google.com/uc?export=view&id=1WLkePFJh2_vphL7QUEg27W3a4AMqKdgi",
 //                    "Για ποια τιμή του χ το παρακάτω τρίγωνο θα είναι ορθογώνιο;",
@@ -452,17 +452,17 @@ public class DistributedSystemsApplication {
                     "τίποτα απο αυτά",
                     "meletis@gmail.com",
                     embada.getName());
-                //no39
-            questionService.saveQuestion(
-                    "https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI",
-                    "Αν χ=8 να υπολογίσετε το εμβαδόν του σχήματος",
-                    "88",
-                    "-77",
-                    "808",
-                    "τίποτα απο αυτά",
-                    "meletis@gmail.com",
-                    embada.getName());
-                //no40
+//                //no39
+//            questionService.saveQuestion(
+//                    "https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI",
+//                    "Αν χ=8 να υπολογίσετε το εμβαδόν του σχήματος",
+//                    "88",
+//                    "-77",
+//                    "808",
+//                    "τίποτα απο αυτά",
+//                    "meletis@gmail.com",
+//                    embada.getName());
+//                no40
 //            questionService.saveQuestion(
 //                    "https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI",
 //                    "Αν χ=10 να υπολογίσετε το εμβαδόν του σχήματος",

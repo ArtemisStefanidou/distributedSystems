@@ -36,7 +36,7 @@ document.getElementById("showMyAnswers").addEventListener("click", (event) => {
                 //if results is 0 means that the select returns 0 rows because it doesn't find books to database
                 if (questions.length == 0) {
 
-                    let errorTextNode = document.createTextNode("We don't have students in our database");
+                    let errorTextNode = document.createTextNode("We don't have grades of questions for you  in our database");
                     //add this child to divElem to print the message to user
                     divElem.appendChild(errorTextNode);
                     return false;
@@ -71,7 +71,14 @@ document.getElementById("showMyAnswers").addEventListener("click", (event) => {
                             questionValues = Object.values(values[i]);
 
                             for (j in questionValues){
-                                if(j!=0 && j!=1 && j!=7 ) {
+                                if(j == 1){
+                                    let cell = document.createElement('td');
+                                    var img = document.createElement('img');
+                                    img.src =questionValues[j];
+                                    cell.appendChild(img);
+                                    row.appendChild(cell);
+                                }
+                                if(j!=0 && j!=7 && j!=1) {
                                     let cell = document.createElement('td');
                                     let textNode = document.createTextNode(questionValues[j]);
                                     cell.appendChild(textNode);

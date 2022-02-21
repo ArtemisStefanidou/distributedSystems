@@ -202,6 +202,13 @@ document.getElementById("search").addEventListener("click", (event) => {
                             questionValues = Object.values(values[i]);
 
                             for (j in questionValues){
+                                if(j == 1){
+                                    let cell = document.createElement('td');
+                                    var img = document.createElement('img');
+                                    img.src =questionValues[j];
+                                    cell.appendChild(img);
+                                    row.appendChild(cell);
+                                }
                                 if(j!=0 && j!=1 && j!=7 ) {
                                     let cell = document.createElement('td');
                                     let textNode = document.createTextNode(questionValues[j]);
@@ -331,6 +338,7 @@ document.getElementById("showStudents").addEventListener("click", (event) => {
                 document.getElementById("deleteStudent").classList.remove('hide');
                 document.getElementById("updateStudent").classList.remove('hide');
                 document.getElementById("infoStudent").classList.remove('hide');
+                document.getElementById("p").classList.remove('hide');
 
             }
         }

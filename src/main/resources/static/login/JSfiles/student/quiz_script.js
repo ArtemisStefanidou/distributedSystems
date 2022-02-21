@@ -153,10 +153,10 @@ function selectAnswer(e){
             if (answer.correct === 'true') {
                 //console.log(answer.text)
                 if (selectedButton.textContent === answer.text) {
-                    grade = new GradePost("true",q.text,email);
+                    grade = new GradePost("Σωστή",q.text,email);
                     //console.log("Save Correct Question Here")
                 } else {
-                    grade = new GradePost("false",q.text,email);
+                    grade = new GradePost("Λάθος",q.text,email);
                     //console.log("Save False Question Here")
                 }
             }
