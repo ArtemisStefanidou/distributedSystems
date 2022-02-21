@@ -50,4 +50,12 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 &emsp; 4. Ο μαθητής μπορεί να επιλέξει να κάνει quiz ανεξάρτητα με την τάξη στην οποία βρίσκεται εφόσον επιλέγει με βάση το κεφάλαιο<br />
 
 
+<br /><br />
+-----------------------------Σύνδεση στην βάση μας-----------------------------------------<br />
+Για την σύνδεση στην βάση μας, μετα το download του προγραμματος μας θα πρέπει:
+bluh bluh bluh bluh bluh <br/?
+bluh bluh bluh bluh bluh <br/?
+bluh bluh bluh bluh bluh <br/?
+bluh bluh bluh bluh bluh <br/?
+bluh bluh bluh bluh bluh <br/?
 
