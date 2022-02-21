@@ -23,6 +23,12 @@ https://docs.google.com/document/d/e/2PACX-1vReZn87dLrV-lEkipsHImlP2IcJOJLxk27cP
 https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTgTPeIBm-LkgEbQKHithdiQol38gsP5OJLILtrP703hlZyH7N/pubhtml?gid=647520828&single=true
 
 <br /><br />
+
+-----------------------------------Βήματα εγκατάστασης-----------------------------------
+&emsp;1.Πατήστε το κουμπί για download σε zip<br />
+&emsp;2.Κάντε unzip το αρχείο και <br />
+&emsp;3.Ανοίξτε το με κάποιο IDE, προτεινόμενο : intellij<br />
+<br /><br />
 -----------------------------Περιγραφή Συστήματος-----------------------------------------
 
 Θα έχουμε ένα σύστημα στο οποίο:
