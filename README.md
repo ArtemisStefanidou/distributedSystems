@@ -4,7 +4,7 @@ a team project for Distributed Systems Class HUA
 a team project for Distributed Systems Class HUA
 -----------------------------------------------------------------------
  
-**online doc**<br /> https://docs.google.com/document/d/1jAbl3qfcJdOLAeb-BAcrI_uYFsfwyqYo3WkrFhEoOtY/edit </br>
+**online doc**<br /> https://docs.google.com/document/d/1jAbl3qfcJdOLAeb-BAcrI_uYFsfwyqYo3WkrFhEoOtY/edit 
 <br />**online PowerPoint**<br /> https://docs.google.com/presentation/d/1jU4LQRuBOY4fQS3JBUZmy0_nuLKXkK0uoA3Wjedy1dg/edit </br>
 **draw-diagramms** <br/> https://app.diagrams.net/#HArtemisStefanidou%2FdistributedSystems%2Fmain%2Fprwtoparadoteo.drawio 
 </br>
