@@ -3,21 +3,33 @@ a team project for Distributed Systems Class HUA
 # distributedSystems
 a team project for Distributed Systems Class HUA
 -----------------------------------------------------------------------
+ 
+**online doc**<br /> https://docs.google.com/document/d/1jAbl3qfcJdOLAeb-BAcrI_uYFsfwyqYo3WkrFhEoOtY/edit 
+<br />**online PowerPoint**<br /> https://docs.google.com/presentation/d/1jU4LQRuBOY4fQS3JBUZmy0_nuLKXkK0uoA3Wjedy1dg/edit </br>
+**draw-diagramms** <br/> https://app.diagrams.net/#HArtemisStefanidou%2FdistributedSystems%2Fmain%2Fprwtoparadoteo.drawio 
+</br>
 
-**online doc**https://docs.google.com/document/d/1jAbl3qfcJdOLAeb-BAcrI_uYFsfwyqYo3WkrFhEoOtY/edit
-
+<br />
 Οδηγίες εργασιών
-
+<br />
 https://docs.google.com/document/d/e/2PACX-1vSnSUfpPwum1Pt-48ttv7J5-vsQ5yYst9rufVGh96o8yFXkpXbE3xOdZPlN3trG3sHniWhD2ZAIm7fI/pub
+<br />
 
 Θέματα Εργασιών
-
+<br />
 https://docs.google.com/document/d/e/2PACX-1vReZn87dLrV-lEkipsHImlP2IcJOJLxk27cP1TZi0qSVJ4Rf6C7XmlKwqUR2ZxmImyRgmJ2UyACo5Ps/pub
-
-Αναθέσεις Εργασιών
-
+<br />
+Αναθέσεις Εργασιών<br />
 https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTgTPeIBm-LkgEbQKHithdiQol38gsP5OJLILtrP703hlZyH7N/pubhtml?gid=647520828&single=true
-----------------------------------------------------------------------
+
+<br /><br />
+
+-----------------------------------Βήματα εγκατάστασης-----------------------------------<br />
+&emsp;1.Πατήστε το κουμπί για download σε zip<br />
+&emsp;2.Κάντε unzip το αρχείο και <br />
+&emsp;3.Ανοίξτε το με κάποιο IDE, προτεινόμενο : intellij<br />
+<br /><br />
+-----------------------------Περιγραφή Συστήματος-----------------------------------------
 
 Θα έχουμε ένα σύστημα στο οποίο:
 
@@ -31,7 +43,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 
 Ο Καθηγητής θα μπορεί:<br />
    &emsp; 1.Να κάνει εγγραφή στο σύστημα ( email, κωδικό , αριθμό τηλεφώνου, ονοματεπώνυμο) <br />
-   &emsp; 2.Να συνδέεται στο σύστημα (με email και κωδικό...στην επιλογή "Συνδέσου ως  Καθηγητής") <br />
+   &emsp; 2.Να συνδέεται στο σύστημα (με email και κωδικό) <br />
    &emsp; 3.Να δημιουργήσει μια ερώτηση δηλώνοντας το κεφάλαιο <br />
    &emsp; 4.Να διαγράψει μια ερώτηση <br/>
    &emsp; 5.Να τροποποιήσει μια ερώτηση <br/>
@@ -46,45 +58,16 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 &emsp; 4. Ο μαθητής μπορεί να επιλέξει να κάνει quiz ανεξάρτητα με την τάξη στην οποία βρίσκεται εφόσον επιλέγει με βάση το κεφάλαιο<br />
 
 
-
----------------------------------------------------CREATE TABLES--------------------------------------------------- 
-
-create table question(<br />
-                         &emsp;question_id INT NOT NULL AUTO_INCREMENT,<br />
-                         &emsp;question_image VARCHAR(100),<br />
-                         &emsp;question_text VARCHAR(100) NOT NULL,<br />
-                         &emsp;question_option1 VARCHAR(100) NOT NULL,<br />
-                         &emsp;question_option2 VARCHAR(100) NOT NULL,<br />
-                         &emsp;question_option3 VARCHAR(100),<br />
-                         &emsp;question_option4 VARCHAR(100),<br />
-                         &emsp;question_script VARCHAR(100),<br />
-                         &emsp;PRIMARY KEY ( question_id )<br />
-);<br /><br />
-
-create table subject(<br />
-                        &emsp;subject_id INT NOT NULL AUTO_INCREMENT,<br />
-                        &emsp;subject_name VARCHAR(50) NOT NULL,<br />
-                        &emsp;subject_class VARCHAR(50) ,<br />
-                        &emsp;PRIMARY KEY ( subject_id )<br />
-);<br /><br />
-
-
-create table user(<br />
-                     &emsp;user_id INT NOT NULL AUTO_INCREMENT,<br />
-                     &emsp;user_email VARCHAR(50) NOT NULL,<br />
-                     &emsp;user_phone_number INT NOT NULL,<br />
-                     &emsp;user_password VARCHAR(50) NOT NULL,<br />
-                     &emsp;user_fullname VARCHAR(50) NOT NULL,<br />
-                     &emsp;user_role VARCHAR(50) NOT NULL,<br />
-                     &emsp;user_teacher VARCHAR(50),<br />
-                     &emsp;PRIMARY KEY (user_id)<br />
-);<br /><br />
-
-create table grade(<br />
-                      &emsp;grade_of_question INT NOT NULL,<br />
-                      &emsp;grade_question_id INT NOT NULL,<br />
-                      &emsp;grade_user_id INT NOT NULL,<br />
-                      &emsp;FOREIGN KEY (grade_question_id) REFERENCES question(question_id),<br />
-                      &emsp;FOREIGN KEY (grade_user_id) REFERENCES user(user_id),<br />
-                      &emsp;PRIMARY KEY (grade_question_id,grade_user_id)<br />
-);<br /><br />
+<br /><br />
+-----------------------------Σύνδεση στην βάση μας μέσω intellij-----------------------------------------<br />
+Για την σύνδεση στην βάση μας, μετα το download του προγραμματος μας θα πρέπει:<br/>
+&emsp; 1.Να πατήσεετε στο menu πάνω δεξιά με τις database<br/>
+&emsp; 2.Να πατήσετε το σύμβολο του "+" για την προσθήκη μιας βάσης<br/>
+&emsp; 3.Πατήστε στο Data Source/MySQL  <br />
+&emsp; 4.Βάλτε τα στοιχεία   <br />
+  &emsp; &emsp;Endpoint<br />
+  &emsp; &emsp; &emsp;distributedsystemsdatabase.chtaqpwno8ds.eu-central-1.rds.amazonaws.com <br />
+  &emsp; &emsp;Port<br />
+ &emsp; &emsp;  &emsp;3306 <br />
+ &emsp;  &emsp;admin <br /> &emsp;&emsp; &emsp; den3ereistonkwdiko<br/>
+&emsp; 5.Και πατήστε Apply και μετά Οκ <br />
