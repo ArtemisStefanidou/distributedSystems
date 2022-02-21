@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-21T21:22:02.114Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="Mm-Kil7sY51hnyNHt-Ks" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-21T21:38:41.494Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="UO7O0jhGCobhTv2aknQf" version="16.6.2" type="github">
   <diagram id="ZKMzX2-KmIJ3fYU5vfUb" name="Page-1">
-    <mxGraphModel dx="1488" dy="-2519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="914" dy="-2714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -914,10 +914,10 @@
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-177" value="&lt;b&gt;&lt;u&gt;CLASS&amp;nbsp; DIAGRAM&lt;/u&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="482.48" y="3898" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-181" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=1.006;entryY=0.595;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.438;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="2m4D7fxdxuq7k2BDo-Uo-193" target="2m4D7fxdxuq7k2BDo-Uo-192" edge="1">
+        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-181" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0;exitY=0.394;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="2m4D7fxdxuq7k2BDo-Uo-193" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="422.5" y="4079" as="sourcePoint" />
-            <mxPoint x="329.5" y="4079" as="targetPoint" />
+            <mxPoint x="320" y="4080" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-182" value="Περιέχει" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2m4D7fxdxuq7k2BDo-Uo-181" vertex="1" connectable="0">
@@ -931,7 +931,7 @@
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-184" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="302.5" y="4043" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-185" value="" style="endArrow=none;html=1;rounded=0;exitX=1.008;exitY=0.435;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="2m4D7fxdxuq7k2BDo-Uo-193" target="2m4D7fxdxuq7k2BDo-Uo-194" edge="1">
+        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-185" value="" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.4;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="2m4D7fxdxuq7k2BDo-Uo-193" target="2m4D7fxdxuq7k2BDo-Uo-194" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="582.5" y="4078.266055045872" as="sourcePoint" />
             <mxPoint x="735.71" y="4077.434305577247" as="targetPoint" />
@@ -941,7 +941,7 @@
           <mxGeometry x="685.5799999999999" y="4053" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-187" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="597.2" y="4048.52" width="60" height="34.48" as="geometry" />
+          <mxGeometry x="592.97" y="4049" width="60" height="34.48" as="geometry" />
         </mxCell>
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-188" value="1...*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="824.21" y="4153" width="60" height="30" as="geometry" />
@@ -955,17 +955,24 @@
             <mxPoint x="830.5100000000002" y="4263" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rvc3sDn40TBT8kCvccj3-1" target="rvc3sDn40TBT8kCvccj3-1" edge="1">
+        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="rvc3sDn40TBT8kCvccj3-1" target="rvc3sDn40TBT8kCvccj3-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="833.51" y="4461" as="sourcePoint" />
             <mxPoint x="913.51" y="4411.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="832" y="4490" />
+              <mxPoint x="850" y="4490" />
+              <mxPoint x="850" y="4510" />
+              <mxPoint x="940" y="4510" />
+              <mxPoint x="940" y="4433" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-192" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;Κεφάλαιο&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;Subject_ID:int&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;name : string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;p&gt;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" parent="1" vertex="1">
-          <mxGeometry x="127.5" y="4043" width="190" height="62" as="geometry" />
+        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-192" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;Κεφάλαιο&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;Subject_ID:int&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;name : string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;questions : List&amp;lt;Questions&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;p&gt;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" parent="1" vertex="1">
+          <mxGeometry x="127.5" y="4043" width="190" height="97" as="geometry" />
         </mxCell>
-        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-193" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;Eρώτηση&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;id: long&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;image: string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;text: string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option1:string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option2:string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option3:string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option4:string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&amp;nbsp;subject_id : int&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&amp;nbsp;teacher : string&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;createQuestion()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;findByName()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;findQuestion()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;updateQuestion()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;findById(i)&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" parent="1" vertex="1">
-          <mxGeometry x="428" y="3948.52" width="190" height="297.48" as="geometry" />
+        <mxCell id="2m4D7fxdxuq7k2BDo-Uo-193" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;Eρώτηση&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;id: long&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;image: string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;text: string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option1:string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option2:string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option3:string&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;option4:string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&amp;nbsp;subject_id : int&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&amp;nbsp;teacher : string&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;grades : List&amp;lt;Grades&amp;gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;createQuestion()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;findByName()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;findQuestion()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;updateQuestion()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;findById(i)&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" parent="1" vertex="1">
+          <mxGeometry x="428" y="3948.52" width="190" height="331.48" as="geometry" />
         </mxCell>
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-194" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;Βαθμός&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;grade_question_id: long&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;student_user_id:int&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;grade_of_question: string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;question_id:int&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;addGrade(int,int,int)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left ; margin: 0px 0px 0px 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" parent="1" vertex="1">
           <mxGeometry x="735.71" y="4008.52" width="190" height="140" as="geometry" />
@@ -1858,11 +1865,27 @@
         <mxCell id="2m4D7fxdxuq7k2BDo-Uo-451" value="Εκφώνηση" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="6763.039999999999" y="7247" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rvc3sDn40TBT8kCvccj3-1" value="&lt;p style=&quot;margin: 4px 0px 0px&quot;&gt;Χρήστης&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;user_id: long&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;email: string&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;phone_number: string&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;password: string&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;fullName: string&lt;/span&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;login()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;logout()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;signin()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" vertex="1" parent="1">
-          <mxGeometry x="761.5699999999999" y="4263" width="140.83" height="185.76" as="geometry" />
+        <mxCell id="rvc3sDn40TBT8kCvccj3-1" value="&lt;p style=&quot;margin: 4px 0px 0px&quot;&gt;Χρήστης&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;user_id: long&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;email: string&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;phone_number: string&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;password: string&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;fullName: string&lt;br&gt;teacher:string&lt;br&gt;&lt;br&gt;roles : List&amp;lt;Role&amp;gt;&lt;br&gt;subjects : List&amp;lt;Subject&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;p&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;login()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;logout()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;signin()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;startSize=26;" parent="1" vertex="1">
+          <mxGeometry x="761.57" y="4263" width="140.83" height="237" as="geometry" />
         </mxCell>
-        <mxCell id="rvc3sDn40TBT8kCvccj3-2" value="Καθηγητης" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="841.54" y="4452" width="70" height="20" as="geometry" />
+        <mxCell id="rvc3sDn40TBT8kCvccj3-2" value="Καθηγητης" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="850.8299999999999" y="4520" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="gz74PtwMzM9L5D2AgCOZ-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2m4D7fxdxuq7k2BDo-Uo-192" target="rvc3sDn40TBT8kCvccj3-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="4340" as="sourcePoint" />
+            <mxPoint x="410" y="4520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="4540" />
+              <mxPoint x="832" y="4540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gz74PtwMzM9L5D2AgCOZ-4" value="0...*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="4140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gz74PtwMzM9L5D2AgCOZ-5" value="1" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="797" y="4515" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
