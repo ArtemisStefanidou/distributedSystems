@@ -52,7 +52,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vT_mJFeT_xZjE6BTzqigJF4_jN2dddTg
 
 <br /><br />
 -----------------------------Σύνδεση στην βάση μας-----------------------------------------<br />
-Για την σύνδεση στην βάση μας, μετα το download του προγραμματος μας θα πρέπει:
+Για την σύνδεση στην βάση μας, μετα το download του προγραμματος μας θα πρέπει:<br/?
 bluh bluh bluh bluh bluh <br/>
 bluh bluh bluh bluh bluh <br/>
 bluh bluh bluh bluh bluh <br/>
