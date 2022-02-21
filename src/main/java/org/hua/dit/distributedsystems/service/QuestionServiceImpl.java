@@ -57,8 +57,6 @@ public class QuestionServiceImpl implements QuestionService{
         return gradeRepo.findByStudent(student);
     }
 
-
-
     @Override
     public void saveQuestion(String image, String text, String opt1, String opt2, String opt3, String opt4
             , String teacherEmail, String subject) {
@@ -143,6 +141,16 @@ public class QuestionServiceImpl implements QuestionService{
 
 
         return null;
+    }
+
+    @Override
+    public void deleteQuestion(Long id, String subjectName) {
+
+        Subject subject = subjectRepo.findByName(subjectName);
+
+        subject.getQuestions().removeIf(q -> q.getId() == id);
+
+        questionsRepo.deleteById(id);
     }
 
 }

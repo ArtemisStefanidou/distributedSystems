@@ -63,40 +63,20 @@ public class TeacherRest {
             return "You don't have a student with this email.You can not change the email of your student but you can create a new one";
         }
 
-//        Long id = questionService.getQuestion(q.getQuestion_text()).getId();
-
-//        return questionService.updateQuestion(new Question(null,
-//                q.getQuestion_image(),
-//                q.getQuestion_text(),
-//                q.getQuestion_option1(),
-//                q.getQuestion_option2(),
-//                q.getQuestion_option3(),
-//                q.getQuestion_option4(),
-//                "", null));
-
-
-
-
-//        return questionRepo.findById(id)
-//                .map(updateQuestion -> {
-//                    //the id will be random from the system
-//                    updateQuestion.setImage(newQuestion.getImage());
-//                    updateQuestion.setOption1(newQuestion.getOption1());
-//                    updateQuestion.setOption2(newQuestion.getOption2());
-//                    updateQuestion.setOption3(newQuestion.getOption3());
-//                    updateQuestion.setOption4(newQuestion.getOption4());
-//                    updateQuestion.setText(newQuestion.getText());
-//                    System.out.println(updateQuestion);
-//                    return questionRepo.save(updateQuestion);
-//                });
     }
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
     @DeleteMapping("question/{id}")
     void deleteQuestion(@PathVariable Long id) {
-        questionRepo.deleteById(id);
+
+        // Θέλει και το subjectName todo
+
+        String subjectName = "Εμβαδά Σχημάτων";
+        questionService.deleteQuestion(id, subjectName);
         System.out.println("here");
     }
+
+
 
     // /questionList --> get teacher's question (get)
     @GetMapping("questionList/{teacherEmail}")

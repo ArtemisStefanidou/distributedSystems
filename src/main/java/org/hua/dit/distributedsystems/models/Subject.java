@@ -21,6 +21,6 @@ public class Subject implements Serializable {
 
     private String name;
 
-    @OneToMany (fetch = FetchType.EAGER)
+    @OneToMany (fetch = FetchType.EAGER, cascade = CascadeType.REMOVE, orphanRemoval = true)
     private Collection<Question> questions = new ArrayList<>();
 }
