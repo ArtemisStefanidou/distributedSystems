@@ -97,9 +97,8 @@ public class StudentRest {
 
     public void quizAnswers(@RequestBody GradePost gradePost) {
 
-        HashMap<Long,String> map=new HashMap<Long,String>();//Creating HashMap
-        map.put(8L,gradePost.getGrade_of_question());  //Put elements in Map
-        questionService.saveQuizResults(gradePost.getUser(),map);
+
+        questionService.saveQuizResults(gradePost.getUser(), gradePost.getGrade_of_question(), gradePost.getGrade_question_text());
 
     }
 
