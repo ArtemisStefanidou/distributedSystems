@@ -43,11 +43,6 @@ public class Login {
         return "/login/teacher/createStudent";
     }
 
-    @GetMapping("teacher/studentManage")
-    public String studentManageMenu() {
-        return "/login/studentManageMenu";
-    }
-
     @GetMapping("teacher/aboutMe")
     public String teacherAboutMe() {
         return "/login/teacher/AboutTeacher";

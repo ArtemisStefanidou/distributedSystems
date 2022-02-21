@@ -243,30 +243,6 @@ document.getElementById("search").addEventListener("click", (event) => {
     };
 
 });
-// function validateFormQuestion() {
-//
-//     document.getElementById('subject').style.borderColor = '';
-//     const subjectSelect = document.getElementById('subject').value;
-//
-//     if (subjectSelect == 'select') {
-//
-//         document.getElementById('subject').style.borderColor = 'OrangeRed';
-//         alert("All the fields must be filled out. Fill out the subject please");
-//         return false;
-//     }
-//
-//     return true;
-// }
-//
-// document.getElementById("doQuiz").addEventListener("click", (event) => {
-//
-//     if(!validateFormQuestion()){
-//         return false;
-//     }else {
-//         location.href = "http://localhost:8080/login/student/doQuiz";
-//
-//     }
-// });
 
 document.getElementById("showStudents").addEventListener("click", (event) => {
     const accessToken = localStorage.getItem("accessToken");
@@ -319,8 +295,8 @@ document.getElementById("showStudents").addEventListener("click", (event) => {
                 table.appendChild(headersRows);
 
                 /*for each row that exists in the results (the rows that given by select)
-                   i do a foreach for each value that object book has to create the table to
-                   put all the values for each book that i have*/
+                   we do a foreach for each value that object has to create the table to
+                   put all the values for each student that we have*/
 
                 /*if something went wrong with the database in the table appeared the wrong
                     message to inform the user*/
@@ -390,7 +366,7 @@ document.getElementById("deleteQ").addEventListener("click", (event) => {
     const email = localStorage.getItem("email");
 
     const idQuestion = document.getElementById("idQuestion").value;
-    alert("deleteStudent"+idQuestion);
+    alert("delete Question "+idQuestion);
     let xhr = new XMLHttpRequest();
     xhr.open("DELETE", "http://localhost:8080/teacher/question/"+idQuestion, true);
     xhr.setRequestHeader("Authorization", accessToken);
@@ -485,73 +461,6 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
 
 
                 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                // questions.forEach(question => {
-                //
-                //     var i=0;
-                //     let row = document.createElement('tr');
-                //     var values = [];
-                //     var values = Object.values(question);
-                //     for (i in values){
-                //         if(i == 3 ){
-                //             var j=0;
-                //             var questionValues = [];
-                //             questionValues = Object.values(values[i]);
-                //
-                //             for (j in questionValues){
-                //                 let cell = document.createElement('td');
-                //                 let textNode = document.createTextNode(questionValues[j]);
-                //                 cell.appendChild(textNode);
-                //                 //add cell by cell into the row to complete the info of one book that i have in the database
-                //                 row.appendChild(cell);
-                //             }
-                //
-                //         }else if(i!=2 && i!=1) {
-                //
-                //             let cell = document.createElement('td');
-                //             let textNode = document.createTextNode(values[i]);
-                //             cell.appendChild(textNode);
-                //             //add cell by cell into the row to complete the info of one book that i have in the database
-                //             row.appendChild(cell);
-                //
-                //         }
-                //     }
-                //
-                //     //add row by row into the table
-                //     table.appendChild(row);
-                //
-                //
-                // });
 
                 //add the completed table
                 divElem.appendChild(table);

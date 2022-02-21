@@ -115,6 +115,10 @@ function setNextQuestion(){
 function showQuestion(q){
     console.log(q.text);
     questionElement.innerText = q.text
+    //image
+    var img = document.createElement('img');
+    img.src =q.image;
+    questionElement.appendChild(img);
 
     q.answers = q.answers.sort(() => Math.random() - .5)
 

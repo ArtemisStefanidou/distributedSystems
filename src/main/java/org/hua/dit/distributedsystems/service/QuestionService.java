@@ -21,7 +21,7 @@ public interface QuestionService {
     /** Αποθηκεύει τα αποτελέσματα του κουίζ που έκανε ο μαθητής
      *
      * @param student το μέιλ του μαθητή που έκανε το κουίζ
-     * @param grades ένα Map<Long, Integer> όπου Long = ID της ερώτησης και Integer=βαθμός από το 1-10 του μαθητή
+     * @param grade ένα Map<Long, Integer> όπου Long = ID της ερώτησης και Integer=βαθμός από το 1-10 του μαθητή
      */
     void saveQuizResults(String student, String grade, String question);
 
