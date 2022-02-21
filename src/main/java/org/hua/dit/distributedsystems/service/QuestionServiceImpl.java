@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -112,9 +113,13 @@ public class QuestionServiceImpl implements QuestionService{
         return questionsRepo.findByText(text);
     }
 
-    public Optional<Question> updateQuestion(Question newQuestion) {
+    public Optional<Question> updateQuestion(Question newQuestion) throws Exception {
 
         Question questionInDb = getQuestion(newQuestion.getText());
+
+        if(!Objects.equals(questionInDb.getTeacher(), newQuestion.getTeacher())) {
+            throw new Exception("Wrong question");
+        }
 
         if(!newQuestion.getImage().equals("")) {
             questionInDb.setImage(newQuestion.getImage());

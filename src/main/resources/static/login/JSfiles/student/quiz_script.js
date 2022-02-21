@@ -68,6 +68,11 @@ document.getElementById("start-btn").addEventListener("click", (event) => {
 
 
                     const questionsJSON = JSON.parse(request.responseText);
+                    if(questionsJSON.length == 0){
+                        alert("This subject does not have questions yet.Please select an other");
+                        return false;
+                    }
+
                     localStorage.setItem("questionsJSON",questionsJSON);
                     startGame(questionsJSON);
 
@@ -91,7 +96,7 @@ nextButton.addEventListener('click',()=>{
 
 function startGame(questionsJSON){
 
-    alert(questionsJSON);
+    //alert(questionsJSON);
     startButton.classList.add('hide')
     dropDown.classList.add('hide')
     // shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -142,13 +147,13 @@ function selectAnswer(e){
         q.answers.forEach(answer => {
 
             if (answer.correct === 'true') {
-                console.log(answer.text)
+                //console.log(answer.text)
                 if (selectedButton.textContent === answer.text) {
                     grade = new GradePost("true",q.text,email);
-                    console.log("Save Correct Question Here")
+                    //console.log("Save Correct Question Here")
                 } else {
                     grade = new GradePost("false",q.text,email);
-                    console.log("Save False Question Here")
+                    //console.log("Save False Question Here")
                 }
             }
 
@@ -166,10 +171,8 @@ function selectAnswer(e){
     request.onreadystatechange = function () {
 
         if (request.readyState == 4) {
-            if (request.status == 200) {
-                alert("Successful Addition");
-            } else {
-                alert("Something went wrong");
+            if (request.status != 200) {
+                alert("Something Went Wrong");
             }
         }
     }

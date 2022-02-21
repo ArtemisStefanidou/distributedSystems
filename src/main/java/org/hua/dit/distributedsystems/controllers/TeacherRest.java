@@ -2,7 +2,6 @@ package org.hua.dit.distributedsystems.controllers;
 
 import org.hua.dit.distributedsystems.models.Grade;
 import org.hua.dit.distributedsystems.models.Question;
-import org.hua.dit.distributedsystems.models.Role;
 import org.hua.dit.distributedsystems.models.User;
 import org.hua.dit.distributedsystems.models.post.QuestionPost;
 import org.hua.dit.distributedsystems.models.post.UserPost;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/teacher/")
@@ -53,19 +51,28 @@ public class TeacherRest {
     }
 
     // /updateQuestion --> form for update the Question (put)
-    @PutMapping("question/{q}")
-    Optional<Question> replaceQuestion(@PathVariable QuestionPost q) {
+    @PutMapping("question/")
+    String replaceQuestion(@RequestBody QuestionPost q) {
+
+        Question questionNew = new Question(null,q.getQuestion_image(),q.getQuestion_text(),q.getQuestion_option1(),q.getQuestion_option2(),q.getQuestion_option3(),q.getQuestion_option4(),q.getTeacher(),null);
+        try {
+            questionService.updateQuestion(questionNew);
+            return "Question successful updated";
+        } catch (Exception e) {
+
+            return "You don't have a student with this email.You can not change the email of your student but you can create a new one";
+        }
 
 //        Long id = questionService.getQuestion(q.getQuestion_text()).getId();
 
-        return questionService.updateQuestion(new Question(null,
-                q.getQuestion_image(),
-                q.getQuestion_text(),
-                q.getQuestion_option1(),
-                q.getQuestion_option2(),
-                q.getQuestion_option3(),
-                q.getQuestion_option4(),
-                "", null));
+//        return questionService.updateQuestion(new Question(null,
+//                q.getQuestion_image(),
+//                q.getQuestion_text(),
+//                q.getQuestion_option1(),
+//                q.getQuestion_option2(),
+//                q.getQuestion_option3(),
+//                q.getQuestion_option4(),
+//                "", null));
 
 
 
@@ -96,9 +103,6 @@ public class TeacherRest {
     List<Question> getList(@PathVariable String teacherEmail) {
 
         List<Question> questions = questionService.getTeacherQuestions(teacherEmail);
-        for (Question q: questions){
-            q.setImage("");
-        }
         return questions;
         //.orElseThrow(() -> new EmployeeNotFoundException(id));
     }
@@ -110,7 +114,7 @@ public class TeacherRest {
 
     public void userPost(@RequestBody UserPost userPost) {
 
-        User user = new User(null, userPost.getUser_email(), userPost.getUser_phone_number(),
+        User user = new User( null, userPost.getUser_email(), userPost.getUser_phone_number(),
                 userPost.getUser_password(),userPost.getUser_fullname(), new ArrayList<>(), userPost.getTeacher(), null);
         //add user
         userService.saveUser(user);
@@ -136,7 +140,7 @@ public class TeacherRest {
 
     //update student
     @PutMapping("student/{teacherEmail}")
-    Optional<User> replaceStudent(@RequestBody UserPost newStudent, @PathVariable String teacherEmail) {
+    String replaceStudent(@RequestBody UserPost newStudent, @PathVariable String teacherEmail) {
 
         // bale to id tou student mesa sthn klash newStudent kai apla dwse to email tou ka8hghth 3exwrista
         // pera apo to id tou student oti allo baleis 8a ginei allagh (akomh kai o kwdikos)
@@ -147,13 +151,12 @@ public class TeacherRest {
         User updateUser = new User(null, newStudent.getUser_email(), newStudent.getUser_phone_number(), newStudent.getUser_password(), newStudent.getUser_fullname(),null,newStudent.getTeacher(),null);
         try {
             userService.updateUser(teacherEmail,updateUser);
-
+            return "Student with email: "+updateUser.getEmail()+" successful updated";
         } catch (Exception e) {
 
-            e.printStackTrace();
+            return "You don't have a student with this email.You can not change the email of your student but you can create a new one";
         }
 
-        return null;
     }
 
     // /getStudentsList --> (get)

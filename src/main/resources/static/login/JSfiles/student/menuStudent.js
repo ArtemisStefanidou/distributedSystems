@@ -21,7 +21,7 @@ document.getElementById("showMyAnswers").addEventListener("click", (event) => {
             if (request.status == 200) {
 
                 let divElem = document.getElementById('listAnswers');
-                let headersValues = ['Id','Βαθμός','Φωτογραφία', 'Επίπεδο','Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η','Κείμενο','Script','Δάσκαλος'];
+                let headersValues = ['Βαθμός','Κείμενο','Φωτογραφία', 'Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η'];
 
                 let table = document.createElement('table');
                 let headersRows = document.createElement('tr');
@@ -36,7 +36,7 @@ document.getElementById("showMyAnswers").addEventListener("click", (event) => {
                 //if results is 0 means that the select returns 0 rows because it doesn't find books to database
                 if (questions.length == 0) {
 
-                    let errorTextNode = document.createTextNode("We don't have questions in our database");
+                    let errorTextNode = document.createTextNode("We don't have students in our database");
                     //add this child to divElem to print the message to user
                     divElem.appendChild(errorTextNode);
                     return false;
@@ -71,14 +71,16 @@ document.getElementById("showMyAnswers").addEventListener("click", (event) => {
                             questionValues = Object.values(values[i]);
 
                             for (j in questionValues){
-                                let cell = document.createElement('td');
-                                let textNode = document.createTextNode(questionValues[j]);
-                                cell.appendChild(textNode);
-                                //add cell by cell into the row to complete the info of one book that i have in the database
-                                row.appendChild(cell);
+                                if(j!=0 && j!=1 && j!=7 ) {
+                                    let cell = document.createElement('td');
+                                    let textNode = document.createTextNode(questionValues[j]);
+                                    cell.appendChild(textNode);
+                                    //add cell by cell into the row to complete the info of one book that i have in the database
+                                    row.appendChild(cell);
+                                }
                             }
 
-                        }else if(i!=2 && i!=1) {
+                        }else if(i!=0 && i!=2) {
                             // if(i != 3 && i!=5 && i!=6){
                             let cell = document.createElement('td');
                             let textNode = document.createTextNode(values[i]);

@@ -38,15 +38,15 @@ public class DistributedSystemsApplication {
 
 
 
-            User bill = new User(null, "bill@gmail.com", 1234, "1234", "Bill"
+            User bill = new User(null, "bill@gmail.com","1234" , "1234", "Bill"
                     , new ArrayList<>(), null, null);
             userService.saveUser(bill);
 
-            User artemis = new User(null, "artemis@gmail.com", 1234, "5678"
+            User artemis = new User(null, "artemis@gmail.com", "1234", "5678"
                     , "Artemis", new ArrayList<>(), null, null);
             userService.saveUser(artemis);
 
-            User meletis = new User(null, "meletis@gmail.com", 1234, "9012"
+            User meletis = new User(null, "meletis@gmail.com", "1234", "9012"
                     , "Meletis", new ArrayList<>(), null, null);
             userService.saveUser(meletis);
 
@@ -463,15 +463,15 @@ public class DistributedSystemsApplication {
                     "meletis@gmail.com",
                     embada.getName());
                 //no40
-            questionService.saveQuestion(
-                    "https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI",
-                    "Αν χ=10 να υπολογίσετε το εμβαδόν του σχήματος",
-                    "130",
-                    "-55",
-                    "80",
-                    "τίποτα απο αυτά",
-                    "meletis@gmail.com",
-                    embada.getName());
+//            questionService.saveQuestion(
+//                    "https://drive.google.com/uc?export=view&id=1QGT7rv35EHjWWTzcoyQvZlpdG2LvINUI",
+//                    "Αν χ=10 να υπολογίσετε το εμβαδόν του σχήματος",
+//                    "130",
+//                    "-55",
+//                    "80",
+//                    "τίποτα απο αυτά",
+//                    "meletis@gmail.com",
+//                    embada.getName());
 
             List<Question> questionList = questionService.getSubjectQuestions(
                     "meletis@gmail.com",

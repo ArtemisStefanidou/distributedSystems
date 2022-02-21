@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             throw new Exception("Wrong student");
         }
 
-        if(newStudent.getPhoneNumber() != 0) {
+        if(!Objects.equals(newStudent.getPhoneNumber(), "")) {
             studentInDb.setPhoneNumber(newStudent.getPhoneNumber());
         }
 

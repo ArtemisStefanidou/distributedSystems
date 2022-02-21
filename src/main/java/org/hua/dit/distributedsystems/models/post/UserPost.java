@@ -6,13 +6,13 @@ public class UserPost {
 
     private int user_id ;
     private String user_email ;
-    private int user_phone_number  ;
+    private String user_phone_number  ;
     private String user_password  ;
     private String user_fullName  ;
     private String user_role  ;
     private String email_teacher  ;
 
-    public UserPost(int user_id, String user_email, int user_phone_number, String user_password, String user_fullName, String user_role, String email_teacher) {
+    public UserPost(int user_id, String user_email, String user_phone_number, String user_password, String user_fullName, String user_role, String email_teacher) {
         this.user_id = user_id;
         this.user_email = user_email;
         this.user_phone_number = user_phone_number;
@@ -38,11 +38,11 @@ public class UserPost {
         this.user_email = user_email;
     }
 
-    public int getUser_phone_number() {
+    public String getUser_phone_number() {
         return user_phone_number;
     }
 
-    public void setUser_phone_number(int user_phone_number) {
+    public void setUser_phone_number(String user_phone_number) {
         this.user_phone_number = user_phone_number;
     }
 

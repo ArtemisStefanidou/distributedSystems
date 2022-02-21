@@ -152,7 +152,7 @@ document.getElementById("search").addEventListener("click", (event) => {
             if (request.status == 200) {
 
                 let divElem = document.getElementById('infoList');
-                let headersValues = ['Id','Βαθμός','Φωτογραφία', 'Επίπεδο','Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η','Κείμενο','Script','Δάσκαλος'];
+                let headersValues = ['Βαθμός','Κείμενο','Φωτογραφία', 'Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η'];
 
                 let table = document.createElement('table');
                 let headersRows = document.createElement('tr');
@@ -202,14 +202,16 @@ document.getElementById("search").addEventListener("click", (event) => {
                             questionValues = Object.values(values[i]);
 
                             for (j in questionValues){
-                                let cell = document.createElement('td');
-                                let textNode = document.createTextNode(questionValues[j]);
-                                cell.appendChild(textNode);
-                                //add cell by cell into the row to complete the info of one book that i have in the database
-                                row.appendChild(cell);
+                                if(j!=0 && j!=1 && j!=7 ) {
+                                    let cell = document.createElement('td');
+                                    let textNode = document.createTextNode(questionValues[j]);
+                                    cell.appendChild(textNode);
+                                    //add cell by cell into the row to complete the info of one book that i have in the database
+                                    row.appendChild(cell);
+                                }
                             }
 
-                        }else if(i!=2 && i!=1) {
+                        }else if(i!=0 && i!=2) {
                             // if(i != 3 && i!=5 && i!=6){
                             let cell = document.createElement('td');
                             let textNode = document.createTextNode(values[i]);
@@ -398,7 +400,7 @@ document.getElementById("deleteQ").addEventListener("click", (event) => {
         if (xhr.readyState == 4 && xhr.status == "200") {
             console.table(question);
         } else {
-            // console.error(question);
+            alert("Something Went Wrong with the Server");
         }
     }
     xhr.send(null);
@@ -423,7 +425,7 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
             if (request.status == 200) {
 
                 let divElem = document.getElementById('questionList');
-                let headersValues = ['Id','Βαθμός','Φωτογραφία', 'Επίπεδο','Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η','Κείμενο','Script','Δάσκαλος'];
+                let headersValues = ['Id','Φωτογραφία','Κείμενο','Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η'];
 
                 let table = document.createElement('table');
                 let headersRows = document.createElement('tr');
@@ -437,7 +439,7 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
                 questions = JSON.parse(request.responseText);
 
                 //if results is 0 means that the select returns 0 rows because it doesn't find books to database
-                if (questions.length == 0) {
+                if (questions.length === 0) {
 
                     let errorTextNode = document.createTextNode("We don't have questions in our database");
                     //add this child to divElem to print the message to user
@@ -461,6 +463,7 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
 
                 /*if something went wrong with the database in the table appeared the wrong
                     message to inform the user*/
+
                 questions.forEach(question => {
 
                     var i=0;
@@ -468,27 +471,12 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
                     var values = [];
                     var values = Object.values(question);
                     for (i in values){
-                        if(i == 3 ){
-                            var j=0;
-                            var questionValues = [];
-                            questionValues = Object.values(values[i]);
-
-                            for (j in questionValues){
-                                let cell = document.createElement('td');
-                                let textNode = document.createTextNode(questionValues[j]);
-                                cell.appendChild(textNode);
-                                //add cell by cell into the row to complete the info of one book that i have in the database
-                                row.appendChild(cell);
-                            }
-
-                        }else if(i!=2 && i!=1) {
-                            // if(i != 3 && i!=5 && i!=6){
+                        if( i != 7){
                             let cell = document.createElement('td');
                             let textNode = document.createTextNode(values[i]);
                             cell.appendChild(textNode);
-                            //add cell by cell into the row to complete the info of one book that i have in the database
+                            //add cell by cell into the row to complete the info of one question that we have in the database
                             row.appendChild(cell);
-                            // }
                         }
                     }
 
@@ -497,6 +485,73 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
 
 
                 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // questions.forEach(question => {
+                //
+                //     var i=0;
+                //     let row = document.createElement('tr');
+                //     var values = [];
+                //     var values = Object.values(question);
+                //     for (i in values){
+                //         if(i == 3 ){
+                //             var j=0;
+                //             var questionValues = [];
+                //             questionValues = Object.values(values[i]);
+                //
+                //             for (j in questionValues){
+                //                 let cell = document.createElement('td');
+                //                 let textNode = document.createTextNode(questionValues[j]);
+                //                 cell.appendChild(textNode);
+                //                 //add cell by cell into the row to complete the info of one book that i have in the database
+                //                 row.appendChild(cell);
+                //             }
+                //
+                //         }else if(i!=2 && i!=1) {
+                //
+                //             let cell = document.createElement('td');
+                //             let textNode = document.createTextNode(values[i]);
+                //             cell.appendChild(textNode);
+                //             //add cell by cell into the row to complete the info of one book that i have in the database
+                //             row.appendChild(cell);
+                //
+                //         }
+                //     }
+                //
+                //     //add row by row into the table
+                //     table.appendChild(row);
+                //
+                //
+                // });
 
                 //add the completed table
                 divElem.appendChild(table);

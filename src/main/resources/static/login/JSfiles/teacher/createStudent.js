@@ -10,35 +10,79 @@ class UserPost {
     }
 }
 
+//check the input from the user before request leave
+function validateForm() {
+
+    //get the values of the elements to use them below
+    const email = document.getElementById('email').value;
+    const fullName = document.getElementById('fullName').value;
+    const password = document.getElementById('password').value;
+    const phone = document.getElementById('phone').value;
+
+    if (email == '' || email.split('@').length < 2) {
+
+        alert("All the fields must be filled out.Please fill out the field 'Email'");
+        return false;
+
+    }
+
+    if (fullName == '') {
+
+        alert("All the fields must be filled out.Please fill out the field for fullName");
+        return false;
+
+    }
+
+    if (password == '') {
+
+        alert("All the fields must be filled out. Fill out the password please");
+        return false;
+
+    }
+
+    if (phone == '' || phone < 0 || Number.isInteger(phone) || phone.toString().indexOf('.') == 0) {
+
+        alert("Please give a valid phone like 11880 or 6912341003 . Not -8.5 or 8.6 or nothing");
+        return false;
+
+    }
+    return true;
+}
+
 document.getElementById("addStudent").addEventListener("click", (event) => {
 
-    const email_student = document.getElementById('email').value;
-    const phone_student = document.getElementById('phone').value;
-    const password_student = document.getElementById('password').value;
-    const fullName_student = document.getElementById('fullName').value;
+    if(!validateForm()){
+        return false;
+    }else{
+        const email_student = document.getElementById('email').value;
+        let phone_student = document.getElementById('phone').value;
+        const password_student = document.getElementById('password').value;
+        const fullName_student = document.getElementById('fullName').value;
 
-    const accessToken = localStorage.getItem("accessToken");
-    const email = localStorage.getItem("email");
+        const accessToken = localStorage.getItem("accessToken");
+        const email = localStorage.getItem("email");
 
-    let user = new UserPost(12,email_student,phone_student,password_student,fullName_student,"student",email);
+        let user = new UserPost(null,email_student,phone_student.toString(),password_student,fullName_student,"student",email);
 
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/teacher/user", true);
-    xhr.setRequestHeader("Authorization", accessToken);
-    xhr.setRequestHeader('Content-type','application/json;');
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost:8080/teacher/user", true);
+        xhr.setRequestHeader("Authorization", accessToken);
+        xhr.setRequestHeader('Content-type','application/json;');
 
-    xhr.send(JSON.stringify(user));
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-            if (xhr.status == 200) {
+        xhr.send(JSON.stringify(user));
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
 
-                alert("Successful Addition");
-            } else {
-                alert("Something went wrong");
+                    alert("Successful Addition");
+                } else {
+                    alert("Something went wrong");
+                }
+
             }
+        };
+    }
 
-        }
-    };
 });
 
 document.getElementById("updateStudent").addEventListener("click", (event) => {
@@ -48,9 +92,10 @@ document.getElementById("updateStudent").addEventListener("click", (event) => {
     const email = localStorage.getItem("email");
 
     const emailStudent = document.getElementById('email').value;
-    const phoneStudent = document.getElementById('phone').value;
+    let phoneStudent = document.getElementById('phone').value;
     const passwordStudent = document.getElementById('password').value;
     const fullNameStudent = document.getElementById('fullName').value;
+    phoneStudent = phoneStudent.toString();
 
     var studentNew = {};
     studentNew.user_id = "";
@@ -71,11 +116,10 @@ document.getElementById("updateStudent").addEventListener("click", (event) => {
     xhr.onload = function () {
 
         if (xhr.readyState == 4 && xhr.status == "200") {
-            var text = JSON.parse(xhr.responseText);
-            console.table(text);
-            alert("Successful Update");
+            var text = xhr.responseText;
+            alert(text);
         } else {
-            alert("Failed Update");
+            alert("Failed Update.Problem with Server");
         }
     }
     xhr.send(json);

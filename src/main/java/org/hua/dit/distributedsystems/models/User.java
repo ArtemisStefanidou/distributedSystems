@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -17,7 +18,7 @@ public class User implements Serializable {
 
     private String email ;
 
-    private int phoneNumber  ;
+    private String phoneNumber ;
 
     private String password  ;
 

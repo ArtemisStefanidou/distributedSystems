@@ -55,7 +55,7 @@ public interface QuestionService {
 
     Question getQuestion(String text);
 
-    public Optional<Question> updateQuestion(Question question);
+    public Optional<Question> updateQuestion(Question question) throws Exception;
 
 
 
