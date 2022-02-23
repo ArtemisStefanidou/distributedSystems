@@ -13,10 +13,7 @@ import org.hua.dit.distributedsystems.repositories.UserRepo;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -89,13 +86,15 @@ public class QuestionServiceImpl implements QuestionService{
 
         List<Subject> subjectList = (List<Subject>) teacher.getSubjects();
 
-        Subject subject1 = new Subject();
+        List<Question> questionList = new ArrayList<>();
 
         for(Subject s : subjectList) {
-            subject1.setQuestions(s.getQuestions());
+            for (Question q : s.getQuestions()) {
+                questionList.add(q);
+            }
         }
 
-        return (List<Question>) subject1.getQuestions();
+        return (List<Question>) questionList;
     }
 
     @Override
