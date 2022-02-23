@@ -135,11 +135,13 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
-    public void deleteQuestion(Long id, String subjectName) {
+    public void deleteQuestion(Long id) {
 
-        Subject subject = subjectRepo.findByName(subjectName);
+        List<Subject> subjectList = subjectRepo.findAll();
 
-        subject.getQuestions().removeIf(q -> q.getId() == id);
+        for (Subject s : subjectList) {
+            s.getQuestions().removeIf(q -> q.getId() == id);
+        }
 
         questionsRepo.deleteById(id);
     }

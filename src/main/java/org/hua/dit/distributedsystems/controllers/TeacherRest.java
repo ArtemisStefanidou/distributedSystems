@@ -71,8 +71,7 @@ public class TeacherRest {
 
         // Θέλει και το subjectName todo
 
-        String subjectName = "Εμβαδά Σχημάτων";
-        questionService.deleteQuestion(id, subjectName);
+        questionService.deleteQuestion(id);
         System.out.println("here");
     }
 
