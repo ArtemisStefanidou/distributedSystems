@@ -67,12 +67,15 @@ public class TeacherRest {
 
     // /deleteQuestion --> pop up for confirmation to delete the Question (delete)
     @DeleteMapping("question/{id}")
-    void deleteQuestion(@PathVariable Long id) {
+    String deleteQuestion(@PathVariable Long id) {
 
-        // Θέλει και το subjectName todo
+        try {
+            questionService.deleteQuestion(id);
+            return "Successful Deletion For Question With id="+id;
+        } catch (Exception e) {
+            return "We don't have a question with this id";
+        }
 
-        questionService.deleteQuestion(id);
-        System.out.println("here");
     }
 
 

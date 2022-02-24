@@ -57,5 +57,5 @@ public interface QuestionService {
 
     public Optional<Question> updateQuestion(Question question) throws Exception;
 
-    void deleteQuestion(Long id);
+    void deleteQuestion(Long id) throws Exception;
 }

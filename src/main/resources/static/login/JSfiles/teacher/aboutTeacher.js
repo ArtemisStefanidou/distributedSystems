@@ -138,6 +138,7 @@ document.getElementById("search").addEventListener("click", (event) => {
     //Ψάχνω με βάση το email του μαθητή γιατι έχουμε πάρει ως παραδοχή ότι ο μαθητής ανήκει σε ένας καθηγητή Άρα δεν χρειάζομαι και το id του teacher για να αναζητήσω τον μαθητή στη βάση
     const emailStudent = document.getElementById('emailStudent').value;
 
+
     const request = new XMLHttpRequest();
 
     //for asynchronised
@@ -150,6 +151,13 @@ document.getElementById("search").addEventListener("click", (event) => {
 
         if (request.readyState == 4) {
             if (request.status == 200) {
+
+                let divElemB = document.getElementById('buttonsCenter');
+
+                for(let i=0;i<=7;i++){
+                    let br= document.createElement('br');
+                    divElemB.appendChild(br);
+                }
 
                 let divElem = document.getElementById('infoList');
                 let headersValues = ['Βαθμός','Κείμενο','Φωτογραφία', 'Επιλογή 1η','Επιλογή 2η','Επιλογή 3η','Επιλογή 4η'];
@@ -167,7 +175,7 @@ document.getElementById("search").addEventListener("click", (event) => {
                 //if results is 0 means that the select returns 0 rows because it doesn't find books to database
                 if (questions.length == 0) {
 
-                    let errorTextNode = document.createTextNode("We don't have students in our database");
+                    let errorTextNode = document.createTextNode("We don't have grades for this student in our database");
                     //add this child to divElem to print the message to user
                     divElem.appendChild(errorTextNode);
                     return false;
@@ -269,6 +277,20 @@ document.getElementById("showStudents").addEventListener("click", (event) => {
         if (request.readyState == 4) {
             if (request.status == 200) {
 
+                let divElemQ = document.getElementById('questionList');
+
+                //delete all the childrens besause maybe already exists a table with not updated info
+                while (divElemQ.firstChild) {
+                    divElemQ.removeChild(divElemQ.firstChild);
+                }
+
+                document.getElementById("pElement").classList.add('hide');
+                document.getElementById("deleteQuestion").classList.add('hide');
+                document.getElementById("updateQuestion").classList.add('hide');
+                document.getElementById("labelDeleteQuestion").classList.add('hide');
+                document.getElementById("idQuestion").classList.add('hide');
+                document.getElementById("deleteQ").classList.add('hide');
+
                 let divElem = document.getElementById('studentList');
                 let headersValues = ['Id','Email', 'Τηλέφωνο','Όνομα'];
 
@@ -338,7 +360,6 @@ document.getElementById("showStudents").addEventListener("click", (event) => {
                 document.getElementById("deleteStudent").classList.remove('hide');
                 document.getElementById("updateStudent").classList.remove('hide');
                 document.getElementById("infoStudent").classList.remove('hide');
-                document.getElementById("p").classList.remove('hide');
 
             }
         }
@@ -374,15 +395,15 @@ document.getElementById("deleteQ").addEventListener("click", (event) => {
     const email = localStorage.getItem("email");
 
     const idQuestion = document.getElementById("idQuestion").value;
-    alert("delete Question "+idQuestion);
+
     let xhr = new XMLHttpRequest();
     xhr.open("DELETE", "http://localhost:8080/teacher/question/"+idQuestion, true);
     xhr.setRequestHeader("Authorization", accessToken);
     xhr.setRequestHeader('Content-type','application/json;');
     xhr.onload = function () {
-        let question = JSON.parse(xhr.responseText);
         if (xhr.readyState == 4 && xhr.status == "200") {
-            console.table(question);
+            let message = xhr.responseText;
+            alert(message);
         } else {
             alert("Something Went Wrong with the Server");
         }
@@ -476,6 +497,7 @@ document.getElementById("myQuestions").addEventListener("click", (event) => {
                 let br = document.createElement('br');
                 divElem.appendChild(br);
 
+                document.getElementById("pElement").classList.remove('hide');
                 document.getElementById("deleteQuestion").classList.remove('hide');
                 document.getElementById("updateQuestion").classList.remove('hide');
 

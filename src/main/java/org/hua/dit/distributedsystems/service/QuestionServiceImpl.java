@@ -66,6 +66,8 @@ public class QuestionServiceImpl implements QuestionService{
 
         List<Subject> subjectList = (List<Subject>) teacher.getSubjects();
 
+        List<Question> questionList = new ArrayList<>();
+
         Subject subject1 = new Subject();
 
         for(Subject s : subjectList) {
@@ -135,12 +137,23 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
-    public void deleteQuestion(Long id) {
+    public void deleteQuestion(Long id) throws Exception {
 
+        Optional<Question> question = questionsRepo.findById(id);
+        if(question == null){
+            throw new Exception("We don't have a question with this id");
+        }
         List<Subject> subjectList = subjectRepo.findAll();
 
         for (Subject s : subjectList) {
             s.getQuestions().removeIf(q -> q.getId() == id);
+        }
+
+        List<Grade> gradeList = gradeRepo.findAll();
+        for(Grade g : gradeList){
+            if(g.getQuestion().getId() == id){
+                gradeRepo.deleteById(g.getGrade_question_id());
+            }
         }
 
         questionsRepo.deleteById(id);
